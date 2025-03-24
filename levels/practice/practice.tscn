@@ -1,6 +1,15 @@
-[gd_scene load_steps=2 format=3 uid="uid://c31gfyv665i1h"]
+[gd_scene load_steps=7 format=3 uid="uid://c31gfyv665i1h"]
 
-[ext_resource type="PackedScene" uid="uid://dkdjj24le8rha" path="res://levels/item.tscn" id="1_ryacq"]
+[ext_resource type="Script" uid="uid://o3cepcadmws0" path="res://components/hidden_object.gd" id="1_cbk4j"]
+[ext_resource type="Texture2D" uid="uid://cvvwjba2a1uuv" path="res://art/sample/teddy.png" id="2_cbk4j"]
+[ext_resource type="Texture2D" uid="uid://c5hfds8j10snw" path="res://art/sample/bottle.png" id="3_6kb1t"]
+[ext_resource type="Texture2D" uid="uid://6fqcvg3s8wxc" path="res://art/sample/book.png" id="4_h3qnt"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_v75ov"]
+size = Vector2(21.1358, 65.243)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_j33gh"]
+size = Vector2(50.127, 49.4451)
 
 [node name="Node2D" type="Node2D"]
 
@@ -9,11 +18,49 @@ offset_right = 1150.0
 offset_bottom = 648.0
 color = Color(0.82, 1, 0.829, 1)
 
-[node name="item" parent="." instance=ExtResource("1_ryacq")]
-position = Vector2(285, 324)
+[node name="teddy" type="Area2D" parent="."]
+position = Vector2(931, 241)
+script = ExtResource("1_cbk4j")
+item_name = "teddy"
+item_texture = ExtResource("2_cbk4j")
+use_polygon_collision = true
 
-[node name="item2" parent="." instance=ExtResource("1_ryacq")]
-position = Vector2(534, 319)
+[node name="Sprite2D" type="Sprite2D" parent="teddy"]
+texture = ExtResource("2_cbk4j")
 
-[node name="item3" parent="." instance=ExtResource("1_ryacq")]
-position = Vector2(802, 326)
+[node name="CollisionShape2D" type="CollisionShape2D" parent="teddy"]
+disabled = true
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="teddy"]
+polygon = PackedVector2Array(0, -27, 11, -38, 7, -44, 15, -52, 18, -42, 38, -35, 46, -37, 47, -29, 38, -28, 23, -12, 41, -8, 56, -13, 57, -3, 38, 3, 14, -4, -1, 17, -7, 20, -11, 47, -20, 50, -23, 44, -12, 20, -21, 16, -47, 36, -54, 35, -56, 27, -23, 13, -23, 2, -8, -9, -28, -10, -37, -21, -29, -31, -12, -16, 0, -18)
+
+[node name="bottle" type="Area2D" parent="."]
+position = Vector2(658, 248)
+script = ExtResource("1_cbk4j")
+item_name = "bottle"
+
+[node name="Sprite2D" type="Sprite2D" parent="bottle"]
+texture = ExtResource("3_6kb1t")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="bottle"]
+position = Vector2(0.871277, 2.31326)
+rotation = -0.0906142
+shape = SubResource("RectangleShape2D_v75ov")
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="bottle"]
+
+[node name="book" type="Area2D" parent="."]
+position = Vector2(209, 316)
+rotation = 0.00734865
+script = ExtResource("1_cbk4j")
+item_name = "book"
+
+[node name="Sprite2D" type="Sprite2D" parent="book"]
+texture = ExtResource("4_h3qnt")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="book"]
+position = Vector2(-0.184479, -3.23523)
+rotation = -0.854113
+shape = SubResource("RectangleShape2D_j33gh")
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="book"]
