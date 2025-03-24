@@ -1,7 +1,7 @@
 extends Node2D
 
-var hand_cursor = preload("res://art/sample/cursor_normal.png")
-var found_cursor = preload("res://art/sample/cursor_found.png")
+var hand_cursor = preload("res://Common/Art/Sample/cursor_normal.png")
+var found_cursor = preload("res://Common/Art/Sample/cursor_found.png")
 
 # called when the node enters the scene tree for the first time
 func _ready():

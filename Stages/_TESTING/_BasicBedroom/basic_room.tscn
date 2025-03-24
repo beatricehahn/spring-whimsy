@@ -1,10 +1,10 @@
 [gd_scene load_steps=6 format=3 uid="uid://clytmihxa3t0s"]
 
-[ext_resource type="Texture2D" uid="uid://djwawa08gelsk" path="res://art/sample/bedroom.png" id="1_72qop"]
-[ext_resource type="Script" uid="uid://da5hls75i1f7m" path="res://scripts/basic_room.gd" id="1_hdptj"]
-[ext_resource type="Texture2D" uid="uid://cvvwjba2a1uuv" path="res://art/sample/teddy.png" id="2_hdptj"]
-[ext_resource type="Texture2D" uid="uid://c5hfds8j10snw" path="res://art/sample/bottle.png" id="3_tr7i3"]
-[ext_resource type="Texture2D" uid="uid://6fqcvg3s8wxc" path="res://art/sample/book.png" id="4_1wxud"]
+[ext_resource type="Texture2D" uid="uid://djwawa08gelsk" path="res://Common/Art/Sample/bedroom.png" id="1_72qop"]
+[ext_resource type="Script" uid="uid://da5hls75i1f7m" path="res://Stages/_TESTING/_BasicBedroom/basic_room.gd" id="1_hdptj"]
+[ext_resource type="Texture2D" uid="uid://cvvwjba2a1uuv" path="res://Common/Art/Sample/teddy.png" id="2_hdptj"]
+[ext_resource type="Texture2D" uid="uid://c5hfds8j10snw" path="res://Common/Art/Sample/bottle.png" id="3_tr7i3"]
+[ext_resource type="Texture2D" uid="uid://6fqcvg3s8wxc" path="res://Common/Art/Sample/book.png" id="4_1wxud"]
 
 [node name="BasicRoom" type="Node2D"]
 script = ExtResource("1_hdptj")

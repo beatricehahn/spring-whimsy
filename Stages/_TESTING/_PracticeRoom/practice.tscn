@@ -1,9 +1,9 @@
 [gd_scene load_steps=7 format=3 uid="uid://c31gfyv665i1h"]
 
-[ext_resource type="Script" uid="uid://o3cepcadmws0" path="res://components/hidden_object.gd" id="1_cbk4j"]
-[ext_resource type="Texture2D" uid="uid://cvvwjba2a1uuv" path="res://art/sample/teddy.png" id="2_cbk4j"]
-[ext_resource type="Texture2D" uid="uid://c5hfds8j10snw" path="res://art/sample/bottle.png" id="3_6kb1t"]
-[ext_resource type="Texture2D" uid="uid://6fqcvg3s8wxc" path="res://art/sample/book.png" id="4_h3qnt"]
+[ext_resource type="Script" uid="uid://o3cepcadmws0" path="res://Common/hidden_object.gd" id="1_cbk4j"]
+[ext_resource type="Texture2D" uid="uid://cvvwjba2a1uuv" path="res://Common/Art/Sample/teddy.png" id="2_cbk4j"]
+[ext_resource type="Texture2D" uid="uid://c5hfds8j10snw" path="res://Common/Art/Sample/bottle.png" id="3_6kb1t"]
+[ext_resource type="Texture2D" uid="uid://6fqcvg3s8wxc" path="res://Common/Art/Sample/book.png" id="4_h3qnt"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_v75ov"]
 size = Vector2(21.1358, 65.243)

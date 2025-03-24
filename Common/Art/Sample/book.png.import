@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cvvwjba2a1uuv"
-path="res://.godot/imported/teddy.png-82fcebbb6e29068e257fbeeac1f56c1d.ctex"
+uid="uid://6fqcvg3s8wxc"
+path="res://.godot/imported/book.png-5df746d4b3e40eb1076a191e38c816c4.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://art/sample/teddy.png"
-dest_files=["res://.godot/imported/teddy.png-82fcebbb6e29068e257fbeeac1f56c1d.ctex"]
+source_file="res://Common/Art/Sample/book.png"
+dest_files=["res://.godot/imported/book.png-5df746d4b3e40eb1076a191e38c816c4.ctex"]
 
 [params]
 

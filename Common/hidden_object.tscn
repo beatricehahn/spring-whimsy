@@ -1,6 +1,6 @@
 [gd_scene load_steps=3 format=3 uid="uid://b7pubykbso5x7"]
 
-[ext_resource type="Script" uid="uid://o3cepcadmws0" path="res://components/hidden_object.gd" id="1_sq6y1"]
+[ext_resource type="Script" uid="uid://o3cepcadmws0" path="res://Common/hidden_object.gd" id="1_sq6y1"]
 [ext_resource type="Texture2D" uid="uid://df1eailehwedp" path="res://icon.svg" id="2_nea3a"]
 
 [node name="HiddenObject" type="Area2D"]
