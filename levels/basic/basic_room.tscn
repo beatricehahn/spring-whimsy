@@ -1,0 +1,54 @@
+[gd_scene load_steps=6 format=3 uid="uid://clytmihxa3t0s"]
+
+[ext_resource type="Texture2D" uid="uid://djwawa08gelsk" path="res://art/sample/bedroom.png" id="1_72qop"]
+[ext_resource type="Script" uid="uid://da5hls75i1f7m" path="res://scripts/basic_room.gd" id="1_hdptj"]
+[ext_resource type="Texture2D" uid="uid://cvvwjba2a1uuv" path="res://art/sample/teddy.png" id="2_hdptj"]
+[ext_resource type="Texture2D" uid="uid://c5hfds8j10snw" path="res://art/sample/bottle.png" id="3_tr7i3"]
+[ext_resource type="Texture2D" uid="uid://6fqcvg3s8wxc" path="res://art/sample/book.png" id="4_1wxud"]
+
+[node name="BasicRoom" type="Node2D"]
+script = ExtResource("1_hdptj")
+
+[node name="bg" type="Sprite2D" parent="."]
+visibility_layer = 513
+position = Vector2(480, 347)
+scale = Vector2(0.697685, 0.697685)
+texture = ExtResource("1_72qop")
+
+[node name="teddy" type="Sprite2D" parent="."]
+position = Vector2(414, 389)
+texture = ExtResource("2_hdptj")
+
+[node name="Area2D" type="Area2D" parent="teddy"]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="teddy/Area2D"]
+polygon = PackedVector2Array(-28, -32, -3, -19, 9, -55, 50, -38, 26, -10, 50, -13, 60, -7, 35, 4, 14, -3, -5, 23, -5, 39, -13, 53, -27, 47, -17, 30, -16, 19, -23, 15, -42, 34, -59, 37, -59, 24, -39, 19, -27, 11, -25, -1, -14, -8, -30, -9, -39, -20)
+
+[node name="bottle" type="Sprite2D" parent="."]
+position = Vector2(277, 334)
+texture = ExtResource("3_tr7i3")
+
+[node name="Area2D" type="Area2D" parent="bottle"]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="bottle/Area2D"]
+position = Vector2(0.537268, 1.04425)
+scale = Vector2(0.974537, 0.981419)
+polygon = PackedVector2Array(-8, -40, -9, -31, -14, -22, -9, 34, 13, 34, 11, -26, 3, -31, 2, -40)
+
+[node name="book" type="Sprite2D" parent="."]
+position = Vector2(496, 433)
+texture = ExtResource("4_1wxud")
+
+[node name="Area2D" type="Area2D" parent="book"]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="book/Area2D"]
+polygon = PackedVector2Array(-36, -6, -37, 3, 0, 32, 33, 6, 33, -8, 0, -33)
+
+[node name="Node2D" type="Node2D" parent="."]
+
+[connection signal="mouse_entered" from="teddy/Area2D" to="." method="change_cursor_hand"]
+[connection signal="mouse_exited" from="teddy/Area2D" to="." method="change_cursor_back"]
+[connection signal="mouse_entered" from="bottle/Area2D" to="." method="change_cursor_hand"]
+[connection signal="mouse_exited" from="bottle/Area2D" to="." method="change_cursor_back"]
+[connection signal="mouse_entered" from="book/Area2D" to="." method="change_cursor_hand"]
+[connection signal="mouse_exited" from="book/Area2D" to="." method="change_cursor_back"]

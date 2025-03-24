@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://6fqcvg3s8wxc"
-path="res://.godot/imported/book.png-03ab1e7c818036f33950cbbd06b86452.ctex"
+uid="uid://c5hfds8j10snw"
+path="res://.godot/imported/bottle.png-958c2e0d7e660f5c088d5eb436af1069.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://sample/book.png"
-dest_files=["res://.godot/imported/book.png-03ab1e7c818036f33950cbbd06b86452.ctex"]
+source_file="res://art/sample/bottle.png"
+dest_files=["res://.godot/imported/bottle.png-958c2e0d7e660f5c088d5eb436af1069.ctex"]
 
 [params]
 

@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cvvwjba2a1uuv"
-path="res://.godot/imported/teddy.png-5b958cf5b18ccf7f11ed423c6d1bd542.ctex"
+uid="uid://bgdj7ltbg0agy"
+path="res://.godot/imported/cursor_normal.png-764171fad660c303d42ce9c5ae4e00b6.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://sample/teddy.png"
-dest_files=["res://.godot/imported/teddy.png-5b958cf5b18ccf7f11ed423c6d1bd542.ctex"]
+source_file="res://art/sample/cursor_normal.png"
+dest_files=["res://.godot/imported/cursor_normal.png-764171fad660c303d42ce9c5ae4e00b6.ctex"]
 
 [params]
 

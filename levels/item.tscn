@@ -1,0 +1,15 @@
+[gd_scene load_steps=2 format=3 uid="uid://dkdjj24le8rha"]
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_vpy52"]
+resource_local_to_scene = true
+load_path = "res://.godot/imported/icon.svg-218a8f2b3041327d8a5756f3a245f83b.ctex"
+
+[node name="item" type="Node2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = SubResource("CompressedTexture2D_vpy52")
+
+[node name="Area2D" type="Area2D" parent="Sprite2D"]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Sprite2D/Area2D"]
+polygon = PackedVector2Array(-60, -61, -60, 58, 58, 57, 58, -60)
