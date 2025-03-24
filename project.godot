@@ -11,7 +11,7 @@ config_version=5
 [application]
 
 config/name="unorthoducks and the cherry blossom picnic"
-run/main_scene="uid://clytmihxa3t0s"
+run/main_scene="uid://wy3uvcvhfa21"
 config/features=PackedStringArray("4.4", "GL Compatibility")
 config/icon="res://icon.svg"
 
