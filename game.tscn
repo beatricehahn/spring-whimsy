@@ -1,9 +1,13 @@
-[gd_scene load_steps=3 format=3 uid="uid://dq34vslgjmdfk"]
+[gd_scene load_steps=6 format=3 uid="uid://dq34vslgjmdfk"]
 
+[ext_resource type="Script" uid="uid://csnkpo7ksvuyo" path="res://game.gd" id="1_7jktm"]
 [ext_resource type="Script" uid="uid://cigf00o02l1xv" path="res://camera_control.gd" id="1_80nbo"]
 [ext_resource type="PackedScene" uid="uid://dgw25o1c7i3l3" path="res://Stages/Picnic/Items/apple.tscn" id="2_e2o6t"]
+[ext_resource type="PackedScene" uid="uid://1hr2qja6snql" path="res://Stages/Picnic/Items/basket.tscn" id="3_feb5d"]
+[ext_resource type="PackedScene" uid="uid://dn6ktjhekfwnx" path="res://Stages/Picnic/Items/cheese.tscn" id="4_fc0e3"]
 
 [node name="Game" type="Node"]
+script = ExtResource("1_7jktm")
 
 [node name="Camera2D" type="Camera2D" parent="."]
 position = Vector2(574, 326)
@@ -16,3 +20,16 @@ scale = Vector2(0.25, 0.25)
 [node name="Apple2" parent="." instance=ExtResource("2_e2o6t")]
 position = Vector2(476, 280)
 scale = Vector2(0.25, 0.25)
+
+[node name="basket" parent="." instance=ExtResource("3_feb5d")]
+position = Vector2(433, 319)
+item_name = "basket of food"
+
+[node name="Cheese" parent="." instance=ExtResource("4_fc0e3")]
+position = Vector2(744, 341)
+scale = Vector2(0.3, 0.3)
+
+[connection signal="is_found" from="Apple" to="." method="_on_object_found"]
+[connection signal="is_found" from="Apple2" to="." method="_on_object_found"]
+[connection signal="is_found" from="basket" to="." method="_on_object_found"]
+[connection signal="is_found" from="Cheese" to="." method="_on_object_found"]

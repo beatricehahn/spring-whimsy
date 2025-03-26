@@ -1,0 +1,18 @@
+[gd_scene load_steps=4 format=3 uid="uid://1hr2qja6snql"]
+
+[ext_resource type="PackedScene" uid="uid://dlu4ormju4den" path="res://Common/collectable.tscn" id="1_osdgk"]
+[ext_resource type="Texture2D" uid="uid://u7x6oa6ojgi5" path="res://Stages/Picnic/Art/basket@2x.png" id="2_nvp43"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_4dy4g"]
+resource_local_to_scene = true
+size = Vector2(113, 102)
+
+[node name="basket" instance=ExtResource("1_osdgk")]
+
+[node name="CollisionShape2D" parent="." index="0"]
+position = Vector2(1.5, 6)
+shape = SubResource("RectangleShape2D_4dy4g")
+
+[node name="Sprite2D" parent="." index="1"]
+scale = Vector2(0.2, 0.2)
+texture = ExtResource("2_nvp43")
