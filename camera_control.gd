@@ -49,13 +49,13 @@ func SimplePan(delta) -> void:
 		
 	# Fixes the issue of movement speed difference due to extreme zoom in/out
 	moveAmount = moveAmount.normalized()
-	position += moveAmount * delta * 1000 * (1/zoom.x)
+	position += moveAmount * delta * 1500 * (1/zoom.x)
 
 # Middle mouse panning
 func ClickAndDrag() -> void:
 	if !isDragging and Input.is_action_just_pressed("camera_pan"):
 		dragStartMousePos = get_viewport().get_mouse_position()
-		dragStartCameraPos = position_smoothing_enabled
+		dragStartCameraPos = position
 		isDragging = true
 		
 	if isDragging and Input.is_action_just_released("camera_pan"):
