@@ -1,0 +1,18 @@
+[gd_scene load_steps=4 format=3 uid="uid://dgw25o1c7i3l3"]
+
+[ext_resource type="PackedScene" uid="uid://dlu4ormju4den" path="res://Common/collectable.tscn" id="1_2pfca"]
+[ext_resource type="Texture2D" uid="uid://st85207km4s6" path="res://Stages/Picnic/Art/apple@2x.png" id="2_pctjj"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_pctjj"]
+resource_local_to_scene = true
+size = Vector2(237, 225)
+
+[node name="Apple" instance=ExtResource("1_2pfca")]
+item_name = "apple"
+
+[node name="CollisionShape2D" parent="." index="0"]
+position = Vector2(-2.5, 7.5)
+shape = SubResource("RectangleShape2D_pctjj")
+
+[node name="Sprite2D" parent="." index="1"]
+texture = ExtResource("2_pctjj")

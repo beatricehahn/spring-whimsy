@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=3 uid="uid://buuudr62nhofy"]
+
+[ext_resource type="PackedScene" uid="uid://dgw25o1c7i3l3" path="res://Stages/Picnic/Items/apple.tscn" id="1_mwkir"]
+
+[node name="Picnic" type="Node2D"]
+
+[node name="Apple" parent="." instance=ExtResource("1_mwkir")]
+position = Vector2(798, 390)
+scale = Vector2(0.25, 0.25)
