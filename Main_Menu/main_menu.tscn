@@ -1,6 +1,7 @@
-[gd_scene load_steps=4 format=3 uid="uid://wy3uvcvhfa21"]
+[gd_scene load_steps=5 format=3 uid="uid://wy3uvcvhfa21"]
 
-[ext_resource type="Script" uid="uid://dl8pj6mhgku5i" path="res://Stages/main_menu.gd" id="1_06t4h"]
+[ext_resource type="Script" uid="uid://dl8pj6mhgku5i" path="res://Main_Menu/main_menu.gd" id="1_06t4h"]
+[ext_resource type="FontFile" uid="uid://b5tfhyq3vh05d" path="res://Common/Fonts/ComingSoon.ttf" id="2_jht8a"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_06t4h"]
 bg_color = Color(0.832057, 0.619955, 0.556165, 1)
@@ -26,23 +27,24 @@ script = ExtResource("1_06t4h")
 
 [node name="VBoxContainer" type="VBoxContainer" parent="."]
 layout_mode = 1
-anchors_preset = 8
+anchors_preset = -1
 anchor_left = 0.5
-anchor_top = 0.5
+anchor_top = 0.917
 anchor_right = 0.5
-anchor_bottom = 0.5
-offset_left = -28.0
-offset_top = 155.0
-offset_right = 130.0
-offset_bottom = 262.0
+anchor_bottom = 0.917
+offset_left = -79.0
+offset_top = -170.216
+offset_right = 79.0
+offset_bottom = -63.2161
 grow_horizontal = 2
-grow_vertical = 2
+grow_vertical = 0
 theme_override_constants/separation = 16
 
 [node name="Start" type="Button" parent="VBoxContainer"]
 layout_mode = 2
 size_flags_vertical = 3
 theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_jht8a")
 theme_override_font_sizes/font_size = 24
 theme_override_styles/pressed = SubResource("StyleBoxFlat_06t4h")
 theme_override_styles/normal = SubResource("StyleBoxFlat_rhts7")
@@ -52,10 +54,28 @@ text = "Start"
 layout_mode = 2
 size_flags_vertical = 3
 theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_jht8a")
 theme_override_font_sizes/font_size = 24
 theme_override_styles/pressed = SubResource("StyleBoxFlat_06t4h")
 theme_override_styles/normal = SubResource("StyleBoxFlat_rhts7")
 text = "Quit"
+
+[node name="title" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -94.5
+offset_top = -118.0
+offset_right = 94.5
+offset_bottom = -20.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("2_jht8a")
+theme_override_font_sizes/font_size = 64
+text = "Spring"
 
 [connection signal="pressed" from="VBoxContainer/Start" to="." method="_on_start_pressed"]
 [connection signal="pressed" from="VBoxContainer/Quit" to="." method="_on_quit_pressed"]
