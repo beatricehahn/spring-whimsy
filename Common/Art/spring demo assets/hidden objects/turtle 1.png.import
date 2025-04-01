@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://c63fwbtmbg3wm"
-path="res://.godot/imported/rubberducky.png-1e8c19ddd5cb4ac09148688e6a71f678.ctex"
+uid="uid://cm2txu4k7uh3w"
+path="res://.godot/imported/turtle 1.png-e3cb1be1fb027ea9e4a27d46785c8d93.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Common/Art/spring demo assets/rubberducky.png"
-dest_files=["res://.godot/imported/rubberducky.png-1e8c19ddd5cb4ac09148688e6a71f678.ctex"]
+source_file="res://Common/Art/spring demo assets/hidden objects/turtle 1.png"
+dest_files=["res://.godot/imported/turtle 1.png-e3cb1be1fb027ea9e4a27d46785c8d93.ctex"]
 
 [params]
 

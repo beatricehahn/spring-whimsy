@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://be2onujg3bb0f"
-path="res://.godot/imported/snail 2.png-8b4a275ca0328f2cd86ef3e90a60e918.ctex"
+uid="uid://dbsigksyms5el"
+path="res://.godot/imported/musicduck.png-5a3cfcabc61afa59d766968720eb358f.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Common/Art/spring demo assets/snail 2.png"
-dest_files=["res://.godot/imported/snail 2.png-8b4a275ca0328f2cd86ef3e90a60e918.ctex"]
+source_file="res://Common/Art/spring demo assets/hidden objects/musicduck.png"
+dest_files=["res://.godot/imported/musicduck.png-5a3cfcabc61afa59d766968720eb358f.ctex"]
 
 [params]
 

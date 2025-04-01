@@ -1,6 +1,6 @@
 extends Camera2D
 
-@export var zoomSpeed : float = 10
+@export var zoomSpeed : float = 5
 
 var zoomTarget : Vector2
 
@@ -36,16 +36,16 @@ func SimplePan(delta) -> void:
 	var moveAmount = Vector2.ZERO
 	
 	if Input.is_action_pressed("camera_move_right"):
-		position.x += 1
+		position.x += 5
 	
 	if Input.is_action_pressed("camera_move_left"):
-		position.x -= 1
+		position.x -= 5
 	
 	if Input.is_action_pressed("camera_move_up"):
-		position.y -= 1
+		position.y -= 5
 	
 	if Input.is_action_pressed("camera_move_down"):
-		position.y += 1	
+		position.y += 5
 		
 	# Fixes the issue of movement speed difference due to extreme zoom in/out
 	moveAmount = moveAmount.normalized()

@@ -5,13 +5,13 @@
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_pctjj"]
 resource_local_to_scene = true
-size = Vector2(237, 225)
+size = Vector2(118, 108)
 
 [node name="Apple" instance=ExtResource("1_2pfca")]
 item_name = "apple"
 
 [node name="CollisionShape2D" parent="." index="0"]
-position = Vector2(-2.5, 7.5)
+position = Vector2(-2, 3)
 shape = SubResource("RectangleShape2D_pctjj")
 
 [node name="Sprite2D" parent="." index="1"]

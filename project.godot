@@ -11,7 +11,7 @@ config_version=5
 [application]
 
 config/name="unorthoducks and the cherry blossom picnic"
-run/main_scene="uid://dq34vslgjmdfk"
+run/main_scene="uid://wy3uvcvhfa21"
 config/features=PackedStringArray("4.4", "GL Compatibility")
 config/icon="res://icon.svg"
 
@@ -32,6 +32,12 @@ window/stretch/mode="viewport"
 [editor_plugins]
 
 enabled=PackedStringArray("res://addons/dialogic/plugin.cfg")
+
+[file_customization]
+
+folder_colors={
+"res://Stages/demo_picnic/": "red"
+}
 
 [input]
 

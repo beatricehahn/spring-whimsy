@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dgvelthqb6g2"
-path="res://.godot/imported/frogphotos.png-0051f78a07db465d200012c807f63928.ctex"
+uid="uid://xgpkxyem2hsi"
+path="res://.godot/imported/snail 1.png-fbace63835cf92e0a9d3f8a0f105d5d0.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Common/Art/spring demo assets/frogphotos.png"
-dest_files=["res://.godot/imported/frogphotos.png-0051f78a07db465d200012c807f63928.ctex"]
+source_file="res://Common/Art/spring demo assets/hidden objects/snail 1.png"
+dest_files=["res://.godot/imported/snail 1.png-fbace63835cf92e0a9d3f8a0f105d5d0.ctex"]
 
 [params]
 

@@ -1,0 +1,322 @@
+[gd_scene load_steps=28 format=3 uid="uid://dq34vslgjmdfk"]
+
+[ext_resource type="Script" uid="uid://csnkpo7ksvuyo" path="res://demo.gd" id="1_5g7v7"]
+[ext_resource type="Script" uid="uid://cigf00o02l1xv" path="res://camera_control.gd" id="2_i1g04"]
+[ext_resource type="PackedScene" uid="uid://dgw25o1c7i3l3" path="res://Stages/Picnic/Items/apple.tscn" id="3_y4qkf"]
+[ext_resource type="PackedScene" uid="uid://1hr2qja6snql" path="res://Stages/Picnic/Items/basket.tscn" id="4_oncxo"]
+[ext_resource type="PackedScene" uid="uid://dn6ktjhekfwnx" path="res://Stages/Picnic/Items/cheese.tscn" id="5_hu8bq"]
+[ext_resource type="Texture2D" uid="uid://dc1kx480txvpj" path="res://Common/Art/spring demo assets/blanket 3.png" id="6_l07pr"]
+[ext_resource type="Texture2D" uid="uid://cleho8a2oagg2" path="res://Common/Art/spring demo assets/cherry blossom 2.png" id="7_vtas4"]
+[ext_resource type="Texture2D" uid="uid://byfpcpm8lh1py" path="res://Common/Art/spring demo assets/cherrytreeA.png" id="8_bej8n"]
+[ext_resource type="Texture2D" uid="uid://r00qsm3g31vd" path="res://Common/Art/spring demo assets/flowers.png" id="9_npcgs"]
+[ext_resource type="Texture2D" uid="uid://dhl6c2vnpdvb3" path="res://Common/Art/spring demo assets/tent.png" id="10_ob8ie"]
+[ext_resource type="Texture2D" uid="uid://cblqowuwvh8w" path="res://Common/Art/spring demo assets/food tent.png" id="11_wavrw"]
+[ext_resource type="Texture2D" uid="uid://dol5p1xc2mc0a" path="res://Common/Art/spring demo assets/blanket 2.png" id="12_hhe36"]
+[ext_resource type="Texture2D" uid="uid://bsaoeuhqpit4w" path="res://Common/Art/spring demo assets/blanket 1.png" id="13_0gupw"]
+[ext_resource type="Texture2D" uid="uid://df20d4157lbsp" path="res://Common/Art/spring demo assets/chickens.png" id="14_pryqw"]
+[ext_resource type="Texture2D" uid="uid://c5gu81r7krfk6" path="res://Common/Art/spring demo assets/pond.png" id="15_18kiu"]
+[ext_resource type="Texture2D" uid="uid://d1vb12mr3gbpf" path="res://Common/Art/spring demo assets/rabbits.png" id="16_dci70"]
+[ext_resource type="Texture2D" uid="uid://hw3qa2h0xhop" path="res://Common/Art/spring demo assets/sheep and blanket.png" id="17_kf85k"]
+[ext_resource type="Texture2D" uid="uid://d2c1rxdvoqx5s" path="res://Common/Art/line.png" id="18_i1g04"]
+[ext_resource type="PackedScene" uid="uid://cnvaaqhdg1tv5" path="res://Stages/demo_picnic/collectables/rubberducky.tscn" id="19_oncxo"]
+[ext_resource type="PackedScene" uid="uid://cjolvlg41l04a" path="res://Stages/demo_picnic/collectables/photofrogs.tscn" id="20_hu8bq"]
+[ext_resource type="PackedScene" uid="uid://dy4har8tg2gte" path="res://Stages/demo_picnic/collectables/musicduck.tscn" id="21_wavrw"]
+[ext_resource type="PackedScene" uid="uid://by4tiwoiqwwk2" path="res://Stages/demo_picnic/collectables/sleepingfox.tscn" id="22_hhe36"]
+[ext_resource type="PackedScene" uid="uid://6fr0sqjcs3dp" path="res://Stages/demo_picnic/collectables/snail1.tscn" id="23_0gupw"]
+[ext_resource type="PackedScene" uid="uid://8j5247kh6huq" path="res://Stages/demo_picnic/collectables/snail2.tscn" id="24_pryqw"]
+[ext_resource type="PackedScene" uid="uid://cy8qu0g0yxkqm" path="res://Stages/demo_picnic/collectables/sunbathingheron.tscn" id="25_18kiu"]
+[ext_resource type="PackedScene" uid="uid://dgfxt2hy81y43" path="res://Stages/demo_picnic/collectables/toyboat.tscn" id="26_dci70"]
+[ext_resource type="PackedScene" uid="uid://bos154wcihka4" path="res://Stages/demo_picnic/collectables/turtle.tscn" id="27_kf85k"]
+
+[node name="Demo" type="Node"]
+script = ExtResource("1_5g7v7")
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2(574, 326)
+script = ExtResource("2_i1g04")
+
+[node name="ColorRect" type="ColorRect" parent="."]
+offset_left = -1900.0
+offset_top = -832.0
+offset_right = 1900.0
+offset_bottom = 1567.0
+mouse_filter = 1
+color = Color(0.6292, 0.78, 0.624, 1)
+metadata/_edit_lock_ = true
+
+[node name="Apple" parent="." instance=ExtResource("3_y4qkf")]
+position = Vector2(52, 1444)
+scale = Vector2(0.25, 0.25)
+
+[node name="Apple2" parent="." instance=ExtResource("3_y4qkf")]
+position = Vector2(350, 1482)
+scale = Vector2(0.25, 0.25)
+
+[node name="basket" parent="." instance=ExtResource("4_oncxo")]
+position = Vector2(173, 1468)
+item_name = "basket of food"
+
+[node name="Cheese" parent="." instance=ExtResource("5_hu8bq")]
+position = Vector2(474, 1464)
+scale = Vector2(0.3, 0.3)
+
+[node name="Blanket4" type="Sprite2D" parent="."]
+position = Vector2(623, 106)
+scale = Vector2(0.2, 0.2)
+texture = ExtResource("6_l07pr")
+
+[node name="CherryBlossom2" type="Sprite2D" parent="."]
+y_sort_enabled = true
+position = Vector2(-513, -71)
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("7_vtas4")
+
+[node name="CherrytreeA" type="Sprite2D" parent="."]
+y_sort_enabled = true
+position = Vector2(1259, 92)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("8_bej8n")
+
+[node name="Flowers" type="Sprite2D" parent="."]
+position = Vector2(1085, 596)
+scale = Vector2(0.2, 0.2)
+texture = ExtResource("9_npcgs")
+
+[node name="Tent" type="Sprite2D" parent="."]
+position = Vector2(898, -175)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("10_ob8ie")
+
+[node name="FoodTent" type="Sprite2D" parent="."]
+position = Vector2(-39, -95)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("11_wavrw")
+
+[node name="Blanket2" type="Sprite2D" parent="."]
+position = Vector2(-881, 104)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("12_hhe36")
+
+[node name="Blanket3" type="Sprite2D" parent="."]
+y_sort_enabled = true
+position = Vector2(1121, 213)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("13_0gupw")
+
+[node name="Chickens" type="Sprite2D" parent="."]
+y_sort_enabled = true
+position = Vector2(1078, 223)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("14_pryqw")
+
+[node name="Flowers2" type="Sprite2D" parent="."]
+position = Vector2(690, 396)
+scale = Vector2(0.2, 0.2)
+texture = ExtResource("9_npcgs")
+
+[node name="Flowers3" type="Sprite2D" parent="."]
+position = Vector2(883, 121)
+scale = Vector2(0.2, 0.2)
+texture = ExtResource("9_npcgs")
+
+[node name="Flowers4" type="Sprite2D" parent="."]
+position = Vector2(215, 346)
+scale = Vector2(0.2, 0.2)
+texture = ExtResource("9_npcgs")
+
+[node name="Pond" type="Sprite2D" parent="."]
+position = Vector2(-680, 625)
+texture = ExtResource("15_18kiu")
+
+[node name="Rabbits" type="Sprite2D" parent="."]
+position = Vector2(263, 942)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("16_dci70")
+
+[node name="SheepAndBlanket" type="Sprite2D" parent="."]
+position = Vector2(579, 773)
+scale = Vector2(-0.5, 0.5)
+texture = ExtResource("17_kf85k")
+
+[node name="Tent2" type="Sprite2D" parent="."]
+position = Vector2(1352, 779)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("10_ob8ie")
+
+[node name="Tent3" type="Sprite2D" parent="."]
+position = Vector2(-1512, 128)
+scale = Vector2(-0.5, 0.5)
+texture = ExtResource("10_ob8ie")
+
+[node name="FoodTent2" type="Sprite2D" parent="."]
+position = Vector2(-1615, 759)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("11_wavrw")
+
+[node name="CherrytreeA3" type="Sprite2D" parent="."]
+position = Vector2(-1340, -424)
+rotation = -3.14159
+scale = Vector2(0.5, -0.5)
+texture = ExtResource("8_bej8n")
+
+[node name="CherrytreeA4" type="Sprite2D" parent="."]
+position = Vector2(-904, 676)
+rotation = -3.14159
+scale = Vector2(0.5, -0.5)
+texture = ExtResource("8_bej8n")
+
+[node name="CherrytreeA2" type="Sprite2D" parent="."]
+position = Vector2(-1152, -250)
+scale = Vector2(-0.5, 0.5)
+texture = ExtResource("8_bej8n")
+
+[node name="CherryBlossom3" type="Sprite2D" parent="."]
+position = Vector2(-784, 990)
+scale = Vector2(0.4, 0.4)
+texture = ExtResource("7_vtas4")
+
+[node name="CherrytreeA5" type="Sprite2D" parent="."]
+position = Vector2(1518, 700)
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("8_bej8n")
+
+[node name="ColorRect2" type="ColorRect" parent="."]
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -446.0
+offset_top = -139.0
+offset_right = 446.0
+offset_bottom = -37.0
+grow_horizontal = 2
+grow_vertical = 0
+color = Color(1, 0.807843, 0.658824, 1)
+
+[node name="searchlist" type="HBoxContainer" parent="."]
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -442.0
+offset_top = -137.0
+offset_right = 445.0
+offset_bottom = -38.0
+grow_horizontal = 2
+grow_vertical = 0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+size_flags_stretch_ratio = 0.0
+theme_override_constants/separation = 24
+alignment = 1
+
+[node name="photofrogs" type="Label" parent="searchlist"]
+layout_mode = 2
+size_flags_horizontal = 4
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+text = "A frogs taking photos"
+
+[node name="checkmark" type="Sprite2D" parent="searchlist/photofrogs"]
+visible = false
+position = Vector2(74.5, 14)
+scale = Vector2(3.22222, 1)
+texture = ExtResource("18_i1g04")
+
+[node name="rubberducky" type="Label" parent="searchlist"]
+layout_mode = 2
+size_flags_horizontal = 4
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+text = "A rubber ducky"
+
+[node name="checkmark" type="Sprite2D" parent="searchlist/rubberducky"]
+visible = false
+position = Vector2(57.25, 13)
+scale = Vector2(2.56667, 1)
+texture = ExtResource("18_i1g04")
+
+[node name="sleepingfox" type="Label" parent="searchlist"]
+layout_mode = 2
+size_flags_horizontal = 4
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+text = "A sleeping fox"
+
+[node name="checkmark" type="Sprite2D" parent="searchlist/sleepingfox"]
+visible = false
+position = Vector2(52.75, 13)
+scale = Vector2(2.36667, 1)
+texture = ExtResource("18_i1g04")
+
+[node name="musicduck" type="Label" parent="searchlist"]
+layout_mode = 2
+size_flags_horizontal = 4
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+text = "Duck listening to music"
+
+[node name="checkmark" type="Sprite2D" parent="searchlist/musicduck"]
+visible = false
+position = Vector2(90.25, 13)
+scale = Vector2(3.94444, 1)
+texture = ExtResource("18_i1g04")
+
+[node name="snail1" type="Label" parent="searchlist"]
+layout_mode = 2
+size_flags_horizontal = 4
+
+[node name="snail2" type="Label" parent="searchlist"]
+layout_mode = 2
+size_flags_horizontal = 4
+
+[node name="sunbathingheron" type="Label" parent="searchlist"]
+layout_mode = 2
+size_flags_horizontal = 4
+
+[node name="toyboat" type="Label" parent="searchlist"]
+layout_mode = 2
+size_flags_horizontal = 4
+
+[node name="turtle" type="Label" parent="searchlist"]
+layout_mode = 2
+size_flags_horizontal = 4
+
+[node name="rubberducky" parent="." instance=ExtResource("19_oncxo")]
+position = Vector2(402, 452)
+
+[node name="photo_frogs" parent="." instance=ExtResource("20_hu8bq")]
+position = Vector2(573, 426)
+
+[node name="music_duck" parent="." instance=ExtResource("21_wavrw")]
+position = Vector2(410, 243)
+
+[node name="sleepingfox" parent="." instance=ExtResource("22_hhe36")]
+position = Vector2(624, 253)
+
+[node name="snail1" parent="." instance=ExtResource("23_0gupw")]
+position = Vector2(761, 267)
+
+[node name="snail2" parent="." instance=ExtResource("24_pryqw")]
+position = Vector2(838, 275)
+
+[node name="sunbathingheron" parent="." instance=ExtResource("25_18kiu")]
+position = Vector2(957, 430)
+
+[node name="toyboat" parent="." instance=ExtResource("26_dci70")]
+position = Vector2(162, 267)
+
+[node name="turtle" parent="." instance=ExtResource("27_kf85k")]
+position = Vector2(252, 390)
+
+[connection signal="is_found" from="Apple" to="." method="_on_object_found"]
+[connection signal="is_found" from="Apple2" to="." method="_on_object_found"]
+[connection signal="is_found" from="basket" to="." method="_on_object_found"]
+[connection signal="is_found" from="Cheese" to="." method="_on_object_found"]
+[connection signal="is_found" from="rubberducky" to="." method="_on_object_found"]
+[connection signal="is_found" from="photo_frogs" to="." method="_on_object_found"]
+[connection signal="is_found" from="music_duck" to="." method="_on_object_found"]
+[connection signal="is_found" from="sleepingfox" to="." method="_on_object_found"]
+[connection signal="is_found" from="snail1" to="." method="_on_object_found"]
+[connection signal="is_found" from="snail2" to="." method="_on_object_found"]
+[connection signal="is_found" from="sunbathingheron" to="." method="_on_object_found"]
+[connection signal="is_found" from="toyboat" to="." method="_on_object_found"]
+[connection signal="is_found" from="turtle" to="." method="_on_object_found"]

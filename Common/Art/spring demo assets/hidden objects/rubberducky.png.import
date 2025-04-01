@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bi3yv2gjtibp1"
-path="res://.godot/imported/toy boat.png-d36b76d29becdee3db11436bc913f7fd.ctex"
+uid="uid://c63fwbtmbg3wm"
+path="res://.godot/imported/rubberducky.png-f0720955988f5b0001014949785c643c.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Common/Art/spring demo assets/toy boat.png"
-dest_files=["res://.godot/imported/toy boat.png-d36b76d29becdee3db11436bc913f7fd.ctex"]
+source_file="res://Common/Art/spring demo assets/hidden objects/rubberducky.png"
+dest_files=["res://.godot/imported/rubberducky.png-f0720955988f5b0001014949785c643c.ctex"]
 
 [params]
 

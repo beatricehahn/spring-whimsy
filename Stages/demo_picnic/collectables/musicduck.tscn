@@ -1,0 +1,18 @@
+[gd_scene load_steps=4 format=3 uid="uid://dy4har8tg2gte"]
+
+[ext_resource type="PackedScene" uid="uid://dlu4ormju4den" path="res://Common/collectable.tscn" id="1_oe5vl"]
+[ext_resource type="Texture2D" uid="uid://dbsigksyms5el" path="res://Common/Art/spring demo assets/hidden objects/musicduck.png" id="2_3n623"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_e7q3t"]
+resource_local_to_scene = true
+size = Vector2(90, 106)
+
+[node name="music_duck" instance=ExtResource("1_oe5vl")]
+item_name = "musicduck"
+
+[node name="CollisionShape2D" parent="." index="0"]
+position = Vector2(-10, -16)
+shape = SubResource("RectangleShape2D_e7q3t")
+
+[node name="Sprite2D" parent="." index="1"]
+texture = ExtResource("2_3n623")

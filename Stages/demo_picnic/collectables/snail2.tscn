@@ -1,0 +1,18 @@
+[gd_scene load_steps=4 format=3 uid="uid://8j5247kh6huq"]
+
+[ext_resource type="PackedScene" uid="uid://dlu4ormju4den" path="res://Common/collectable.tscn" id="1_3jjht"]
+[ext_resource type="Texture2D" uid="uid://be2onujg3bb0f" path="res://Common/Art/spring demo assets/hidden objects/snail 2.png" id="2_4nce7"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_v240k"]
+resource_local_to_scene = true
+size = Vector2(50, 39)
+
+[node name="snail2" instance=ExtResource("1_3jjht")]
+item_name = "snail2"
+
+[node name="CollisionShape2D" parent="." index="0"]
+position = Vector2(2, 0.5)
+shape = SubResource("RectangleShape2D_v240k")
+
+[node name="Sprite2D" parent="." index="1"]
+texture = ExtResource("2_4nce7")

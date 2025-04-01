@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://b58wkjjvd26so"
-path="res://.godot/imported/sleeping fox.png-edeb0a671d98b4695bf722c9af8eee69.ctex"
+uid="uid://be2onujg3bb0f"
+path="res://.godot/imported/snail 2.png-0d9ac01be3c042ef78c7cf14d945cbf8.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Common/Art/spring demo assets/sleeping fox.png"
-dest_files=["res://.godot/imported/sleeping fox.png-edeb0a671d98b4695bf722c9af8eee69.ctex"]
+source_file="res://Common/Art/spring demo assets/hidden objects/snail 2.png"
+dest_files=["res://.godot/imported/snail 2.png-0d9ac01be3c042ef78c7cf14d945cbf8.ctex"]
 
 [params]
 

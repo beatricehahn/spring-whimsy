@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dbsigksyms5el"
-path="res://.godot/imported/musicduck.png-51e20acfa6218b36dc55f28fcf9db7cf.ctex"
+uid="uid://bqvopoxahbjyl"
+path="res://.godot/imported/sunbathing heron.png-21916c906523e600efc9fe539e442706.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Common/Art/spring demo assets/musicduck.png"
-dest_files=["res://.godot/imported/musicduck.png-51e20acfa6218b36dc55f28fcf9db7cf.ctex"]
+source_file="res://Common/Art/spring demo assets/hidden objects/sunbathing heron.png"
+dest_files=["res://.godot/imported/sunbathing heron.png-21916c906523e600efc9fe539e442706.ctex"]
 
 [params]
 

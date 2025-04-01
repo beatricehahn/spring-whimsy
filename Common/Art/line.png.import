@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cm2txu4k7uh3w"
-path="res://.godot/imported/turtle 1.png-86d6bf273b1e6de7c3f3364cd8df75a4.ctex"
+uid="uid://d2c1rxdvoqx5s"
+path="res://.godot/imported/line.png-6b0c7885e33d9441f5882fe1e0710a04.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Common/Art/spring demo assets/turtle 1.png"
-dest_files=["res://.godot/imported/turtle 1.png-86d6bf273b1e6de7c3f3364cd8df75a4.ctex"]
+source_file="res://Common/Art/line.png"
+dest_files=["res://.godot/imported/line.png-6b0c7885e33d9441f5882fe1e0710a04.ctex"]
 
 [params]
 
