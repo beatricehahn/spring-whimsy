@@ -1,4 +1,4 @@
-[gd_scene load_steps=28 format=3 uid="uid://dq34vslgjmdfk"]
+[gd_scene load_steps=29 format=3 uid="uid://dq34vslgjmdfk"]
 
 [ext_resource type="Script" uid="uid://csnkpo7ksvuyo" path="res://demo.gd" id="1_5g7v7"]
 [ext_resource type="Script" uid="uid://cigf00o02l1xv" path="res://camera_control.gd" id="2_i1g04"]
@@ -17,6 +17,7 @@
 [ext_resource type="Texture2D" uid="uid://c5gu81r7krfk6" path="res://Common/Art/spring demo assets/pond.png" id="15_18kiu"]
 [ext_resource type="Texture2D" uid="uid://d1vb12mr3gbpf" path="res://Common/Art/spring demo assets/rabbits.png" id="16_dci70"]
 [ext_resource type="Texture2D" uid="uid://hw3qa2h0xhop" path="res://Common/Art/spring demo assets/sheep and blanket.png" id="17_kf85k"]
+[ext_resource type="Theme" uid="uid://7vyw8pr30dth" path="res://springthemefont.tres" id="18_hhe36"]
 [ext_resource type="Texture2D" uid="uid://d2c1rxdvoqx5s" path="res://Common/Art/line.png" id="18_i1g04"]
 [ext_resource type="PackedScene" uid="uid://cnvaaqhdg1tv5" path="res://Stages/demo_picnic/collectables/rubberducky.tscn" id="19_oncxo"]
 [ext_resource type="PackedScene" uid="uid://cjolvlg41l04a" path="res://Stages/demo_picnic/collectables/photofrogs.tscn" id="20_hu8bq"]
@@ -215,6 +216,7 @@ alignment = 1
 [node name="photofrogs" type="Label" parent="searchlist"]
 layout_mode = 2
 size_flags_horizontal = 4
+theme = ExtResource("18_hhe36")
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 text = "A frogs taking photos"
 
@@ -227,6 +229,7 @@ texture = ExtResource("18_i1g04")
 [node name="rubberducky" type="Label" parent="searchlist"]
 layout_mode = 2
 size_flags_horizontal = 4
+theme = ExtResource("18_hhe36")
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 text = "A rubber ducky"
 
@@ -239,6 +242,7 @@ texture = ExtResource("18_i1g04")
 [node name="sleepingfox" type="Label" parent="searchlist"]
 layout_mode = 2
 size_flags_horizontal = 4
+theme = ExtResource("18_hhe36")
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 text = "A sleeping fox"
 
@@ -251,6 +255,7 @@ texture = ExtResource("18_i1g04")
 [node name="musicduck" type="Label" parent="searchlist"]
 layout_mode = 2
 size_flags_horizontal = 4
+theme = ExtResource("18_hhe36")
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 text = "Duck listening to music"
 

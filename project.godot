@@ -28,6 +28,7 @@ directories/dtl_directory={}
 [display]
 
 window/stretch/mode="viewport"
+window/stretch/scale_mode="integer"
 
 [editor_plugins]
 
