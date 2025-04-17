@@ -18,7 +18,7 @@ config/icon="res://icon.svg"
 [autoload]
 
 Dialogic="*res://addons/dialogic/Core/DialogicGameHandler.gd"
-SceneManager="*res://Common/Util/Scene Manager/scene_manager.tscn"
+SceneManager="*res://Assets/Util/SceneManager/scene_manager.tscn"
 
 [dialogic]
 
