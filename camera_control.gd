@@ -12,6 +12,8 @@ var isDragging : bool = false
 func _ready() -> void:
 	# set zoomTarget to default zoom value of camera
 	zoomTarget = zoom
+	position_smoothing_enabled = true
+	
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
@@ -27,6 +29,11 @@ func Zoom(delta) -> void:
 	
 	if Input.is_action_just_pressed("camera_zoom_out"):
 		zoomTarget *= 0.8
+	
+	# Clamp zoomTarget by min and max zoom values
+	var minZoom = Vector2(1.0, 1.0)
+	var maxZoom = Vector2(1.6, 1.6)
+	zoomTarget = zoomTarget.clamp(minZoom, maxZoom)
 		
 	zoom = zoom.slerp(zoomTarget, zoomSpeed * delta)
 	
