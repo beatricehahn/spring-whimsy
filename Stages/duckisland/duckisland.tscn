@@ -1,0 +1,497 @@
+[gd_scene load_steps=12 format=3 uid="uid://usxajf2fdxkf"]
+
+[ext_resource type="Script" uid="uid://cigf00o02l1xv" path="res://camera_control.gd" id="1_w8hrb"]
+[ext_resource type="Texture2D" uid="uid://shqb5d0128qv" path="res://Stages/duckisland/art/BG.png" id="2_jf8ea"]
+[ext_resource type="Texture2D" uid="uid://q2euh8p4nouc" path="res://Stages/duckisland/art/frogstatue.png" id="2_ywtum"]
+[ext_resource type="Texture2D" uid="uid://d4nrshfbovblo" path="res://Stages/duckisland/art/musicisland.png" id="3_hgciw"]
+[ext_resource type="Texture2D" uid="uid://pk80nb2ajgnq" path="res://Stages/duckisland/art/sandwichisland.png" id="5_1n6dr"]
+[ext_resource type="Texture2D" uid="uid://byygrespjfh65" path="res://Stages/duckisland/art/swimming duck.png" id="5_ywtum"]
+[ext_resource type="Texture2D" uid="uid://b46s68jmlp77e" path="res://Stages/duckisland/art/birthdayisland.png" id="6_w8hrb"]
+[ext_resource type="Texture2D" uid="uid://dpryjpkqoth5i" path="res://Stages/duckisland/art/lilypad.png" id="7_kv0ub"]
+[ext_resource type="Texture2D" uid="uid://dp3q7obkq3srd" path="res://Stages/duckisland/art/lotus.png" id="8_1n6dr"]
+[ext_resource type="Texture2D" uid="uid://b7c3d2a6k7obk" path="res://Stages/duckisland/art/plant.png" id="9_1n6dr"]
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_hgciw"]
+load_path = "res://.godot/imported/picnicisland.png-5f71d05152ba0dadae7cd9e682ac27d9.ctex"
+
+[node name="Duckisland" type="Node2D"]
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2(960, 540)
+limit_left = 0
+limit_top = 0
+limit_right = 1920
+limit_bottom = 1020
+script = ExtResource("1_w8hrb")
+zoomSpeed = 3.0
+
+[node name="bg water" type="ColorRect" parent="."]
+offset_right = 1928.0
+offset_bottom = 1089.0
+color = Color(0.517647, 0.784314, 0.733333, 1)
+metadata/_edit_lock_ = true
+
+[node name="main island" type="Sprite2D" parent="."]
+position = Vector2(1348, 445)
+texture = ExtResource("2_jf8ea")
+
+[node name="Frogstatue" type="Sprite2D" parent="."]
+position = Vector2(1556, 290)
+texture = ExtResource("2_ywtum")
+
+[node name="Picnicisland" type="Sprite2D" parent="."]
+position = Vector2(291, 306)
+texture = SubResource("CompressedTexture2D_hgciw")
+
+[node name="Birthdayisland" type="Sprite2D" parent="."]
+position = Vector2(654, 160)
+texture = ExtResource("6_w8hrb")
+
+[node name="Sandwichisland" type="Sprite2D" parent="."]
+position = Vector2(400, 753)
+texture = ExtResource("5_1n6dr")
+
+[node name="SwimmingDuck" type="Sprite2D" parent="."]
+position = Vector2(883, 767)
+texture = ExtResource("5_ywtum")
+flip_h = true
+
+[node name="SwimmingDuck2" type="Sprite2D" parent="."]
+position = Vector2(650, 472)
+texture = ExtResource("5_ywtum")
+
+[node name="SwimmingDuck3" type="Sprite2D" parent="."]
+position = Vector2(685, 494)
+texture = ExtResource("5_ywtum")
+
+[node name="SwimmingDuck4" type="Sprite2D" parent="."]
+position = Vector2(745, 404)
+texture = ExtResource("5_ywtum")
+flip_h = true
+
+[node name="SwimmingDuck5" type="Sprite2D" parent="."]
+position = Vector2(1521, 548)
+texture = ExtResource("5_ywtum")
+flip_h = true
+
+[node name="SwimmingDuck6" type="Sprite2D" parent="."]
+position = Vector2(1377, 248)
+texture = ExtResource("5_ywtum")
+flip_h = true
+
+[node name="SwimmingDuck7" type="Sprite2D" parent="."]
+position = Vector2(1359, 700)
+texture = ExtResource("5_ywtum")
+
+[node name="SwimmingDuck8" type="Sprite2D" parent="."]
+position = Vector2(1430, 762)
+texture = ExtResource("5_ywtum")
+flip_h = true
+
+[node name="SwimmingDuck9" type="Sprite2D" parent="."]
+position = Vector2(246, 512)
+texture = ExtResource("5_ywtum")
+
+[node name="SwimmingDuck10" type="Sprite2D" parent="."]
+position = Vector2(171, 563)
+texture = ExtResource("5_ywtum")
+flip_h = true
+
+[node name="SwimmingDuck11" type="Sprite2D" parent="."]
+position = Vector2(1308, 882)
+texture = ExtResource("5_ywtum")
+
+[node name="SwimmingDuck12" type="Sprite2D" parent="."]
+position = Vector2(303, 984)
+texture = ExtResource("5_ywtum")
+
+[node name="Musicisland" type="Sprite2D" parent="."]
+position = Vector2(1064, 814)
+texture = ExtResource("3_hgciw")
+
+[node name="Lilypad" type="Sprite2D" parent="."]
+position = Vector2(594, 626)
+texture = ExtResource("7_kv0ub")
+
+[node name="Lotus" type="Sprite2D" parent="."]
+position = Vector2(628, 610)
+texture = ExtResource("8_1n6dr")
+
+[node name="Lotus2" type="Sprite2D" parent="."]
+position = Vector2(728, 940)
+texture = ExtResource("8_1n6dr")
+
+[node name="Lilypad2" type="Sprite2D" parent="."]
+position = Vector2(834, 950)
+texture = ExtResource("7_kv0ub")
+
+[node name="Lilypad3" type="Sprite2D" parent="."]
+position = Vector2(794, 984)
+texture = ExtResource("7_kv0ub")
+
+[node name="Lilypad4" type="Sprite2D" parent="."]
+position = Vector2(1424, 860)
+texture = ExtResource("7_kv0ub")
+
+[node name="Lilypad5" type="Sprite2D" parent="."]
+position = Vector2(1456, 711)
+texture = ExtResource("7_kv0ub")
+
+[node name="Lilypad6" type="Sprite2D" parent="."]
+position = Vector2(1493, 747)
+texture = ExtResource("7_kv0ub")
+
+[node name="Lilypad7" type="Sprite2D" parent="."]
+position = Vector2(393, 526)
+texture = ExtResource("7_kv0ub")
+
+[node name="Lilypad8" type="Sprite2D" parent="."]
+position = Vector2(118, 787)
+texture = ExtResource("7_kv0ub")
+
+[node name="Lotus3" type="Sprite2D" parent="."]
+position = Vector2(172, 811)
+texture = ExtResource("8_1n6dr")
+
+[node name="Lilypad9" type="Sprite2D" parent="."]
+position = Vector2(1870, 447)
+texture = ExtResource("7_kv0ub")
+
+[node name="Lotus4" type="Sprite2D" parent="."]
+position = Vector2(1814, 475)
+texture = ExtResource("8_1n6dr")
+
+[node name="Lotus5" type="Sprite2D" parent="."]
+position = Vector2(1881, 602)
+texture = ExtResource("8_1n6dr")
+
+[node name="Lotus6" type="Sprite2D" parent="."]
+position = Vector2(1638, 940)
+texture = ExtResource("8_1n6dr")
+
+[node name="Lotus7" type="Sprite2D" parent="."]
+position = Vector2(627, 368)
+texture = ExtResource("8_1n6dr")
+
+[node name="Lotus8" type="Sprite2D" parent="."]
+position = Vector2(100, 188)
+texture = ExtResource("8_1n6dr")
+
+[node name="Lotus9" type="Sprite2D" parent="."]
+position = Vector2(1269, 969)
+texture = ExtResource("8_1n6dr")
+
+[node name="Lotus10" type="Sprite2D" parent="."]
+position = Vector2(448, 982)
+texture = ExtResource("8_1n6dr")
+
+[node name="Lilypad10" type="Sprite2D" parent="."]
+position = Vector2(478, 926)
+texture = ExtResource("7_kv0ub")
+
+[node name="Lilypad11" type="Sprite2D" parent="."]
+position = Vector2(1461, 887)
+texture = ExtResource("7_kv0ub")
+
+[node name="Lilypad12" type="Sprite2D" parent="."]
+position = Vector2(1261, 1000)
+texture = ExtResource("7_kv0ub")
+
+[node name="Lilypad13" type="Sprite2D" parent="."]
+position = Vector2(1206, 974)
+texture = ExtResource("7_kv0ub")
+
+[node name="Lilypad14" type="Sprite2D" parent="."]
+position = Vector2(116, 819)
+texture = ExtResource("7_kv0ub")
+
+[node name="Lilypad15" type="Sprite2D" parent="."]
+position = Vector2(158, 847)
+texture = ExtResource("7_kv0ub")
+
+[node name="Lilypad16" type="Sprite2D" parent="."]
+position = Vector2(420, 494)
+texture = ExtResource("7_kv0ub")
+
+[node name="Lilypad17" type="Sprite2D" parent="."]
+position = Vector2(614, 396)
+texture = ExtResource("7_kv0ub")
+
+[node name="Lilypad18" type="Sprite2D" parent="."]
+position = Vector2(486, 959)
+texture = ExtResource("7_kv0ub")
+
+[node name="Lilypad19" type="Sprite2D" parent="."]
+position = Vector2(920, 409)
+texture = ExtResource("7_kv0ub")
+
+[node name="Lilypad20" type="Sprite2D" parent="."]
+position = Vector2(163, 193)
+texture = ExtResource("7_kv0ub")
+
+[node name="Lilypad21" type="Sprite2D" parent="."]
+position = Vector2(1329, 449)
+texture = ExtResource("7_kv0ub")
+
+[node name="Lilypad22" type="Sprite2D" parent="."]
+position = Vector2(1285, 254)
+texture = ExtResource("7_kv0ub")
+
+[node name="Lilypad23" type="Sprite2D" parent="."]
+position = Vector2(1880, 198)
+texture = ExtResource("7_kv0ub")
+
+[node name="Plant" type="Sprite2D" parent="."]
+position = Vector2(831, 542)
+texture = ExtResource("9_1n6dr")
+
+[node name="Plant2" type="Sprite2D" parent="."]
+position = Vector2(589, 590)
+texture = ExtResource("9_1n6dr")
+
+[node name="Plant3" type="Sprite2D" parent="."]
+position = Vector2(880, 798)
+texture = ExtResource("9_1n6dr")
+
+[node name="Plant4" type="Sprite2D" parent="."]
+position = Vector2(1470, 840)
+texture = ExtResource("9_1n6dr")
+
+[node name="Plant5" type="Sprite2D" parent="."]
+position = Vector2(1504, 776)
+texture = ExtResource("9_1n6dr")
+
+[node name="Plant6" type="Sprite2D" parent="."]
+position = Vector2(1463, 783)
+texture = ExtResource("9_1n6dr")
+
+[node name="Plant7" type="Sprite2D" parent="."]
+position = Vector2(1751, 881)
+texture = ExtResource("9_1n6dr")
+
+[node name="Plant8" type="Sprite2D" parent="."]
+position = Vector2(1781, 907)
+texture = ExtResource("9_1n6dr")
+
+[node name="Plant9" type="Sprite2D" parent="."]
+position = Vector2(1748, 918)
+texture = ExtResource("9_1n6dr")
+
+[node name="Plant10" type="Sprite2D" parent="."]
+position = Vector2(1442, 1027)
+texture = ExtResource("9_1n6dr")
+
+[node name="Plant11" type="Sprite2D" parent="."]
+position = Vector2(1304, 977)
+texture = ExtResource("9_1n6dr")
+
+[node name="Plant12" type="Sprite2D" parent="."]
+position = Vector2(1164, 948)
+texture = ExtResource("9_1n6dr")
+
+[node name="Plant13" type="Sprite2D" parent="."]
+position = Vector2(1109, 987)
+texture = ExtResource("9_1n6dr")
+
+[node name="Plant14" type="Sprite2D" parent="."]
+position = Vector2(1056, 961)
+texture = ExtResource("9_1n6dr")
+
+[node name="Plant15" type="Sprite2D" parent="."]
+position = Vector2(1347, 416)
+texture = ExtResource("9_1n6dr")
+
+[node name="Plant16" type="Sprite2D" parent="."]
+position = Vector2(1537, 517)
+texture = ExtResource("9_1n6dr")
+
+[node name="Plant17" type="Sprite2D" parent="."]
+position = Vector2(1481, 514)
+texture = ExtResource("9_1n6dr")
+
+[node name="Plant18" type="Sprite2D" parent="."]
+position = Vector2(1567, 493)
+texture = ExtResource("9_1n6dr")
+
+[node name="Plant19" type="Sprite2D" parent="."]
+position = Vector2(1812, 440)
+texture = ExtResource("9_1n6dr")
+
+[node name="Plant20" type="Sprite2D" parent="."]
+position = Vector2(1303, 227)
+texture = ExtResource("9_1n6dr")
+
+[node name="Plant21" type="Sprite2D" parent="."]
+position = Vector2(1769, 187)
+texture = ExtResource("9_1n6dr")
+
+[node name="Plant22" type="Sprite2D" parent="."]
+position = Vector2(629, 634)
+texture = ExtResource("9_1n6dr")
+
+[node name="Plant23" type="Sprite2D" parent="."]
+position = Vector2(891, 647)
+texture = ExtResource("9_1n6dr")
+
+[node name="Plant24" type="Sprite2D" parent="."]
+position = Vector2(846, 628)
+texture = ExtResource("9_1n6dr")
+
+[node name="Plant25" type="Sprite2D" parent="."]
+position = Vector2(159, 455)
+texture = ExtResource("9_1n6dr")
+
+[node name="Plant26" type="Sprite2D" parent="."]
+position = Vector2(593, 358)
+texture = ExtResource("9_1n6dr")
+
+[node name="Plant27" type="Sprite2D" parent="."]
+position = Vector2(144, 785)
+texture = ExtResource("9_1n6dr")
+
+[node name="Plant28" type="Sprite2D" parent="."]
+position = Vector2(259, 933)
+texture = ExtResource("9_1n6dr")
+
+[node name="Plant29" type="Sprite2D" parent="."]
+position = Vector2(314, 1009)
+texture = ExtResource("9_1n6dr")
+
+[node name="Plant30" type="Sprite2D" parent="."]
+position = Vector2(253, 960)
+texture = ExtResource("9_1n6dr")
+
+[node name="Plant31" type="Sprite2D" parent="."]
+position = Vector2(311, 934)
+texture = ExtResource("9_1n6dr")
+
+[node name="Plant32" type="Sprite2D" parent="."]
+position = Vector2(788, 928)
+texture = ExtResource("9_1n6dr")
+
+[node name="Plant33" type="Sprite2D" parent="."]
+position = Vector2(757, 966)
+texture = ExtResource("9_1n6dr")
+
+[node name="Plant34" type="Sprite2D" parent="."]
+position = Vector2(889, 383)
+texture = ExtResource("9_1n6dr")
+
+[node name="Plant35" type="Sprite2D" parent="."]
+position = Vector2(659, 373)
+texture = ExtResource("9_1n6dr")
+
+[node name="Plant36" type="Sprite2D" parent="."]
+position = Vector2(636, 581)
+texture = ExtResource("9_1n6dr")
+
+[node name="Plant37" type="Sprite2D" parent="."]
+position = Vector2(704, 581)
+texture = ExtResource("9_1n6dr")
+
+[node name="Plant38" type="Sprite2D" parent="."]
+position = Vector2(755, 599)
+texture = ExtResource("9_1n6dr")
+
+[node name="Plant39" type="Sprite2D" parent="."]
+position = Vector2(924, 726)
+texture = ExtResource("9_1n6dr")
+
+[node name="Plant40" type="Sprite2D" parent="."]
+position = Vector2(921, 765)
+texture = ExtResource("9_1n6dr")
+
+[node name="Plant41" type="Sprite2D" parent="."]
+position = Vector2(889, 688)
+texture = ExtResource("9_1n6dr")
+
+[node name="Lilypad24" type="Sprite2D" parent="."]
+position = Vector2(881, 717)
+texture = ExtResource("7_kv0ub")
+
+[node name="Lilypad25" type="Sprite2D" parent="."]
+position = Vector2(929, 694)
+texture = ExtResource("7_kv0ub")
+
+[node name="Lilypad26" type="Sprite2D" parent="."]
+position = Vector2(1234, 705)
+texture = ExtResource("7_kv0ub")
+
+[node name="Lilypad27" type="Sprite2D" parent="."]
+position = Vector2(1398, 567)
+texture = ExtResource("7_kv0ub")
+
+[node name="Lotus11" type="Sprite2D" parent="."]
+position = Vector2(1292, 692)
+texture = ExtResource("8_1n6dr")
+
+[node name="Plant42" type="Sprite2D" parent="."]
+position = Vector2(1335, 652)
+texture = ExtResource("9_1n6dr")
+
+[node name="Plant43" type="Sprite2D" parent="."]
+position = Vector2(1374, 536)
+texture = ExtResource("9_1n6dr")
+
+[node name="Plant44" type="Sprite2D" parent="."]
+position = Vector2(1324, 489)
+texture = ExtResource("9_1n6dr")
+
+[node name="Plant45" type="Sprite2D" parent="."]
+position = Vector2(742, 681)
+texture = ExtResource("9_1n6dr")
+
+[node name="Plant46" type="Sprite2D" parent="."]
+position = Vector2(783, 746)
+texture = ExtResource("9_1n6dr")
+
+[node name="Plant47" type="Sprite2D" parent="."]
+position = Vector2(438, 514)
+texture = ExtResource("9_1n6dr")
+
+[node name="Plant48" type="Sprite2D" parent="."]
+position = Vector2(432, 138)
+texture = ExtResource("9_1n6dr")
+
+[node name="Plant49" type="Sprite2D" parent="."]
+position = Vector2(781, 320)
+texture = ExtResource("9_1n6dr")
+
+[node name="Lotus12" type="Sprite2D" parent="."]
+position = Vector2(412, 172)
+texture = ExtResource("8_1n6dr")
+
+[node name="Lotus13" type="Sprite2D" parent="."]
+position = Vector2(818, 306)
+texture = ExtResource("8_1n6dr")
+
+[node name="Lotus14" type="Sprite2D" parent="."]
+position = Vector2(862, 662)
+texture = ExtResource("8_1n6dr")
+
+[node name="Lilypad28" type="Sprite2D" parent="."]
+position = Vector2(442, 206)
+texture = ExtResource("7_kv0ub")
+
+[node name="Lilypad29" type="Sprite2D" parent="."]
+position = Vector2(464, 295)
+texture = ExtResource("7_kv0ub")
+
+[node name="Lilypad30" type="Sprite2D" parent="."]
+position = Vector2(522, 312)
+texture = ExtResource("7_kv0ub")
+
+[node name="SwimmingDuck13" type="Sprite2D" parent="."]
+position = Vector2(576, 940)
+texture = ExtResource("5_ywtum")
+flip_h = true
+
+[node name="SwimmingDuck14" type="Sprite2D" parent="."]
+position = Vector2(609, 897)
+texture = ExtResource("5_ywtum")
+flip_h = true
+
+[node name="SwimmingDuck15" type="Sprite2D" parent="."]
+position = Vector2(626, 924)
+texture = ExtResource("5_ywtum")
+flip_h = true

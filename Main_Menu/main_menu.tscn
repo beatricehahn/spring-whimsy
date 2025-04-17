@@ -35,22 +35,24 @@ script = ExtResource("1_06t4h")
 
 [node name="ColorRect" type="ColorRect" parent="."]
 layout_mode = 0
-offset_right = 1168.0
-offset_bottom = 657.0
+offset_left = -16.0
+offset_top = -10.0
+offset_right = 1925.0
+offset_bottom = 1088.0
 color = Color(0.627451, 0.780392, 0.623529, 1)
 metadata/_edit_lock_ = true
 
 [node name="Frogphotos" type="Sprite2D" parent="."]
-position = Vector2(358, 308)
+position = Vector2(1264, 308)
 scale = Vector2(-0.56, 0.56)
 texture = ExtResource("2_2ytag")
 
 [node name="Musicduck" type="Sprite2D" parent="."]
-position = Vector2(911, 293)
+position = Vector2(1588, 913)
 texture = ExtResource("3_lpfbm")
 
 [node name="Blanket3" type="Sprite2D" parent="."]
-position = Vector2(-34, 582)
+position = Vector2(459, 745)
 texture = ExtResource("4_al2h2")
 
 [node name="Rubberducky" type="Sprite2D" parent="."]
@@ -59,26 +61,31 @@ scale = Vector2(0.331325, 0.331325)
 texture = ExtResource("5_mp05l")
 
 [node name="Snail1" type="Sprite2D" parent="."]
-position = Vector2(998, 85)
+position = Vector2(1732, 588)
 scale = Vector2(0.435065, 0.435065)
 texture = ExtResource("6_al2h2")
 
 [node name="Basket1" type="Sprite2D" parent="."]
-position = Vector2(934, 419)
+position = Vector2(1390, 829)
 scale = Vector2(0.60628, 0.60628)
 texture = ExtResource("7_lpfbm")
 
 [node name="BeaversAndTheirBasket" type="Sprite2D" parent="."]
-position = Vector2(225, 540)
+position = Vector2(503, 735)
 texture = ExtResource("8_ali5n")
 
 [node name="CherryBlossom2" type="Sprite2D" parent="."]
-position = Vector2(1169, 513)
+position = Vector2(1102, 168)
 scale = Vector2(0.287859, 0.287859)
 texture = ExtResource("9_ali5n")
 
+[node name="CherryBlossom4" type="Sprite2D" parent="."]
+position = Vector2(1696, 141)
+scale = Vector2(0.391971, 0.390505)
+texture = ExtResource("9_ali5n")
+
 [node name="CherryBlossom3" type="Sprite2D" parent="."]
-position = Vector2(-5, 305)
+position = Vector2(187, 300)
 scale = Vector2(0.577459, 0.577459)
 texture = ExtResource("9_ali5n")
 
@@ -124,16 +131,18 @@ anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-offset_left = -446.0
-offset_top = -251.0
-offset_right = 481.0
-offset_bottom = -153.0
+offset_left = -428.0
+offset_top = -67.0
+offset_right = 499.0
+offset_bottom = 132.0
 grow_horizontal = 2
 grow_vertical = 2
 theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
 theme_override_fonts/font = ExtResource("2_jht8a")
 theme_override_font_sizes/font_size = 64
-text = "Spring: The Hidden Object Game"
+text = "Spring Whimsy
+A Hidden Object Game"
+horizontal_alignment = 1
 
 [connection signal="pressed" from="VBoxContainer/Start" to="." method="_on_start_pressed"]
 [connection signal="pressed" from="VBoxContainer/Quit" to="." method="_on_quit_pressed"]

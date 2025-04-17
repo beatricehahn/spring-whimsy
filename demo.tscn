@@ -33,151 +33,155 @@
 script = ExtResource("1_5g7v7")
 
 [node name="Camera2D" type="Camera2D" parent="."]
-position = Vector2(574, 326)
+position = Vector2(1757.75, 859)
+limit_left = -700
+limit_top = -300
+limit_right = 3000
+limit_bottom = 2100
 script = ExtResource("2_i1g04")
+zoomSpeed = 3.0
 
 [node name="ColorRect" type="ColorRect" parent="."]
-offset_left = -1900.0
-offset_top = -832.0
-offset_right = 1900.0
-offset_bottom = 1567.0
+offset_left = -716.25
+offset_top = -299.0
+offset_right = 3083.75
+offset_bottom = 2100.0
 mouse_filter = 1
 color = Color(0.6292, 0.78, 0.624, 1)
-metadata/_edit_lock_ = true
 
 [node name="Apple" parent="." instance=ExtResource("3_y4qkf")]
-position = Vector2(52, 1444)
+position = Vector2(1235.75, 1977)
 scale = Vector2(0.25, 0.25)
 
 [node name="Apple2" parent="." instance=ExtResource("3_y4qkf")]
-position = Vector2(350, 1482)
+position = Vector2(1533.75, 2015)
 scale = Vector2(0.25, 0.25)
 
 [node name="basket" parent="." instance=ExtResource("4_oncxo")]
-position = Vector2(173, 1468)
+position = Vector2(1356.75, 2001)
 item_name = "basket of food"
 
 [node name="Cheese" parent="." instance=ExtResource("5_hu8bq")]
-position = Vector2(474, 1464)
+position = Vector2(1657.75, 1997)
 scale = Vector2(0.3, 0.3)
 
 [node name="Blanket4" type="Sprite2D" parent="."]
-position = Vector2(952, 80)
+position = Vector2(2135.75, 613)
 scale = Vector2(0.2, 0.2)
 texture = ExtResource("6_l07pr")
 
 [node name="CherryBlossom2" type="Sprite2D" parent="."]
 y_sort_enabled = true
-position = Vector2(-513, -71)
+position = Vector2(670.75, 462)
 scale = Vector2(0.3, 0.3)
 texture = ExtResource("7_vtas4")
 
 [node name="CherrytreeA" type="Sprite2D" parent="."]
 y_sort_enabled = true
-position = Vector2(1259, 92)
+position = Vector2(2442.75, 625)
 scale = Vector2(0.5, 0.5)
 texture = ExtResource("8_bej8n")
 
 [node name="Flowers" type="Sprite2D" parent="."]
-position = Vector2(1085, 596)
+position = Vector2(2268.75, 1129)
 scale = Vector2(0.2, 0.2)
 texture = ExtResource("9_npcgs")
 
 [node name="Tent" type="Sprite2D" parent="."]
-position = Vector2(898, -175)
+position = Vector2(2081.75, 358)
 scale = Vector2(0.5, 0.5)
 texture = ExtResource("10_ob8ie")
 
 [node name="FoodTent" type="Sprite2D" parent="."]
-position = Vector2(-39, -95)
+position = Vector2(1144.75, 438)
 scale = Vector2(0.5, 0.5)
 texture = ExtResource("11_wavrw")
 
 [node name="Blanket2" type="Sprite2D" parent="."]
-position = Vector2(-881, 104)
+position = Vector2(302.75, 637)
 scale = Vector2(0.5, 0.5)
 texture = ExtResource("12_hhe36")
 
 [node name="Blanket3" type="Sprite2D" parent="."]
 y_sort_enabled = true
-position = Vector2(1121, 213)
+position = Vector2(2304.75, 746)
 scale = Vector2(0.5, 0.5)
 texture = ExtResource("13_0gupw")
 
 [node name="Chickens" type="Sprite2D" parent="."]
 y_sort_enabled = true
-position = Vector2(1078, 223)
+position = Vector2(2261.75, 756)
 scale = Vector2(0.5, 0.5)
 texture = ExtResource("14_pryqw")
 
 [node name="Flowers2" type="Sprite2D" parent="."]
-position = Vector2(690, 396)
+position = Vector2(1873.75, 929)
 scale = Vector2(0.2, 0.2)
 texture = ExtResource("9_npcgs")
 
 [node name="Flowers3" type="Sprite2D" parent="."]
-position = Vector2(883, 121)
+position = Vector2(2066.75, 654)
 scale = Vector2(0.2, 0.2)
 texture = ExtResource("9_npcgs")
 
 [node name="Flowers4" type="Sprite2D" parent="."]
-position = Vector2(215, 346)
+position = Vector2(1398.75, 879)
 scale = Vector2(0.2, 0.2)
 texture = ExtResource("9_npcgs")
 
 [node name="Pond" type="Sprite2D" parent="."]
-position = Vector2(-680, 625)
+position = Vector2(503.75, 1158)
 texture = ExtResource("15_18kiu")
 
 [node name="Rabbits" type="Sprite2D" parent="."]
-position = Vector2(263, 942)
+position = Vector2(1446.75, 1475)
 scale = Vector2(0.5, 0.5)
 texture = ExtResource("16_dci70")
 
 [node name="SheepAndBlanket" type="Sprite2D" parent="."]
-position = Vector2(579, 773)
+position = Vector2(1762.75, 1306)
 scale = Vector2(-0.5, 0.5)
 texture = ExtResource("17_kf85k")
 
 [node name="Tent2" type="Sprite2D" parent="."]
-position = Vector2(1352, 779)
+position = Vector2(2535.75, 1312)
 scale = Vector2(0.5, 0.5)
 texture = ExtResource("10_ob8ie")
 
 [node name="Tent3" type="Sprite2D" parent="."]
-position = Vector2(-1512, 128)
+position = Vector2(-328.25, 661)
 scale = Vector2(-0.5, 0.5)
 texture = ExtResource("10_ob8ie")
 
 [node name="FoodTent2" type="Sprite2D" parent="."]
-position = Vector2(-1615, 759)
+position = Vector2(-431.25, 1292)
 scale = Vector2(0.5, 0.5)
 texture = ExtResource("11_wavrw")
 
 [node name="CherrytreeA3" type="Sprite2D" parent="."]
-position = Vector2(-1340, -424)
+position = Vector2(-156.25, 109)
 rotation = -3.14159
 scale = Vector2(0.5, -0.5)
 texture = ExtResource("8_bej8n")
 
 [node name="CherrytreeA4" type="Sprite2D" parent="."]
-position = Vector2(-904, 676)
+position = Vector2(279.75, 1209)
 rotation = -3.14159
 scale = Vector2(0.5, -0.5)
 texture = ExtResource("8_bej8n")
 
 [node name="CherrytreeA2" type="Sprite2D" parent="."]
-position = Vector2(-1152, -250)
+position = Vector2(31.75, 283)
 scale = Vector2(-0.5, 0.5)
 texture = ExtResource("8_bej8n")
 
 [node name="CherryBlossom3" type="Sprite2D" parent="."]
-position = Vector2(-784, 990)
+position = Vector2(399.75, 1523)
 scale = Vector2(0.4, 0.4)
 texture = ExtResource("7_vtas4")
 
 [node name="CherrytreeA5" type="Sprite2D" parent="."]
-position = Vector2(1518, 700)
+position = Vector2(2701.75, 1233)
 scale = Vector2(0.3, 0.3)
 texture = ExtResource("8_bej8n")
 
@@ -187,10 +191,10 @@ anchor_left = 0.5
 anchor_top = 1.0
 anchor_right = 0.5
 anchor_bottom = 1.0
-offset_left = -446.0
-offset_top = -139.0
-offset_right = 446.0
-offset_bottom = -37.0
+offset_left = 737.75
+offset_top = 394.0
+offset_right = 1629.75
+offset_bottom = 496.0
 grow_horizontal = 2
 grow_vertical = 0
 color = Color(1, 0.807843, 0.658824, 1)
@@ -201,10 +205,10 @@ anchor_left = 0.5
 anchor_top = 1.0
 anchor_right = 0.5
 anchor_bottom = 1.0
-offset_left = -442.0
-offset_top = -137.0
-offset_right = 445.0
-offset_bottom = -38.0
+offset_left = 741.75
+offset_top = 396.0
+offset_right = 1628.75
+offset_bottom = 495.0
 grow_horizontal = 2
 grow_vertical = 0
 size_flags_horizontal = 3
@@ -286,31 +290,31 @@ layout_mode = 2
 size_flags_horizontal = 4
 
 [node name="rubberducky" parent="." instance=ExtResource("19_oncxo")]
-position = Vector2(-703, 981)
+position = Vector2(480.75, 1514)
 
 [node name="photo_frogs" parent="." instance=ExtResource("20_hu8bq")]
-position = Vector2(-423, 81)
+position = Vector2(760.75, 614)
 
 [node name="music_duck" parent="." instance=ExtResource("21_wavrw")]
-position = Vector2(576, -216)
+position = Vector2(1759.75, 317)
 
 [node name="sleepingfox" parent="." instance=ExtResource("22_hhe36")]
-position = Vector2(982, 58)
+position = Vector2(2165.75, 591)
 
 [node name="snail1" parent="." instance=ExtResource("23_0gupw")]
-position = Vector2(-152, 288)
+position = Vector2(1031.75, 821)
 
 [node name="snail2" parent="." instance=ExtResource("24_pryqw")]
-position = Vector2(-197, 983)
+position = Vector2(986.75, 1516)
 
 [node name="sunbathingheron" parent="." instance=ExtResource("25_18kiu")]
-position = Vector2(986, 1078)
+position = Vector2(2169.75, 1611)
 
 [node name="toyboat" parent="." instance=ExtResource("26_dci70")]
-position = Vector2(1236, 848)
+position = Vector2(2419.75, 1381)
 
 [node name="turtle" parent="." instance=ExtResource("27_kf85k")]
-position = Vector2(364, 278)
+position = Vector2(1547.75, 811)
 
 [connection signal="is_found" from="Apple" to="." method="_on_object_found"]
 [connection signal="is_found" from="Apple2" to="." method="_on_object_found"]
