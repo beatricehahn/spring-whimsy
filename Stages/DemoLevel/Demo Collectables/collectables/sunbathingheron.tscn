@@ -1,0 +1,18 @@
+[gd_scene load_steps=4 format=3 uid="uid://cy8qu0g0yxkqm"]
+
+[ext_resource type="PackedScene" uid="uid://dlu4ormju4den" path="res://Common/Util/Collectable/collectable.tscn" id="1_n8ynx"]
+[ext_resource type="Texture2D" uid="uid://bqvopoxahbjyl" path="res://Common/Art/Levels/Demo Art/hidden objects/sunbathing heron.png" id="2_fgnqu"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_tyglj"]
+resource_local_to_scene = true
+size = Vector2(177, 204)
+
+[node name="sunbathingheron" instance=ExtResource("1_n8ynx")]
+item_name = "sunbathingheron"
+
+[node name="CollisionShape2D" parent="." index="0"]
+position = Vector2(4.5, -27)
+shape = SubResource("RectangleShape2D_tyglj")
+
+[node name="Sprite2D" parent="." index="1"]
+texture = ExtResource("2_fgnqu")

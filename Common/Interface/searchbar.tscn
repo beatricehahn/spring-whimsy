@@ -1,0 +1,76 @@
+[gd_scene load_steps=8 format=3 uid="uid://cnmpyfhkix8ae"]
+
+[ext_resource type="Texture2D" uid="uid://bi3yv2gjtibp1" path="res://Common/Art/Levels/Demo Art/hidden objects/toy boat.png" id="1_7dd11"]
+[ext_resource type="Texture2D" uid="uid://dgvelthqb6g2" path="res://Common/Art/Levels/Demo Art/hidden objects/frogphotos.png" id="2_kfagf"]
+[ext_resource type="Texture2D" uid="uid://dbsigksyms5el" path="res://Common/Art/Levels/Demo Art/hidden objects/musicduck.png" id="3_bdda7"]
+[ext_resource type="Texture2D" uid="uid://c63fwbtmbg3wm" path="res://Common/Art/Levels/Demo Art/hidden objects/rubberducky.png" id="4_ml5s5"]
+[ext_resource type="Texture2D" uid="uid://b58wkjjvd26so" path="res://Common/Art/Levels/Demo Art/hidden objects/sleeping fox.png" id="5_5dlwb"]
+[ext_resource type="Texture2D" uid="uid://xgpkxyem2hsi" path="res://Common/Art/Levels/Demo Art/hidden objects/snail 1.png" id="6_op4wm"]
+[ext_resource type="Texture2D" uid="uid://be2onujg3bb0f" path="res://Common/Art/Levels/Demo Art/hidden objects/snail 2.png" id="7_r4s62"]
+
+[node name="Searchbar" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 8
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="MarginContainer" type="MarginContainer" parent="CanvasLayer"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 8
+theme_override_constants/margin_left = 56
+theme_override_constants/margin_top = 56
+theme_override_constants/margin_right = 56
+theme_override_constants/margin_bottom = 56
+
+[node name="HBoxContainer" type="HBoxContainer" parent="CanvasLayer/MarginContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 8
+theme_override_constants/separation = 16
+
+[node name="TextureRect" type="TextureRect" parent="CanvasLayer/MarginContainer/HBoxContainer"]
+layout_mode = 2
+texture = ExtResource("1_7dd11")
+expand_mode = 2
+stretch_mode = 5
+
+[node name="TextureRect2" type="TextureRect" parent="CanvasLayer/MarginContainer/HBoxContainer"]
+layout_mode = 2
+texture = ExtResource("2_kfagf")
+expand_mode = 2
+stretch_mode = 5
+
+[node name="TextureRect3" type="TextureRect" parent="CanvasLayer/MarginContainer/HBoxContainer"]
+layout_mode = 2
+texture = ExtResource("3_bdda7")
+expand_mode = 2
+stretch_mode = 5
+
+[node name="TextureRect4" type="TextureRect" parent="CanvasLayer/MarginContainer/HBoxContainer"]
+layout_mode = 2
+texture = ExtResource("4_ml5s5")
+expand_mode = 2
+stretch_mode = 5
+
+[node name="TextureRect5" type="TextureRect" parent="CanvasLayer/MarginContainer/HBoxContainer"]
+layout_mode = 2
+texture = ExtResource("5_5dlwb")
+expand_mode = 2
+stretch_mode = 5
+
+[node name="TextureRect6" type="TextureRect" parent="CanvasLayer/MarginContainer/HBoxContainer"]
+layout_mode = 2
+texture = ExtResource("6_op4wm")
+
+[node name="TextureRect7" type="TextureRect" parent="CanvasLayer/MarginContainer/HBoxContainer"]
+layout_mode = 2
+texture = ExtResource("7_r4s62")

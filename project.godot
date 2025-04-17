@@ -18,7 +18,7 @@ config/icon="res://icon.svg"
 [autoload]
 
 Dialogic="*res://addons/dialogic/Core/DialogicGameHandler.gd"
-SceneManager="*res://SceneManager/scene_manager.tscn"
+SceneManager="*res://Common/Util/Scene Manager/scene_manager.tscn"
 
 [dialogic]
 
@@ -35,12 +35,6 @@ window/stretch/scale_mode="integer"
 [editor_plugins]
 
 enabled=PackedStringArray("res://addons/dialogic/plugin.cfg")
-
-[file_customization]
-
-folder_colors={
-"res://Stages/demo_picnic/": "red"
-}
 
 [input]
 
@@ -112,5 +106,6 @@ camera_pan={
 
 [rendering]
 
+textures/canvas_textures/default_texture_filter=0
 renderer/rendering_method="gl_compatibility"
 renderer/rendering_method.mobile="gl_compatibility"
