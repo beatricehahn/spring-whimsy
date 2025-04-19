@@ -1,3 +1,10 @@
-[gd_scene format=3 uid="uid://bfy30vvtg4si1"]
+[gd_scene load_steps=2 format=3 uid="uid://bfy30vvtg4si1"]
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_pb0fo"]
+load_path = "res://.godot/imported/Spring Cafe Level.png-9db54e97abf89c326a1d65c8ea2e48c3.ctex"
 
 [node name="LevelSelect" type="Node2D"]
+
+[node name="SpringCafeLevel" type="Sprite2D" parent="."]
+position = Vector2(1218, 710)
+texture = SubResource("CompressedTexture2D_pb0fo")

@@ -36,6 +36,23 @@ window/stretch/scale_mode="integer"
 
 enabled=PackedStringArray("res://addons/dialogic/plugin.cfg")
 
+[file_customization]
+
+folder_colors={
+"res://Assets/": "yellow",
+"res://MenuScreens/": "green",
+"res://Stages/": "blue",
+"res://Stages/A_Forest/": "green",
+"res://Stages/B_Urban/": "purple",
+"res://Stages/C_Garden/": "yellow",
+"res://Stages/D_Isles/": "blue",
+"res://Stages/E_Wetlands/": "orange",
+"res://Stages/F_Farm/": "red",
+"res://Stages/G_Festival/": "pink",
+"res://addons/": "gray",
+"res://export/": "gray"
+}
+
 [input]
 
 dialogic_default_action={
