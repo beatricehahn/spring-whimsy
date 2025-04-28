@@ -1,10 +1,7 @@
-[gd_scene load_steps=29 format=3 uid="uid://dq34vslgjmdfk"]
+[gd_scene load_steps=26 format=3 uid="uid://dq34vslgjmdfk"]
 
 [ext_resource type="Script" uid="uid://csnkpo7ksvuyo" path="res://Stages/Z_DemoLevel/demo.gd" id="1_5g7v7"]
 [ext_resource type="Script" uid="uid://cigf00o02l1xv" path="res://Assets/Util/Camera/camera_control.gd" id="2_i1g04"]
-[ext_resource type="PackedScene" path="res://Stages/Picnic/Items/apple.tscn" id="3_y4qkf"]
-[ext_resource type="PackedScene" path="res://Stages/Picnic/Items/basket.tscn" id="4_oncxo"]
-[ext_resource type="PackedScene" path="res://Stages/Picnic/Items/cheese.tscn" id="5_hu8bq"]
 [ext_resource type="Texture2D" uid="uid://dc1kx480txvpj" path="res://Assets/Art/Levels/Demo Art/Deco/blanket 3.png" id="6_l07pr"]
 [ext_resource type="Texture2D" uid="uid://cleho8a2oagg2" path="res://Assets/Art/Levels/Demo Art/Deco/cherry blossom 2.png" id="7_vtas4"]
 [ext_resource type="Texture2D" uid="uid://byfpcpm8lh1py" path="res://Assets/Art/Levels/Demo Art/Deco/cherrytreeA.png" id="8_bej8n"]
@@ -48,22 +45,6 @@ offset_right = 3083.75
 offset_bottom = 2100.0
 mouse_filter = 1
 color = Color(0.6292, 0.78, 0.624, 1)
-
-[node name="Apple" parent="." instance=ExtResource("3_y4qkf")]
-position = Vector2(1235.75, 1977)
-scale = Vector2(0.25, 0.25)
-
-[node name="Apple2" parent="." instance=ExtResource("3_y4qkf")]
-position = Vector2(1533.75, 2015)
-scale = Vector2(0.25, 0.25)
-
-[node name="basket" parent="." instance=ExtResource("4_oncxo")]
-position = Vector2(1356.75, 2001)
-item_name = "basket of food"
-
-[node name="Cheese" parent="." instance=ExtResource("5_hu8bq")]
-position = Vector2(1657.75, 1997)
-scale = Vector2(0.3, 0.3)
 
 [node name="Blanket4" type="Sprite2D" parent="."]
 position = Vector2(2135.75, 613)
@@ -316,10 +297,6 @@ position = Vector2(2419.75, 1381)
 [node name="turtle" parent="." instance=ExtResource("27_kf85k")]
 position = Vector2(1547.75, 811)
 
-[connection signal="is_found" from="Apple" to="." method="_on_object_found"]
-[connection signal="is_found" from="Apple2" to="." method="_on_object_found"]
-[connection signal="is_found" from="basket" to="." method="_on_object_found"]
-[connection signal="is_found" from="Cheese" to="." method="_on_object_found"]
 [connection signal="is_found" from="rubberducky" to="." method="_on_object_found"]
 [connection signal="is_found" from="photo_frogs" to="." method="_on_object_found"]
 [connection signal="is_found" from="music_duck" to="." method="_on_object_found"]

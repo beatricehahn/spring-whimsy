@@ -19,6 +19,7 @@ config/icon="res://icon.svg"
 
 Dialogic="*res://addons/dialogic/Core/DialogicGameHandler.gd"
 SceneManager="*res://Assets/Util/SceneManager/scene_manager.tscn"
+TransitionScreen="*res://MenuScreens/Transitions/transition_screen.tscn"
 
 [dialogic]
 
@@ -41,6 +42,7 @@ enabled=PackedStringArray("res://addons/dialogic/plugin.cfg")
 folder_colors={
 "res://Assets/": "yellow",
 "res://MenuScreens/": "green",
+"res://Scripts/": "red",
 "res://Stages/": "blue",
 "res://Stages/A_Forest/": "green",
 "res://Stages/B_Urban/": "purple",
@@ -123,6 +125,5 @@ camera_pan={
 
 [rendering]
 
-textures/canvas_textures/default_texture_filter=0
 renderer/rendering_method="gl_compatibility"
 renderer/rendering_method.mobile="gl_compatibility"

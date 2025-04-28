@@ -1,19 +1,20 @@
-[gd_scene load_steps=3 format=3 uid="uid://dlu4ormju4den"]
+[gd_scene load_steps=4 format=3 uid="uid://c0qa4cotdyca3"]
 
 [ext_resource type="Script" uid="uid://dbfygrrd02f3c" path="res://Assets/Util/Collectable/collectable.gd" id="1_4lgpn"]
+[ext_resource type="Texture2D" uid="uid://clsrhbwaa41p5" path="res://Assets/textures/frog_1.png" id="2_heixh"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_m6gw3"]
 resource_local_to_scene = true
-size = Vector2(145, 121)
+size = Vector2(18, 20)
 
 [node name="Collectable" type="Area2D"]
 script = ExtResource("1_4lgpn")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(-2.5, 2.5)
 shape = SubResource("RectangleShape2D_m6gw3")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 scale = Vector2(0.5, 0.5)
+texture = ExtResource("2_heixh")
 
 [connection signal="input_event" from="." to="." method="_on_input_event"]
