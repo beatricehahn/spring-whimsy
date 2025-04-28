@@ -20,9 +20,8 @@ func _on_input_event(viewport: Node, event: InputEvent, shape_idx: int) -> void:
 	if event.is_action_released("click") and mouse_entered:
 		if !is_clicked:
 			is_clicked = true
-			emit_signal("is_found", item_name)
+			emit_signal("is_found", self.name)
 			SceneManager.play_sfx("item_found")
-			print("You found the " + self.name)
 			
 #func _input(event):
 	## Check that mouse click was released while mouse was still in collision shape

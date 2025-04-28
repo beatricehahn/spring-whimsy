@@ -15,4 +15,4 @@ func _process(delta: float) -> void:
 
 # Directs user to forest level
 func _on_forestlevel_pressed() -> void:
-	TransitionScreen.change_scene("res://Stages/A_Forest/forest.tscn")
+	TransitionScreen.change_scene("res://Stages/A_Forest/Forest01.tscn")

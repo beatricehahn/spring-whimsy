@@ -1,0 +1,718 @@
+[gd_scene load_steps=23 format=3 uid="uid://c7e1nqwk25hbe"]
+
+[ext_resource type="Script" uid="uid://6a2ehwuxrouf" path="res://Stages/A_Forest/Forest01.gd" id="1_mqu2i"]
+[ext_resource type="Script" uid="uid://cigf00o02l1xv" path="res://Assets/Util/Camera/camera_control.gd" id="2_5iqwd"]
+[ext_resource type="Theme" uid="uid://7vyw8pr30dth" path="res://Assets/Fonts/springthemefont.tres" id="3_b6pt6"]
+[ext_resource type="Texture2D" uid="uid://chibpfjgvioe" path="res://Assets/Interface/textures_ui/photo.png" id="4_b7tjf"]
+[ext_resource type="Texture2D" uid="uid://clsrhbwaa41p5" path="res://Assets/textures/frog_1.png" id="5_tvooo"]
+[ext_resource type="Texture2D" uid="uid://dbsigksyms5el" path="res://Assets/Art/Levels/Demo Art/hidden objects/musicduck.png" id="6_5iqwd"]
+[ext_resource type="Texture2D" uid="uid://c8w2tlcxet7am" path="res://Assets/textures/cherrytree_1.png" id="6_xl0wm"]
+[ext_resource type="Texture2D" uid="uid://bm181kapgic1j" path="res://Assets/textures/cherrytree_2.png" id="7_xbwpv"]
+[ext_resource type="Texture2D" uid="uid://ilvw6xktm8g4" path="res://Assets/textures/mushroom_patch_1.png" id="8_xswqy"]
+[ext_resource type="Texture2D" uid="uid://bg7mcs6vyhwes" path="res://Assets/textures/rock_1.png" id="9_eynyh"]
+[ext_resource type="Texture2D" uid="uid://402rn6mtfv1r" path="res://Assets/textures/rock_2.png" id="10_qt7wm"]
+[ext_resource type="Texture2D" uid="uid://dhgj5jt8vu6aw" path="res://Assets/textures/rock_3.png" id="11_yl8yh"]
+[ext_resource type="Texture2D" uid="uid://ufmd4neqa088" path="res://Assets/textures/rock_4.png" id="12_p6khe"]
+[ext_resource type="Texture2D" uid="uid://bnhxvij28s3pb" path="res://Assets/textures/bush_1.png" id="13_8c88a"]
+[ext_resource type="Texture2D" uid="uid://t23nbhpwkl4w" path="res://Assets/textures/bush_2.png" id="14_v5x7a"]
+[ext_resource type="Texture2D" uid="uid://dgjfgbaauyek8" path="res://Assets/textures/cherrytree_4.png" id="15_mv4vx"]
+[ext_resource type="Texture2D" uid="uid://cohcv3mlg04ql" path="res://Assets/textures/cherrytree_3.png" id="16_1vqsg"]
+[ext_resource type="Texture2D" uid="uid://b4daxbsro27o0" path="res://Assets/textures/frog_on_lilipadmat.png" id="17_u4v31"]
+[ext_resource type="Texture2D" uid="uid://cy38obq3cnln" path="res://Assets/textures/deer_flowercrown.png" id="18_6y46q"]
+[ext_resource type="Texture2D" uid="uid://8t1cse0j8rnu" path="res://Assets/textures/squirrel_basket.png" id="19_bee6c"]
+[ext_resource type="PackedScene" uid="uid://dy4har8tg2gte" path="res://Stages/Z_DemoLevel/Demo Collectables/collectables/musicduck.tscn" id="20_mqu2i"]
+
+[sub_resource type="Theme" id="Theme_52hgw"]
+
+[node name="Forest01" type="Node2D"]
+script = ExtResource("1_mqu2i")
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2(958, 544)
+script = ExtResource("2_5iqwd")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="Control" type="Control" parent="CanvasLayer"]
+layout_mode = 3
+anchors_preset = 0
+offset_left = 2.0
+offset_top = 2.0
+offset_right = 365.0
+offset_bottom = 1088.0
+scale = Vector2(1.00113, 1)
+mouse_filter = 2
+
+[node name="Panel" type="Panel" parent="CanvasLayer/Control"]
+layout_mode = 0
+offset_left = -8.98981
+offset_top = -1.0
+offset_right = 342.01
+offset_bottom = 1131.0
+
+[node name="Level Title" type="Label" parent="CanvasLayer/Control/Panel"]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -120.5
+offset_top = 59.0
+offset_right = 134.5
+offset_bottom = 108.0
+grow_horizontal = 2
+theme = ExtResource("3_b6pt6")
+theme_override_font_sizes/font_size = 32
+text = "Level Name"
+
+[node name="Sum" type="Label" parent="CanvasLayer/Control/Panel"]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -120.5
+offset_top = 122.0
+offset_right = 134.5
+offset_bottom = 145.0
+grow_horizontal = 2
+text = "x/100 found"
+
+[node name="MarginContainer" type="MarginContainer" parent="CanvasLayer/Control/Panel"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -159.5
+offset_top = -406.0
+offset_right = 159.5
+offset_bottom = 683.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 32
+theme_override_constants/margin_top = 32
+theme_override_constants/margin_right = 32
+theme_override_constants/margin_bottom = 32
+
+[node name="searchlist" type="ScrollContainer" parent="CanvasLayer/Control/Panel/MarginContainer"]
+layout_mode = 2
+
+[node name="GridContainer" type="GridContainer" parent="CanvasLayer/Control/Panel/MarginContainer/searchlist"]
+layout_mode = 2
+theme = SubResource("Theme_52hgw")
+theme_override_constants/v_separation = 0
+columns = 2
+
+[node name="Frog1_icon" type="TextureRect" parent="CanvasLayer/Control/Panel/MarginContainer/searchlist/GridContainer"]
+layout_mode = 2
+texture = ExtResource("4_b7tjf")
+
+[node name="Sprite2D" type="TextureRect" parent="CanvasLayer/Control/Panel/MarginContainer/searchlist/GridContainer/Frog1_icon"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -24.5
+offset_top = -32.5
+offset_right = 16.5
+offset_bottom = 6.5
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("5_tvooo")
+
+[node name="Label" type="Label" parent="CanvasLayer/Control/Panel/MarginContainer/searchlist/GridContainer/Frog1_icon"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.467
+anchor_top = 0.882
+anchor_right = 0.467
+anchor_bottom = 0.882
+offset_left = -19.9925
+offset_top = -23.014
+offset_right = 20.0076
+offset_bottom = -0.0139999
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 12
+text = "Frog"
+horizontal_alignment = 1
+vertical_alignment = 1
+uppercase = true
+
+[node name="musicduck_icon" type="TextureRect" parent="CanvasLayer/Control/Panel/MarginContainer/searchlist/GridContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+texture = ExtResource("4_b7tjf")
+
+[node name="TextureRect" type="TextureRect" parent="CanvasLayer/Control/Panel/MarginContainer/searchlist/GridContainer/musicduck_icon"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.451
+anchor_top = 0.5
+anchor_right = 0.451
+anchor_bottom = 0.5
+offset_left = -32.3605
+offset_top = -32.5
+offset_right = 479.639
+offset_bottom = 290.5
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(0.126586, 0.126586)
+texture = ExtResource("6_5iqwd")
+stretch_mode = 3
+
+[node name="Label" type="Label" parent="CanvasLayer/Control/Panel/MarginContainer/searchlist/GridContainer/musicduck_icon"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.282
+anchor_top = 0.701
+anchor_right = 0.282
+anchor_bottom = 0.701
+offset_left = 2.262
+offset_top = 3.97299
+offset_right = 40.262
+offset_bottom = 21.973
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 12
+text = "Duck"
+horizontal_alignment = 1
+vertical_alignment = 1
+uppercase = true
+
+[node name="TextureRect2" type="TextureRect" parent="CanvasLayer/Control/Panel/MarginContainer/searchlist/GridContainer"]
+layout_mode = 2
+texture = ExtResource("4_b7tjf")
+
+[node name="TextureRect3" type="TextureRect" parent="CanvasLayer/Control/Panel/MarginContainer/searchlist/GridContainer"]
+layout_mode = 2
+texture = ExtResource("4_b7tjf")
+
+[node name="TextureRect4" type="TextureRect" parent="CanvasLayer/Control/Panel/MarginContainer/searchlist/GridContainer"]
+layout_mode = 2
+texture = ExtResource("4_b7tjf")
+
+[node name="TextureRect5" type="TextureRect" parent="CanvasLayer/Control/Panel/MarginContainer/searchlist/GridContainer"]
+layout_mode = 2
+texture = ExtResource("4_b7tjf")
+
+[node name="TextureRect6" type="TextureRect" parent="CanvasLayer/Control/Panel/MarginContainer/searchlist/GridContainer"]
+layout_mode = 2
+texture = ExtResource("4_b7tjf")
+
+[node name="TextureRect7" type="TextureRect" parent="CanvasLayer/Control/Panel/MarginContainer/searchlist/GridContainer"]
+layout_mode = 2
+texture = ExtResource("4_b7tjf")
+
+[node name="TextureRect8" type="TextureRect" parent="CanvasLayer/Control/Panel/MarginContainer/searchlist/GridContainer"]
+layout_mode = 2
+texture = ExtResource("4_b7tjf")
+
+[node name="TextureRect9" type="TextureRect" parent="CanvasLayer/Control/Panel/MarginContainer/searchlist/GridContainer"]
+layout_mode = 2
+texture = ExtResource("4_b7tjf")
+
+[node name="TextureRect10" type="TextureRect" parent="CanvasLayer/Control/Panel/MarginContainer/searchlist/GridContainer"]
+layout_mode = 2
+texture = ExtResource("4_b7tjf")
+
+[node name="TextureRect11" type="TextureRect" parent="CanvasLayer/Control/Panel/MarginContainer/searchlist/GridContainer"]
+layout_mode = 2
+texture = ExtResource("4_b7tjf")
+
+[node name="TextureRect12" type="TextureRect" parent="CanvasLayer/Control/Panel/MarginContainer/searchlist/GridContainer"]
+layout_mode = 2
+texture = ExtResource("4_b7tjf")
+
+[node name="TextureRect13" type="TextureRect" parent="CanvasLayer/Control/Panel/MarginContainer/searchlist/GridContainer"]
+layout_mode = 2
+texture = ExtResource("4_b7tjf")
+
+[node name="TextureRect14" type="TextureRect" parent="CanvasLayer/Control/Panel/MarginContainer/searchlist/GridContainer"]
+layout_mode = 2
+texture = ExtResource("4_b7tjf")
+
+[node name="TextureRect15" type="TextureRect" parent="CanvasLayer/Control/Panel/MarginContainer/searchlist/GridContainer"]
+layout_mode = 2
+texture = ExtResource("4_b7tjf")
+
+[node name="TextureRect18" type="TextureRect" parent="CanvasLayer/Control/Panel/MarginContainer/searchlist/GridContainer"]
+layout_mode = 2
+texture = ExtResource("4_b7tjf")
+
+[node name="TextureRect19" type="TextureRect" parent="CanvasLayer/Control/Panel/MarginContainer/searchlist/GridContainer"]
+layout_mode = 2
+texture = ExtResource("4_b7tjf")
+
+[node name="TextureRect20" type="TextureRect" parent="CanvasLayer/Control/Panel/MarginContainer/searchlist/GridContainer"]
+layout_mode = 2
+texture = ExtResource("4_b7tjf")
+
+[node name="TextureRect21" type="TextureRect" parent="CanvasLayer/Control/Panel/MarginContainer/searchlist/GridContainer"]
+layout_mode = 2
+texture = ExtResource("4_b7tjf")
+
+[node name="TextureRect22" type="TextureRect" parent="CanvasLayer/Control/Panel/MarginContainer/searchlist/GridContainer"]
+layout_mode = 2
+texture = ExtResource("4_b7tjf")
+
+[node name="TextureRect23" type="TextureRect" parent="CanvasLayer/Control/Panel/MarginContainer/searchlist/GridContainer"]
+layout_mode = 2
+texture = ExtResource("4_b7tjf")
+
+[node name="TextureRect24" type="TextureRect" parent="CanvasLayer/Control/Panel/MarginContainer/searchlist/GridContainer"]
+layout_mode = 2
+texture = ExtResource("4_b7tjf")
+
+[node name="TextureRect25" type="TextureRect" parent="CanvasLayer/Control/Panel/MarginContainer/searchlist/GridContainer"]
+layout_mode = 2
+texture = ExtResource("4_b7tjf")
+
+[node name="grassbg" type="ColorRect" parent="."]
+offset_left = -111.0
+offset_top = -300.0
+offset_right = 2482.0
+offset_bottom = 1266.0
+mouse_filter = 2
+color = Color(0.612375, 0.71, 0.4757, 1)
+metadata/_edit_lock_ = true
+
+[node name="Cherrytree1" type="Sprite2D" parent="."]
+y_sort_enabled = true
+position = Vector2(824.5, 448)
+texture = ExtResource("6_xl0wm")
+
+[node name="Cherrytree2" type="Sprite2D" parent="."]
+y_sort_enabled = true
+position = Vector2(1100, 389)
+texture = ExtResource("7_xbwpv")
+
+[node name="MushroomPatch1" type="Sprite2D" parent="."]
+position = Vector2(881, 822)
+texture = ExtResource("8_xswqy")
+
+[node name="MushroomPatch2" type="Sprite2D" parent="."]
+position = Vector2(1283, 733)
+texture = ExtResource("8_xswqy")
+
+[node name="MushroomPatch3" type="Sprite2D" parent="."]
+position = Vector2(794, 548)
+texture = ExtResource("8_xswqy")
+
+[node name="MushroomPatch4" type="Sprite2D" parent="."]
+position = Vector2(435, 876)
+texture = ExtResource("8_xswqy")
+
+[node name="Rock1" type="Sprite2D" parent="."]
+position = Vector2(299, 741)
+texture = ExtResource("9_eynyh")
+
+[node name="Rock2" type="Sprite2D" parent="."]
+position = Vector2(856, 577)
+texture = ExtResource("10_qt7wm")
+
+[node name="Rock3" type="Sprite2D" parent="."]
+position = Vector2(1070, 517)
+texture = ExtResource("11_yl8yh")
+
+[node name="Rock4" type="Sprite2D" parent="."]
+position = Vector2(1155, 501)
+texture = ExtResource("12_p6khe")
+
+[node name="Bush1" type="Sprite2D" parent="."]
+position = Vector2(1801, 416)
+texture = ExtResource("13_8c88a")
+
+[node name="Bush2" type="Sprite2D" parent="."]
+position = Vector2(1617, 533)
+texture = ExtResource("14_v5x7a")
+
+[node name="Cherrytree3" type="Sprite2D" parent="."]
+position = Vector2(1740, 823)
+texture = ExtResource("6_xl0wm")
+
+[node name="Cherrytree6" type="Sprite2D" parent="."]
+position = Vector2(1677, 236)
+texture = ExtResource("15_mv4vx")
+
+[node name="Cherrytree4" type="Sprite2D" parent="."]
+position = Vector2(1750, 271)
+texture = ExtResource("15_mv4vx")
+
+[node name="Cherrytree5" type="Sprite2D" parent="."]
+position = Vector2(1599, 313)
+texture = ExtResource("16_1vqsg")
+
+[node name="Bush3" type="Sprite2D" parent="."]
+position = Vector2(1840, 342)
+texture = ExtResource("14_v5x7a")
+
+[node name="Bush4" type="Sprite2D" parent="."]
+position = Vector2(590, 517)
+texture = ExtResource("14_v5x7a")
+
+[node name="Bush5" type="Sprite2D" parent="."]
+position = Vector2(470, 340)
+texture = ExtResource("14_v5x7a")
+
+[node name="Cherrytree7" type="Sprite2D" parent="."]
+position = Vector2(651, 908)
+texture = ExtResource("6_xl0wm")
+
+[node name="Cherrytree8" type="Sprite2D" parent="."]
+position = Vector2(706, 948)
+texture = ExtResource("16_1vqsg")
+
+[node name="Cherrytree9" type="Sprite2D" parent="."]
+position = Vector2(1948, 1054)
+texture = ExtResource("15_mv4vx")
+
+[node name="Cherrytree10" type="Sprite2D" parent="."]
+position = Vector2(1868, 1087)
+texture = ExtResource("16_1vqsg")
+
+[node name="Cherrytree11" type="Sprite2D" parent="."]
+position = Vector2(2003, 1071)
+texture = ExtResource("6_xl0wm")
+
+[node name="Bush6" type="Sprite2D" parent="."]
+position = Vector2(824, 783)
+texture = ExtResource("13_8c88a")
+
+[node name="Bush7" type="Sprite2D" parent="."]
+y_sort_enabled = true
+position = Vector2(1743, 943)
+texture = ExtResource("13_8c88a")
+
+[node name="Bush8" type="Sprite2D" parent="."]
+position = Vector2(632, 550)
+texture = ExtResource("13_8c88a")
+
+[node name="Bush9" type="Sprite2D" parent="."]
+position = Vector2(816, 582)
+texture = ExtResource("13_8c88a")
+
+[node name="FrogOnLilipadmat" type="Sprite2D" parent="."]
+position = Vector2(2017, 618)
+texture = ExtResource("17_u4v31")
+
+[node name="DeerFlowercrown" type="Sprite2D" parent="."]
+position = Vector2(2011, 180)
+texture = ExtResource("18_6y46q")
+
+[node name="SquirrelBasket" type="Sprite2D" parent="."]
+position = Vector2(677, 1036)
+texture = ExtResource("19_bee6c")
+
+[node name="Bush10" type="Sprite2D" parent="."]
+position = Vector2(602, 1008)
+texture = ExtResource("14_v5x7a")
+
+[node name="Bush11" type="Sprite2D" parent="."]
+position = Vector2(537, 1009)
+texture = ExtResource("14_v5x7a")
+
+[node name="Bush12" type="Sprite2D" parent="."]
+position = Vector2(755, 1059)
+texture = ExtResource("13_8c88a")
+
+[node name="Bush13" type="Sprite2D" parent="."]
+position = Vector2(611, 1052)
+texture = ExtResource("13_8c88a")
+
+[node name="Bush14" type="Sprite2D" parent="."]
+position = Vector2(941, 841)
+texture = ExtResource("13_8c88a")
+
+[node name="Bush15" type="Sprite2D" parent="."]
+position = Vector2(1139, 1017)
+texture = ExtResource("13_8c88a")
+
+[node name="Bush16" type="Sprite2D" parent="."]
+position = Vector2(1090, 935)
+texture = ExtResource("14_v5x7a")
+
+[node name="Bush17" type="Sprite2D" parent="."]
+position = Vector2(1603, 578)
+texture = ExtResource("14_v5x7a")
+
+[node name="Bush18" type="Sprite2D" parent="."]
+position = Vector2(1879, 371)
+texture = ExtResource("14_v5x7a")
+
+[node name="Bush19" type="Sprite2D" parent="."]
+position = Vector2(1846, 408)
+texture = ExtResource("14_v5x7a")
+
+[node name="Bush20" type="Sprite2D" parent="."]
+position = Vector2(1875, 439)
+texture = ExtResource("14_v5x7a")
+
+[node name="Bush21" type="Sprite2D" parent="."]
+position = Vector2(1841, 477)
+texture = ExtResource("14_v5x7a")
+
+[node name="Bush22" type="Sprite2D" parent="."]
+position = Vector2(1878, 518)
+texture = ExtResource("14_v5x7a")
+
+[node name="Bush23" type="Sprite2D" parent="."]
+position = Vector2(1845, 557)
+texture = ExtResource("14_v5x7a")
+
+[node name="Bush24" type="Sprite2D" parent="."]
+position = Vector2(1751, 511)
+texture = ExtResource("13_8c88a")
+
+[node name="Bush25" type="Sprite2D" parent="."]
+position = Vector2(1786, 520)
+texture = ExtResource("13_8c88a")
+
+[node name="Bush26" type="Sprite2D" parent="."]
+position = Vector2(1608, 415)
+texture = ExtResource("13_8c88a")
+
+[node name="Rock5" type="Sprite2D" parent="."]
+position = Vector2(1394, 837)
+texture = ExtResource("12_p6khe")
+
+[node name="Rock6" type="Sprite2D" parent="."]
+position = Vector2(1778, 884)
+texture = ExtResource("11_yl8yh")
+
+[node name="Rock7" type="Sprite2D" parent="."]
+position = Vector2(1757, 1053)
+texture = ExtResource("12_p6khe")
+
+[node name="Rock8" type="Sprite2D" parent="."]
+position = Vector2(972, 897)
+texture = ExtResource("12_p6khe")
+
+[node name="Rock9" type="Sprite2D" parent="."]
+position = Vector2(996, 901)
+texture = ExtResource("9_eynyh")
+
+[node name="Rock10" type="Sprite2D" parent="."]
+position = Vector2(979, 913)
+texture = ExtResource("10_qt7wm")
+
+[node name="Rock11" type="Sprite2D" parent="."]
+position = Vector2(985, 901)
+texture = ExtResource("11_yl8yh")
+
+[node name="Rock12" type="Sprite2D" parent="."]
+position = Vector2(910, 849)
+texture = ExtResource("12_p6khe")
+
+[node name="Rock13" type="Sprite2D" parent="."]
+position = Vector2(842, 797)
+texture = ExtResource("11_yl8yh")
+
+[node name="Rock14" type="Sprite2D" parent="."]
+position = Vector2(820, 802)
+texture = ExtResource("10_qt7wm")
+
+[node name="Rock15" type="Sprite2D" parent="."]
+position = Vector2(879, 580)
+texture = ExtResource("9_eynyh")
+
+[node name="Rock16" type="Sprite2D" parent="."]
+position = Vector2(859, 606)
+texture = ExtResource("11_yl8yh")
+
+[node name="Rock17" type="Sprite2D" parent="."]
+position = Vector2(1373, 633)
+texture = ExtResource("10_qt7wm")
+
+[node name="Rock18" type="Sprite2D" parent="."]
+position = Vector2(1382, 643)
+texture = ExtResource("11_yl8yh")
+
+[node name="Rock19" type="Sprite2D" parent="."]
+position = Vector2(1369, 624)
+texture = ExtResource("12_p6khe")
+
+[node name="Bush27" type="Sprite2D" parent="."]
+position = Vector2(1292, 868)
+texture = ExtResource("14_v5x7a")
+
+[node name="Bush28" type="Sprite2D" parent="."]
+position = Vector2(1306, 907)
+texture = ExtResource("14_v5x7a")
+
+[node name="Bush29" type="Sprite2D" parent="."]
+position = Vector2(1274, 949)
+texture = ExtResource("14_v5x7a")
+
+[node name="Bush30" type="Sprite2D" parent="."]
+position = Vector2(1349, 972)
+texture = ExtResource("13_8c88a")
+
+[node name="Bush31" type="Sprite2D" parent="."]
+position = Vector2(1085, 763)
+texture = ExtResource("13_8c88a")
+
+[node name="Bush32" type="Sprite2D" parent="."]
+position = Vector2(1425, 496)
+texture = ExtResource("13_8c88a")
+
+[node name="Bush33" type="Sprite2D" parent="."]
+position = Vector2(1568, 861)
+texture = ExtResource("13_8c88a")
+
+[node name="Bush34" type="Sprite2D" parent="."]
+position = Vector2(452, 713)
+texture = ExtResource("13_8c88a")
+
+[node name="Bush35" type="Sprite2D" parent="."]
+position = Vector2(528, 756)
+texture = ExtResource("13_8c88a")
+
+[node name="Bush36" type="Sprite2D" parent="."]
+position = Vector2(541, 653)
+texture = ExtResource("13_8c88a")
+
+[node name="Bush37" type="Sprite2D" parent="."]
+position = Vector2(576, 311)
+texture = ExtResource("13_8c88a")
+
+[node name="Bush38" type="Sprite2D" parent="."]
+position = Vector2(819, 116)
+texture = ExtResource("14_v5x7a")
+
+[node name="Bush39" type="Sprite2D" parent="."]
+position = Vector2(842, 136)
+texture = ExtResource("14_v5x7a")
+
+[node name="Cherrytree12" type="Sprite2D" parent="."]
+position = Vector2(904, 7)
+texture = ExtResource("6_xl0wm")
+
+[node name="Cherrytree13" type="Sprite2D" parent="."]
+position = Vector2(753, -16)
+texture = ExtResource("7_xbwpv")
+
+[node name="Cherrytree14" type="Sprite2D" parent="."]
+position = Vector2(698, 51)
+texture = ExtResource("16_1vqsg")
+
+[node name="Cherrytree15" type="Sprite2D" parent="."]
+position = Vector2(626, 81)
+texture = ExtResource("6_xl0wm")
+
+[node name="Cherrytree16" type="Sprite2D" parent="."]
+position = Vector2(530, 131)
+texture = ExtResource("7_xbwpv")
+
+[node name="Cherrytree17" type="Sprite2D" parent="."]
+position = Vector2(392, 140)
+texture = ExtResource("16_1vqsg")
+
+[node name="Cherrytree18" type="Sprite2D" parent="."]
+position = Vector2(693, 186)
+texture = ExtResource("15_mv4vx")
+
+[node name="Cherrytree19" type="Sprite2D" parent="."]
+position = Vector2(576, 244)
+texture = ExtResource("16_1vqsg")
+
+[node name="Cherrytree20" type="Sprite2D" parent="."]
+position = Vector2(922, 166)
+texture = ExtResource("7_xbwpv")
+
+[node name="Cherrytree21" type="Sprite2D" parent="."]
+position = Vector2(988, 513)
+texture = ExtResource("6_xl0wm")
+
+[node name="Cherrytree22" type="Sprite2D" parent="."]
+position = Vector2(1147, 102)
+texture = ExtResource("7_xbwpv")
+
+[node name="Cherrytree23" type="Sprite2D" parent="."]
+position = Vector2(1207, 171)
+texture = ExtResource("16_1vqsg")
+
+[node name="Cherrytree24" type="Sprite2D" parent="."]
+position = Vector2(1366, 86)
+texture = ExtResource("15_mv4vx")
+
+[node name="Cherrytree25" type="Sprite2D" parent="."]
+position = Vector2(1415, 225)
+texture = ExtResource("16_1vqsg")
+
+[node name="SquirrelBasket2" type="Sprite2D" parent="."]
+position = Vector2(1783, 432)
+texture = ExtResource("19_bee6c")
+
+[node name="Bush40" type="Sprite2D" parent="."]
+position = Vector2(1761, 466)
+texture = ExtResource("13_8c88a")
+
+[node name="Bush41" type="Sprite2D" parent="."]
+position = Vector2(1723, 410)
+texture = ExtResource("14_v5x7a")
+
+[node name="Cherrytree26" type="Sprite2D" parent="."]
+position = Vector2(2054, 418)
+texture = ExtResource("16_1vqsg")
+
+[node name="Cherrytree27" type="Sprite2D" parent="."]
+position = Vector2(2128, 449)
+texture = ExtResource("15_mv4vx")
+
+[node name="Cherrytree28" type="Sprite2D" parent="."]
+position = Vector2(1700, 515)
+texture = ExtResource("7_xbwpv")
+
+[node name="Cherrytree29" type="Sprite2D" parent="."]
+position = Vector2(2155, 754)
+texture = ExtResource("6_xl0wm")
+
+[node name="Rock20" type="Sprite2D" parent="."]
+position = Vector2(1961, 691)
+texture = ExtResource("9_eynyh")
+
+[node name="Rock21" type="Sprite2D" parent="."]
+position = Vector2(1947, 702)
+texture = ExtResource("10_qt7wm")
+
+[node name="Rock22" type="Sprite2D" parent="."]
+position = Vector2(1738, 626)
+texture = ExtResource("11_yl8yh")
+
+[node name="Rock23" type="Sprite2D" parent="."]
+position = Vector2(1767, 907)
+texture = ExtResource("12_p6khe")
+
+[node name="Rock24" type="Sprite2D" parent="."]
+position = Vector2(2218, 874)
+texture = ExtResource("10_qt7wm")
+
+[node name="Rock25" type="Sprite2D" parent="."]
+position = Vector2(2105, 518)
+texture = ExtResource("9_eynyh")
+
+[node name="Rock26" type="Sprite2D" parent="."]
+position = Vector2(2089, 536)
+texture = ExtResource("10_qt7wm")
+
+[node name="Rock27" type="Sprite2D" parent="."]
+position = Vector2(2124, 543)
+texture = ExtResource("12_p6khe")
+
+[node name="Rock28" type="Sprite2D" parent="."]
+position = Vector2(2163, 541)
+texture = ExtResource("12_p6khe")
+
+[node name="Rock29" type="Sprite2D" parent="."]
+position = Vector2(2161, 562)
+texture = ExtResource("11_yl8yh")
+
+[node name="musicduck" parent="." instance=ExtResource("20_mqu2i")]
+position = Vector2(1172, 596)
+
+[connection signal="is_found" from="musicduck" to="." method="on_object_found"]

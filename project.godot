@@ -11,7 +11,7 @@ config_version=5
 [application]
 
 config/name="springwhimsy"
-run/main_scene="uid://wy3uvcvhfa21"
+run/main_scene="uid://c7e1nqwk25hbe"
 config/features=PackedStringArray("4.4", "GL Compatibility")
 config/icon="res://icon.svg"
 
@@ -20,6 +20,7 @@ config/icon="res://icon.svg"
 Dialogic="*res://addons/dialogic/Core/DialogicGameHandler.gd"
 SceneManager="*res://Assets/Util/SceneManager/scene_manager.tscn"
 TransitionScreen="*res://MenuScreens/Transitions/transition_screen.tscn"
+Global="*res://Scripts/Global.gd"
 
 [dialogic]
 
