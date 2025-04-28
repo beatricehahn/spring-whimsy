@@ -1,6 +1,7 @@
 extends Node2D
 
 @onready var searchlist = $CanvasLayer/Control/Panel/MarginContainer/searchlist/GridContainer
+@onready var scoreLabel = $CanvasLayer/Control/Panel/Score
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
@@ -9,7 +10,8 @@ func _ready() -> void:
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
-	pass
+	var count = Global.Data[self.name].size()
+	scoreLabel.text = "Found: " + str(count) + "/40"
 	
 # Triggers when hidden object emits a "found" signal
 func on_object_found(object_name: String) -> void:

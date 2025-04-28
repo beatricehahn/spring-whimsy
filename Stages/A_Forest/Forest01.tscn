@@ -61,10 +61,10 @@ offset_right = 134.5
 offset_bottom = 108.0
 grow_horizontal = 2
 theme = ExtResource("3_b6pt6")
-theme_override_font_sizes/font_size = 32
-text = "Level Name"
+theme_override_font_sizes/font_size = 40
+text = "The Forest"
 
-[node name="Sum" type="Label" parent="CanvasLayer/Control/Panel"]
+[node name="Score" type="Label" parent="CanvasLayer/Control/Panel"]
 layout_mode = 1
 anchors_preset = 5
 anchor_left = 0.5
@@ -74,7 +74,8 @@ offset_top = 122.0
 offset_right = 134.5
 offset_bottom = 145.0
 grow_horizontal = 2
-text = "x/100 found"
+theme_override_font_sizes/font_size = 32
+text = "FOUND: X / Y"
 
 [node name="MarginContainer" type="MarginContainer" parent="CanvasLayer/Control/Panel"]
 layout_mode = 1
