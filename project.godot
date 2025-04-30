@@ -55,8 +55,7 @@ folder_colors={
 "res://Stages/E_Wetlands/": "orange",
 "res://Stages/F_Farm/": "red",
 "res://Stages/G_Festival/": "pink",
-"res://addons/": "gray",
-"res://export/": "gray"
+"res://addons/": "gray"
 }
 
 [input]

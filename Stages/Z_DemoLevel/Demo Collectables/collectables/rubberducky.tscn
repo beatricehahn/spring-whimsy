@@ -1,17 +1,17 @@
 [gd_scene load_steps=4 format=3 uid="uid://cnvaaqhdg1tv5"]
 
-[ext_resource type="PackedScene" uid="uid://dlu4ormju4den" path="res://Assets/Util/Collectable/collectable.tscn" id="1_ycecm"]
+[ext_resource type="PackedScene" uid="uid://c0qa4cotdyca3" path="res://Assets/Util/Collectable/collectable.tscn" id="1_ycecm"]
 [ext_resource type="Texture2D" uid="uid://c63fwbtmbg3wm" path="res://Assets/Art/Levels/Demo Art/hidden objects/rubberducky.png" id="2_kgi20"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_gnmhf"]
 resource_local_to_scene = true
-size = Vector2(40, 39)
+size = Vector2(72, 63)
 
 [node name="rubberducky" instance=ExtResource("1_ycecm")]
 item_name = "rubberducky"
 
 [node name="CollisionShape2D" parent="." index="0"]
-position = Vector2(0, -0.5)
+position = Vector2(1, 1.5)
 shape = SubResource("RectangleShape2D_gnmhf")
 
 [node name="Sprite2D" parent="." index="1"]

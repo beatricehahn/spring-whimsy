@@ -1,0 +1,26 @@
+[gd_scene load_steps=5 format=3 uid="uid://b6gkl08h866oy"]
+
+[ext_resource type="PackedScene" uid="uid://c0qa4cotdyca3" path="res://Assets/Util/Collectable/collectable.tscn" id="1_e17yr"]
+[ext_resource type="Texture2D" uid="uid://dol5p1xc2mc0a" path="res://Assets/Art/Levels/Demo Art/Deco/blanket 2.png" id="2_ox8dq"]
+[ext_resource type="Texture2D" uid="uid://rj18p88y6tob" path="res://Assets/Art/Levels/Demo Art/Deco/beavers and their basket.png" id="3_mbcx4"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_e7q3t"]
+resource_local_to_scene = true
+size = Vector2(244.207, 120.956)
+
+[node name="beaverpicnic" instance=ExtResource("1_e17yr")]
+item_name = "musicduck"
+
+[node name="CollisionShape2D" parent="." index="0"]
+position = Vector2(5.19936, 1.49175)
+rotation = 3.13471
+scale = Vector2(1, 1)
+shape = SubResource("RectangleShape2D_e7q3t")
+
+[node name="Blanket2" type="Sprite2D" parent="." index="1"]
+position = Vector2(6, 10)
+scale = Vector2(0.509446, 0.509446)
+texture = ExtResource("2_ox8dq")
+
+[node name="Sprite2D" parent="." index="2"]
+texture = ExtResource("3_mbcx4")

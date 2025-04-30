@@ -11,7 +11,7 @@ func _ready() -> void:
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
 	var count = Global.Data[self.name].size()
-	scoreLabel.text = "Found: " + str(count) + "/40"
+	scoreLabel.text = "Found: " + str(count) + "/10"
 	
 # Triggers when hidden object emits a "found" signal
 func on_object_found(object_name: String) -> void:

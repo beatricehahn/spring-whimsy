@@ -1,0 +1,19 @@
+[gd_scene load_steps=4 format=3 uid="uid://dt7p08r2rrtuj"]
+
+[ext_resource type="PackedScene" uid="uid://c0qa4cotdyca3" path="res://Assets/Util/Collectable/collectable.tscn" id="1_hwm3n"]
+[ext_resource type="Texture2D" uid="uid://cy38obq3cnln" path="res://Assets/textures/deer_flowercrown.png" id="2_vbkcn"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_e7q3t"]
+resource_local_to_scene = true
+size = Vector2(87.0048, 59.9848)
+
+[node name="deer" instance=ExtResource("1_hwm3n")]
+item_name = "musicduck"
+
+[node name="CollisionShape2D" parent="." index="0"]
+position = Vector2(-1.47584, -0.989842)
+rotation = 3.13471
+shape = SubResource("RectangleShape2D_e7q3t")
+
+[node name="Sprite2D" parent="." index="1"]
+texture = ExtResource("2_vbkcn")
