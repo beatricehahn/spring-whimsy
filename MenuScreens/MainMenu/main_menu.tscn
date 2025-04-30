@@ -1,17 +1,38 @@
-[gd_scene load_steps=13 format=3 uid="uid://wy3uvcvhfa21"]
+[gd_scene load_steps=34 format=3 uid="uid://wy3uvcvhfa21"]
 
 [ext_resource type="Script" uid="uid://dl8pj6mhgku5i" path="res://MenuScreens/MainMenu/main_menu.gd" id="1_06t4h"]
-[ext_resource type="Texture2D" uid="uid://dgvelthqb6g2" path="res://Assets/Art/Levels/Demo Art/hidden objects/frogphotos.png" id="2_2ytag"]
-[ext_resource type="FontFile" uid="uid://b5tfhyq3vh05d" path="res://Assets/Fonts/ComingSoon.ttf" id="2_jht8a"]
+[ext_resource type="Texture2D" uid="uid://b81wl6iyvrw78" path="res://MenuScreens/MainMenu/textures_mainmenu/bg@0.3x.png" id="2_m5i6s"]
 [ext_resource type="Texture2D" uid="uid://dbsigksyms5el" path="res://Assets/Art/Levels/Demo Art/hidden objects/musicduck.png" id="3_lpfbm"]
 [ext_resource type="Texture2D" uid="uid://dc1kx480txvpj" path="res://Assets/Art/Levels/Demo Art/Deco/blanket 3.png" id="4_al2h2"]
 [ext_resource type="Texture2D" uid="uid://c63fwbtmbg3wm" path="res://Assets/Art/Levels/Demo Art/hidden objects/rubberducky.png" id="5_mp05l"]
 [ext_resource type="Texture2D" uid="uid://xgpkxyem2hsi" path="res://Assets/Art/Levels/Demo Art/hidden objects/snail 1.png" id="6_al2h2"]
 [ext_resource type="Texture2D" uid="uid://opjkpyctnlr1" path="res://Assets/Art/Levels/Demo Art/Deco/basket 1.png" id="7_lpfbm"]
 [ext_resource type="Texture2D" uid="uid://rj18p88y6tob" path="res://Assets/Art/Levels/Demo Art/Deco/beavers and their basket.png" id="8_ali5n"]
-[ext_resource type="Texture2D" uid="uid://cleho8a2oagg2" path="res://Assets/Art/Levels/Demo Art/Deco/cherry blossom 2.png" id="9_ali5n"]
 [ext_resource type="Texture2D" uid="uid://c8fijwcg0g5u6" path="res://Assets/Interface/textures_ui/Exit.png" id="11_5j3so"]
 [ext_resource type="Texture2D" uid="uid://dvkputda0nact" path="res://Assets/Interface/textures_ui/Play.png" id="11_o8wmd"]
+[ext_resource type="Texture2D" uid="uid://7fkmd8a5e3d3" path="res://MenuScreens/MainMenu/textures_mainmenu/title@0.3x.png" id="12_5j3so"]
+[ext_resource type="Texture2D" uid="uid://tdl3qopfplmm" path="res://MenuScreens/MainMenu/textures_mainmenu/snail@0.3x.png" id="12_qm7uu"]
+[ext_resource type="Texture2D" uid="uid://cm3o1vd1refbl" path="res://MenuScreens/MainMenu/textures_mainmenu/toyboat@0.3x.png" id="13_tl43r"]
+[ext_resource type="Texture2D" uid="uid://c4noh72erg7jg" path="res://MenuScreens/MainMenu/textures_mainmenu/tree@0.3x.png" id="14_c1hie"]
+[ext_resource type="Texture2D" uid="uid://b2fp7yv5a4ye2" path="res://MenuScreens/MainMenu/textures_mainmenu/key@0.3x.png" id="15_7as2j"]
+[ext_resource type="Texture2D" uid="uid://5wkif2yvllfu" path="res://MenuScreens/MainMenu/textures_mainmenu/capybara@0.3x.png" id="16_6qjqs"]
+[ext_resource type="Texture2D" uid="uid://nth02hgqcxxg" path="res://MenuScreens/MainMenu/textures_mainmenu/beach ball@0.3x.png" id="17_nfe8c"]
+[ext_resource type="Texture2D" uid="uid://bwfbgb0e1x2nl" path="res://MenuScreens/MainMenu/textures_mainmenu/sheep@0.3x.png" id="18_nfe8c"]
+[ext_resource type="Texture2D" uid="uid://dm8d84o7bnuwp" path="res://MenuScreens/MainMenu/textures_mainmenu/kite@0.3x.png" id="19_aoshj"]
+[ext_resource type="Texture2D" uid="uid://cv6yw0gxh7d5b" path="res://MenuScreens/MainMenu/textures_mainmenu/balloons@0.3x.png" id="20_dutds"]
+[ext_resource type="Texture2D" uid="uid://b4brjxqrtwknt" path="res://MenuScreens/MainMenu/textures_mainmenu/bush@0.3x.png" id="21_mg587"]
+[ext_resource type="Texture2D" uid="uid://enm2lqh4fdaa" path="res://MenuScreens/MainMenu/textures_mainmenu/tulips@0.3x.png" id="22_o2r3f"]
+[ext_resource type="Texture2D" uid="uid://dhgj5jt8vu6aw" path="res://Assets/textures/rock_3.png" id="23_pkyot"]
+[ext_resource type="Texture2D" uid="uid://bg7mcs6vyhwes" path="res://Assets/textures/rock_1.png" id="24_gd5t4"]
+[ext_resource type="Texture2D" uid="uid://ilvw6xktm8g4" path="res://Assets/textures/mushroom_patch_1.png" id="25_w1b72"]
+[ext_resource type="Texture2D" uid="uid://b4daxbsro27o0" path="res://Assets/textures/frog_on_lilipadmat.png" id="26_b1xs2"]
+[ext_resource type="Texture2D" uid="uid://clsrhbwaa41p5" path="res://Assets/textures/frog_1.png" id="27_u7m8x"]
+[ext_resource type="Texture2D" uid="uid://t23nbhpwkl4w" path="res://Assets/textures/bush_2.png" id="28_kc7em"]
+[ext_resource type="Texture2D" uid="uid://bnhxvij28s3pb" path="res://Assets/textures/bush_1.png" id="29_o8t2a"]
+[ext_resource type="Texture2D" uid="uid://bm181kapgic1j" path="res://Assets/textures/cherrytree_2.png" id="30_16n5p"]
+[ext_resource type="Texture2D" uid="uid://cohcv3mlg04ql" path="res://Assets/textures/cherrytree_3.png" id="31_f807g"]
+[ext_resource type="Texture2D" uid="uid://dgjfgbaauyek8" path="res://Assets/textures/cherrytree_4.png" id="32_bppcv"]
+[ext_resource type="Texture2D" uid="uid://dfnkb4f3f36pp" path="res://Assets/textures/hedgehog_cake.png" id="33_gd5t4"]
 
 [node name="MainMenu" type="Control"]
 layout_mode = 3
@@ -22,26 +43,19 @@ grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_06t4h")
 
-[node name="ColorRect" type="ColorRect" parent="."]
-layout_mode = 0
-offset_left = -16.0
-offset_top = -10.0
-offset_right = 1925.0
-offset_bottom = 1088.0
-color = Color(0.627451, 0.780392, 0.623529, 1)
+[node name="Background" type="Sprite2D" parent="."]
+position = Vector2(960.5, 544)
+scale = Vector2(1.6849, 1.71605)
+texture = ExtResource("2_m5i6s")
 metadata/_edit_lock_ = true
-
-[node name="Frogphotos" type="Sprite2D" parent="."]
-position = Vector2(1264, 308)
-scale = Vector2(-0.56, 0.56)
-texture = ExtResource("2_2ytag")
 
 [node name="Musicduck" type="Sprite2D" parent="."]
 position = Vector2(1588, 913)
 texture = ExtResource("3_lpfbm")
 
 [node name="Blanket3" type="Sprite2D" parent="."]
-position = Vector2(459, 745)
+position = Vector2(419, 853)
+scale = Vector2(0.69183, 0.561836)
 texture = ExtResource("4_al2h2")
 
 [node name="Rubberducky" type="Sprite2D" parent="."]
@@ -55,28 +69,13 @@ scale = Vector2(0.435065, 0.435065)
 texture = ExtResource("6_al2h2")
 
 [node name="Basket1" type="Sprite2D" parent="."]
-position = Vector2(1390, 829)
+position = Vector2(1419, 941)
 scale = Vector2(0.60628, 0.60628)
 texture = ExtResource("7_lpfbm")
 
 [node name="BeaversAndTheirBasket" type="Sprite2D" parent="."]
-position = Vector2(503, 735)
+position = Vector2(407, 839)
 texture = ExtResource("8_ali5n")
-
-[node name="CherryBlossom2" type="Sprite2D" parent="."]
-position = Vector2(1102, 168)
-scale = Vector2(0.287859, 0.287859)
-texture = ExtResource("9_ali5n")
-
-[node name="CherryBlossom4" type="Sprite2D" parent="."]
-position = Vector2(1696, 141)
-scale = Vector2(0.391971, 0.390505)
-texture = ExtResource("9_ali5n")
-
-[node name="CherryBlossom3" type="Sprite2D" parent="."]
-position = Vector2(187, 300)
-scale = Vector2(0.577459, 0.577459)
-texture = ExtResource("9_ali5n")
 
 [node name="VBoxContainer" type="VBoxContainer" parent="."]
 layout_mode = 1
@@ -85,10 +84,10 @@ anchor_left = 0.5
 anchor_top = 0.917
 anchor_right = 0.5
 anchor_bottom = 0.917
-offset_left = -79.0
-offset_top = -170.216
-offset_right = 79.0
-offset_bottom = -63.2161
+offset_left = -114.5
+offset_top = -318.36
+offset_right = 114.5
+offset_bottom = -123.36
 grow_horizontal = 2
 grow_vertical = 0
 theme_override_constants/separation = 16
@@ -101,25 +100,188 @@ texture_normal = ExtResource("11_o8wmd")
 layout_mode = 2
 texture_normal = ExtResource("11_5j3so")
 
-[node name="title" type="Label" parent="."]
-layout_mode = 1
-anchors_preset = 8
-anchor_left = 0.5
-anchor_top = 0.5
-anchor_right = 0.5
-anchor_bottom = 0.5
-offset_left = -428.0
-offset_top = -67.0
-offset_right = 499.0
-offset_bottom = 132.0
-grow_horizontal = 2
-grow_vertical = 2
-theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
-theme_override_fonts/font = ExtResource("2_jht8a")
-theme_override_font_sizes/font_size = 64
-text = "Spring Whimsy
-A Hidden Object Game"
-horizontal_alignment = 1
+[node name="Title" type="Sprite2D" parent="."]
+position = Vector2(964, 452)
+texture = ExtResource("12_5j3so")
+
+[node name="Snail_0_3x" type="Sprite2D" parent="."]
+position = Vector2(761, 994)
+texture = ExtResource("12_qm7uu")
+
+[node name="Toyboat_0_3x" type="Sprite2D" parent="."]
+position = Vector2(307, 511)
+texture = ExtResource("13_tl43r")
+
+[node name="Tree_0_3x2" type="Sprite2D" parent="."]
+position = Vector2(1929, 244)
+texture = ExtResource("14_c1hie")
+
+[node name="Tree_0_3x" type="Sprite2D" parent="."]
+position = Vector2(1813, 496)
+scale = Vector2(1.43431, 1.43431)
+texture = ExtResource("14_c1hie")
+
+[node name="Key_0_3x" type="Sprite2D" parent="."]
+position = Vector2(1671, 1020)
+texture = ExtResource("15_7as2j")
+
+[node name="Capybara_0_3x" type="Sprite2D" parent="."]
+position = Vector2(1269, 703)
+texture = ExtResource("16_6qjqs")
+
+[node name="BeachBall_0_3x" type="Sprite2D" parent="."]
+position = Vector2(276, 366)
+texture = ExtResource("17_nfe8c")
+
+[node name="Sheep_0_3x" type="Sprite2D" parent="."]
+position = Vector2(196, 151)
+texture = ExtResource("18_nfe8c")
+
+[node name="Snail_0_3x2" type="Sprite2D" parent="."]
+position = Vector2(507, 244)
+texture = ExtResource("12_qm7uu")
+
+[node name="Kite_0_3x" type="Sprite2D" parent="."]
+position = Vector2(613, 153)
+texture = ExtResource("19_aoshj")
+
+[node name="Balloons_0_3x" type="Sprite2D" parent="."]
+position = Vector2(1717, 667)
+scale = Vector2(1.47143, 1.47143)
+texture = ExtResource("20_dutds")
+
+[node name="Bush_0_3x" type="Sprite2D" parent="Balloons_0_3x"]
+position = Vector2(44.8542, 47.5727)
+scale = Vector2(0.67961, 0.67961)
+texture = ExtResource("21_mg587")
+
+[node name="Tulips_0_3x" type="Sprite2D" parent="."]
+position = Vector2(665, 587)
+texture = ExtResource("22_o2r3f")
+
+[node name="Tulips_0_3x2" type="Sprite2D" parent="."]
+position = Vector2(1461, 348)
+texture = ExtResource("22_o2r3f")
+
+[node name="Tulips_0_3x3" type="Sprite2D" parent="."]
+position = Vector2(1202, 919)
+texture = ExtResource("22_o2r3f")
+
+[node name="Tulips_0_3x4" type="Sprite2D" parent="."]
+position = Vector2(159, 1009)
+texture = ExtResource("22_o2r3f")
+
+[node name="Tulips_0_3x5" type="Sprite2D" parent="."]
+position = Vector2(84, 727)
+texture = ExtResource("22_o2r3f")
+
+[node name="Tulips_0_3x6" type="Sprite2D" parent="."]
+position = Vector2(113, 358)
+texture = ExtResource("22_o2r3f")
+
+[node name="Tulips_0_3x7" type="Sprite2D" parent="."]
+position = Vector2(372, 239)
+texture = ExtResource("22_o2r3f")
+
+[node name="Tulips_0_3x8" type="Sprite2D" parent="."]
+position = Vector2(1062, 172)
+texture = ExtResource("22_o2r3f")
+
+[node name="Tulips_0_3x9" type="Sprite2D" parent="."]
+position = Vector2(473, 11)
+texture = ExtResource("22_o2r3f")
+
+[node name="Tulips_0_3x10" type="Sprite2D" parent="."]
+position = Vector2(1500, 504)
+texture = ExtResource("22_o2r3f")
+
+[node name="Toyboat_0_3x2" type="Sprite2D" parent="."]
+position = Vector2(1565, 52)
+texture = ExtResource("13_tl43r")
+
+[node name="Toyboat_0_3x3" type="Sprite2D" parent="."]
+position = Vector2(1521, 153)
+texture = ExtResource("13_tl43r")
+
+[node name="Bush_0_3x" type="Sprite2D" parent="."]
+position = Vector2(753, 179)
+texture = ExtResource("21_mg587")
+
+[node name="Bush_0_3x2" type="Sprite2D" parent="."]
+position = Vector2(598, 636)
+texture = ExtResource("21_mg587")
+
+[node name="Rock3" type="Sprite2D" parent="."]
+position = Vector2(1298, 999)
+texture = ExtResource("23_pkyot")
+
+[node name="Rock1" type="Sprite2D" parent="."]
+position = Vector2(1355, 1015)
+texture = ExtResource("24_gd5t4")
+
+[node name="MushroomPatch1" type="Sprite2D" parent="."]
+position = Vector2(1179, 999)
+texture = ExtResource("25_w1b72")
+
+[node name="FrogOnLilipadmat" type="Sprite2D" parent="."]
+position = Vector2(164, 613)
+texture = ExtResource("26_b1xs2")
+
+[node name="Frog1" type="Sprite2D" parent="."]
+position = Vector2(1204, 146)
+texture = ExtResource("27_u7m8x")
+
+[node name="Bush2" type="Sprite2D" parent="."]
+position = Vector2(1296, 57)
+texture = ExtResource("28_kc7em")
+
+[node name="Bush1" type="Sprite2D" parent="."]
+position = Vector2(1176, 158)
+texture = ExtResource("29_o8t2a")
+
+[node name="Cherrytree2" type="Sprite2D" parent="."]
+position = Vector2(1369, -67)
+texture = ExtResource("30_16n5p")
+
+[node name="Cherrytree3" type="Sprite2D" parent="."]
+position = Vector2(1241, 26)
+texture = ExtResource("31_f807g")
+
+[node name="Cherrytree4" type="Sprite2D" parent="."]
+position = Vector2(1577, 251)
+texture = ExtResource("32_bppcv")
+
+[node name="HedgehogCake" type="Sprite2D" parent="."]
+position = Vector2(1455, 874)
+texture = ExtResource("33_gd5t4")
+
+[node name="Bush3" type="Sprite2D" parent="."]
+position = Vector2(1410, 650)
+texture = ExtResource("29_o8t2a")
+
+[node name="Bush4" type="Sprite2D" parent="."]
+position = Vector2(1415, 709)
+texture = ExtResource("28_kc7em")
+
+[node name="Bush5" type="Sprite2D" parent="."]
+position = Vector2(1367, 752)
+texture = ExtResource("28_kc7em")
+
+[node name="Bush6" type="Sprite2D" parent="."]
+position = Vector2(1279, 778)
+texture = ExtResource("28_kc7em")
+
+[node name="Bush7" type="Sprite2D" parent="."]
+position = Vector2(732, 988)
+texture = ExtResource("28_kc7em")
+
+[node name="Bush8" type="Sprite2D" parent="."]
+position = Vector2(705, 1023)
+texture = ExtResource("28_kc7em")
+
+[node name="Bush9" type="Sprite2D" parent="."]
+position = Vector2(639, 957)
+texture = ExtResource("28_kc7em")
 
 [connection signal="pressed" from="VBoxContainer/Play" to="." method="_on_start_pressed"]
 [connection signal="pressed" from="VBoxContainer/Exit" to="." method="_on_quit_pressed"]
