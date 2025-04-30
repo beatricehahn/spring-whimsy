@@ -1,6 +1,6 @@
 extends Node2D
 
-@onready var searchlist = $CanvasLayer/Control/Panel/MarginContainer/searchlist/GridContainer
+@onready var searchlist = $CanvasLayer/Control/Panel/MarginContainer/searchlist/HBoxContainer
 @onready var scoreLabel = $CanvasLayer/Control/Panel/Score
 
 # Called when the node enters the scene tree for the first time.
@@ -53,3 +53,16 @@ func update_searchlist(object_name: String) -> void:
 
 func increment_sum() -> void:
 	pass
+
+# Pause game world when player clicks pause button
+func _on_pause_pressed() -> void:
+	print("Pause Button was clicked.")
+	get_tree().paused = true
+	
+# Un-pause game if player clicks resume game button
+func _on_resume_pressed()-> void:
+	get_tree().paused = false
+
+# Quit to title
+func _on_quit_to_title()-> void:
+	TransitionScreen.change_scene("res://MenuScreens/MainMenu/main_menu.tscn")

@@ -12,7 +12,7 @@ config_version=5
 
 config/name="springwhimsy"
 config/version="1.2"
-run/main_scene="uid://c7e1nqwk25hbe"
+run/main_scene="uid://wy3uvcvhfa21"
 config/use_custom_user_dir=true
 config/features=PackedStringArray("4.4", "GL Compatibility")
 config/icon="res://icon.svg"
@@ -44,6 +44,7 @@ enabled=PackedStringArray("res://addons/dialogic/plugin.cfg")
 
 folder_colors={
 "res://Assets/": "yellow",
+"res://Assets/Interface/textures_ui/searchlist_photo_textures/": "green",
 "res://MenuScreens/": "green",
 "res://Scripts/": "red",
 "res://Stages/": "blue",
