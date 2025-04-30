@@ -1,12 +1,14 @@
-[gd_scene load_steps=23 format=3 uid="uid://c7e1nqwk25hbe"]
+[gd_scene load_steps=27 format=3 uid="uid://c7e1nqwk25hbe"]
 
 [ext_resource type="Script" uid="uid://6a2ehwuxrouf" path="res://Stages/A_Forest/Forest01.gd" id="1_mqu2i"]
 [ext_resource type="Script" uid="uid://cigf00o02l1xv" path="res://Assets/Util/Camera/camera_control.gd" id="2_5iqwd"]
+[ext_resource type="PackedScene" uid="uid://dlymie3y3jyw2" path="res://Stages/A_Forest/grass.tscn" id="2_xl0wm"]
 [ext_resource type="Theme" uid="uid://7vyw8pr30dth" path="res://Assets/Fonts/springthemefont.tres" id="3_b6pt6"]
 [ext_resource type="Texture2D" uid="uid://chibpfjgvioe" path="res://Assets/Interface/textures_ui/photo.png" id="4_b7tjf"]
 [ext_resource type="Texture2D" uid="uid://clsrhbwaa41p5" path="res://Assets/textures/frog_1.png" id="5_tvooo"]
 [ext_resource type="Texture2D" uid="uid://dbsigksyms5el" path="res://Assets/Art/Levels/Demo Art/hidden objects/musicduck.png" id="6_5iqwd"]
 [ext_resource type="Texture2D" uid="uid://c8w2tlcxet7am" path="res://Assets/textures/cherrytree_1.png" id="6_xl0wm"]
+[ext_resource type="Texture2D" uid="uid://c63fwbtmbg3wm" path="res://Assets/Art/Levels/Demo Art/hidden objects/rubberducky.png" id="7_b7tjf"]
 [ext_resource type="Texture2D" uid="uid://bm181kapgic1j" path="res://Assets/textures/cherrytree_2.png" id="7_xbwpv"]
 [ext_resource type="Texture2D" uid="uid://ilvw6xktm8g4" path="res://Assets/textures/mushroom_patch_1.png" id="8_xswqy"]
 [ext_resource type="Texture2D" uid="uid://bg7mcs6vyhwes" path="res://Assets/textures/rock_1.png" id="9_eynyh"]
@@ -21,11 +23,16 @@
 [ext_resource type="Texture2D" uid="uid://cy38obq3cnln" path="res://Assets/textures/deer_flowercrown.png" id="18_6y46q"]
 [ext_resource type="Texture2D" uid="uid://8t1cse0j8rnu" path="res://Assets/textures/squirrel_basket.png" id="19_bee6c"]
 [ext_resource type="PackedScene" uid="uid://dy4har8tg2gte" path="res://Stages/Z_DemoLevel/Demo Collectables/collectables/musicduck.tscn" id="20_mqu2i"]
+[ext_resource type="PackedScene" uid="uid://ch1e2tcbe8qb6" path="res://Stages/A_Forest/objects/rubberducky.tscn" id="22_b6pt6"]
+[ext_resource type="PackedScene" uid="uid://bem13ceghsmsp" path="res://Stages/A_Forest/objects/frog.tscn" id="24_tvooo"]
 
 [sub_resource type="Theme" id="Theme_52hgw"]
 
 [node name="Forest01" type="Node2D"]
 script = ExtResource("1_mqu2i")
+
+[node name="Grass" parent="." instance=ExtResource("2_xl0wm")]
+visible = false
 
 [node name="Camera2D" type="Camera2D" parent="."]
 position = Vector2(958, 544)
@@ -185,9 +192,28 @@ horizontal_alignment = 1
 vertical_alignment = 1
 uppercase = true
 
-[node name="TextureRect2" type="TextureRect" parent="CanvasLayer/Control/Panel/MarginContainer/searchlist/GridContainer"]
+[node name="rubberducky_icon" type="TextureRect" parent="CanvasLayer/Control/Panel/MarginContainer/searchlist/GridContainer"]
 layout_mode = 2
 texture = ExtResource("4_b7tjf")
+
+[node name="TextureRect" type="TextureRect" parent="CanvasLayer/Control/Panel/MarginContainer/searchlist/GridContainer/rubberducky_icon"]
+layout_mode = 0
+offset_left = 27.9143
+offset_top = 30.0
+offset_right = 110.914
+offset_bottom = 115.0
+scale = Vector2(0.53209, 0.53209)
+texture = ExtResource("7_b7tjf")
+
+[node name="Label" type="Label" parent="CanvasLayer/Control/Panel/MarginContainer/searchlist/GridContainer/rubberducky_icon"]
+layout_mode = 0
+offset_left = 11.9323
+offset_top = 92.0
+offset_right = 93.9323
+offset_bottom = 115.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 12
+text = "Rubber Ducky"
 
 [node name="TextureRect3" type="TextureRect" parent="CanvasLayer/Control/Panel/MarginContainer/searchlist/GridContainer"]
 layout_mode = 2
@@ -272,15 +298,6 @@ texture = ExtResource("4_b7tjf")
 [node name="TextureRect25" type="TextureRect" parent="CanvasLayer/Control/Panel/MarginContainer/searchlist/GridContainer"]
 layout_mode = 2
 texture = ExtResource("4_b7tjf")
-
-[node name="grassbg" type="ColorRect" parent="."]
-offset_left = -111.0
-offset_top = -300.0
-offset_right = 2482.0
-offset_bottom = 1266.0
-mouse_filter = 2
-color = Color(0.612375, 0.71, 0.4757, 1)
-metadata/_edit_lock_ = true
 
 [node name="Cherrytree1" type="Sprite2D" parent="."]
 y_sort_enabled = true
@@ -716,4 +733,15 @@ texture = ExtResource("11_yl8yh")
 [node name="musicduck" parent="." instance=ExtResource("20_mqu2i")]
 position = Vector2(1172, 596)
 
+[node name="rubberducky" parent="." instance=ExtResource("22_b6pt6")]
+position = Vector2(1393, 733)
+scale = Vector2(0.320005, 0.320005)
+
+[node name="Frog1" parent="." instance=ExtResource("24_tvooo")]
+position = Vector2(913, 700)
+
 [connection signal="is_found" from="musicduck" to="." method="on_object_found"]
+[connection signal="input_event" from="rubberducky" to="rubberducky" method="_on_input_event"]
+[connection signal="is_found" from="rubberducky" to="." method="on_object_found"]
+[connection signal="input_event" from="Frog1" to="Frog1" method="_on_input_event"]
+[connection signal="is_found" from="Frog1" to="." method="on_object_found"]

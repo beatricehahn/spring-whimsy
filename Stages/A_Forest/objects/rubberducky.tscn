@@ -1,0 +1,17 @@
+[gd_scene load_steps=4 format=3 uid="uid://ch1e2tcbe8qb6"]
+
+[ext_resource type="Script" uid="uid://dbfygrrd02f3c" path="res://Assets/Util/Collectable/collectable.gd" id="1_q08g7"]
+[ext_resource type="Texture2D" uid="uid://c63fwbtmbg3wm" path="res://Assets/Art/Levels/Demo Art/hidden objects/rubberducky.png" id="1_skwks"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_q08g7"]
+size = Vector2(79, 81)
+
+[node name="rubberducky" type="Area2D"]
+script = ExtResource("1_q08g7")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-0.5, -0.5)
+shape = SubResource("RectangleShape2D_q08g7")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_skwks")
