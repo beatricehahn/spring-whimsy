@@ -10,19 +10,8 @@
 [ext_resource type="Texture2D" uid="uid://opjkpyctnlr1" path="res://Assets/Art/Levels/Demo Art/Deco/basket 1.png" id="7_lpfbm"]
 [ext_resource type="Texture2D" uid="uid://rj18p88y6tob" path="res://Assets/Art/Levels/Demo Art/Deco/beavers and their basket.png" id="8_ali5n"]
 [ext_resource type="Texture2D" uid="uid://cleho8a2oagg2" path="res://Assets/Art/Levels/Demo Art/Deco/cherry blossom 2.png" id="9_ali5n"]
-
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_06t4h"]
-bg_color = Color(0.832057, 0.619955, 0.556165, 1)
-
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_rhts7"]
-bg_color = Color(1, 1, 1, 1)
-corner_radius_top_left = 16
-corner_radius_top_right = 16
-corner_radius_bottom_right = 16
-corner_radius_bottom_left = 16
-shadow_color = Color(0.109804, 0.109804, 0.109804, 0.505882)
-shadow_size = 1
-shadow_offset = Vector2(4, 4)
+[ext_resource type="Texture2D" uid="uid://c8fijwcg0g5u6" path="res://Assets/Interface/textures_ui/Exit.png" id="11_5j3so"]
+[ext_resource type="Texture2D" uid="uid://dvkputda0nact" path="res://Assets/Interface/textures_ui/Play.png" id="11_o8wmd"]
 
 [node name="MainMenu" type="Control"]
 layout_mode = 3
@@ -104,25 +93,13 @@ grow_horizontal = 2
 grow_vertical = 0
 theme_override_constants/separation = 16
 
-[node name="Start" type="Button" parent="VBoxContainer"]
+[node name="Play" type="TextureButton" parent="VBoxContainer"]
 layout_mode = 2
-size_flags_vertical = 3
-theme_override_colors/font_color = Color(0, 0, 0, 1)
-theme_override_fonts/font = ExtResource("2_jht8a")
-theme_override_font_sizes/font_size = 24
-theme_override_styles/pressed = SubResource("StyleBoxFlat_06t4h")
-theme_override_styles/normal = SubResource("StyleBoxFlat_rhts7")
-text = "Start"
+texture_normal = ExtResource("11_o8wmd")
 
-[node name="Quit" type="Button" parent="VBoxContainer"]
+[node name="Exit" type="TextureButton" parent="VBoxContainer"]
 layout_mode = 2
-size_flags_vertical = 3
-theme_override_colors/font_color = Color(0, 0, 0, 1)
-theme_override_fonts/font = ExtResource("2_jht8a")
-theme_override_font_sizes/font_size = 24
-theme_override_styles/pressed = SubResource("StyleBoxFlat_06t4h")
-theme_override_styles/normal = SubResource("StyleBoxFlat_rhts7")
-text = "Quit"
+texture_normal = ExtResource("11_5j3so")
 
 [node name="title" type="Label" parent="."]
 layout_mode = 1
@@ -144,5 +121,5 @@ text = "Spring Whimsy
 A Hidden Object Game"
 horizontal_alignment = 1
 
-[connection signal="pressed" from="VBoxContainer/Start" to="." method="_on_start_pressed"]
-[connection signal="pressed" from="VBoxContainer/Quit" to="." method="_on_quit_pressed"]
+[connection signal="pressed" from="VBoxContainer/Play" to="." method="_on_start_pressed"]
+[connection signal="pressed" from="VBoxContainer/Exit" to="." method="_on_quit_pressed"]

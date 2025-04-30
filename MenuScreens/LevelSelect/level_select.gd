@@ -10,6 +10,8 @@ func _ready() -> void:
 func _process(delta: float) -> void:
 	pass
 
+func _on_back_pressed() -> void:
+	TransitionScreen.change_scene("res://MenuScreens/MainMenu/main_menu.tscn")
 
 # Level Button Signals ==============================================
 

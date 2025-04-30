@@ -1,14 +1,24 @@
-[gd_scene load_steps=3 format=3 uid="uid://bfy30vvtg4si1"]
+[gd_scene load_steps=5 format=3 uid="uid://bfy30vvtg4si1"]
 
 [ext_resource type="Script" uid="uid://cbpqoawase5jh" path="res://MenuScreens/LevelSelect/level_select.gd" id="1_cxgy1"]
-[ext_resource type="Texture2D" uid="uid://df1eailehwedp" path="res://icon.svg" id="2_snvkq"]
+[ext_resource type="PackedScene" uid="uid://dlymie3y3jyw2" path="res://Stages/A_Forest/grass.tscn" id="2_nmcqp"]
+[ext_resource type="Texture2D" uid="uid://cwqe573oo5tgn" path="res://Assets/Interface/textures_ui/forest_photo_lvl_ui.png" id="3_nmcqp"]
+[ext_resource type="Texture2D" uid="uid://c1v4num82kllx" path="res://Assets/Interface/textures_ui/Back.png" id="4_nmcqp"]
 
 [node name="LevelSelect" type="Control"]
 layout_mode = 3
-anchors_preset = 0
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_right = -1920.0
+offset_bottom = -1080.0
+grow_horizontal = 2
+grow_vertical = 2
 script = ExtResource("1_cxgy1")
 
-[node name="Label" type="Label" parent="."]
+[node name="Grass" parent="." instance=ExtResource("2_nmcqp")]
+
+[node name="Scene Selection Label" type="Label" parent="."]
 layout_mode = 1
 anchors_preset = 5
 anchor_left = 0.5
@@ -18,24 +28,40 @@ offset_top = 77.0
 offset_right = 1204.0
 offset_bottom = 165.0
 grow_horizontal = 2
+theme_override_colors/font_color = Color(0.490196, 0.215686, 0, 1)
 theme_override_font_sizes/font_size = 64
 text = "Scene Selection"
 
-[node name="MarginContainer" type="MarginContainer" parent="."]
+[node name="Levels" type="MarginContainer" parent="."]
 layout_mode = 1
-offset_top = 224.0
-offset_right = 1919.0
-offset_bottom = 1071.0
+offset_right = 1924.0
+offset_bottom = 1080.0
 theme_override_constants/margin_left = 32
 theme_override_constants/margin_top = 32
 theme_override_constants/margin_right = 32
 theme_override_constants/margin_bottom = 32
 
-[node name="HBoxContainer" type="HBoxContainer" parent="MarginContainer"]
+[node name="HBoxContainer" type="HBoxContainer" parent="Levels"]
 layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
 
-[node name="forestlvl" type="TextureButton" parent="MarginContainer/HBoxContainer"]
+[node name="forestlvl" type="TextureButton" parent="Levels/HBoxContainer"]
 layout_mode = 2
-texture_normal = ExtResource("2_snvkq")
+texture_normal = ExtResource("3_nmcqp")
 
-[connection signal="pressed" from="MarginContainer/HBoxContainer/forestlvl" to="." method="_on_forestlevel_pressed"]
+[node name="MarginContainer" type="MarginContainer" parent="."]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+theme_override_constants/margin_left = 32
+theme_override_constants/margin_top = 32
+theme_override_constants/margin_right = 32
+theme_override_constants/margin_bottom = 32
+
+[node name="Back" type="TextureButton" parent="MarginContainer"]
+layout_mode = 2
+texture_normal = ExtResource("4_nmcqp")
+
+[connection signal="pressed" from="Levels/HBoxContainer/forestlvl" to="." method="_on_forestlevel_pressed"]
+[connection signal="pressed" from="MarginContainer/Back" to="." method="_on_back_pressed"]
