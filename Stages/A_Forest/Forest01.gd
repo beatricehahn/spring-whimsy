@@ -6,7 +6,7 @@ extends Node2D
 
 @onready var pause_btn = $CanvasLayer/Control/Pause
 @onready var pause_menu = $CanvasLayer/PauseMenu
-var paused = false
+@onready var is_paused = pause_menu.is_paused
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
@@ -22,16 +22,13 @@ func _process(delta: float) -> void:
 		pauseMenu()
 
 func pauseMenu():
-	if paused:
+	if is_paused:
 		pause_menu.hide()
-		pause_btn.show()
 		Engine.time_scale = 1
 	else:
 		pause_menu.show()
-		pause_btn.hide()
 		Engine.time_scale = 0
 	
-	paused = !paused
 
 # Triggers when hidden object emits a "found" signal
 func on_object_found(object_name: String) -> void:
@@ -76,19 +73,6 @@ func increment_sum() -> void:
 
 # Pause game world when player clicks pause button
 func _on_pause_pressed() -> void:
-	print("Pause Button was clicked.")
+	print("Pause Button was clicked. is_Paused value is " + str(is_paused))
 	pauseMenu()
 	
-	# hide UI bar
-	
-	# get_tree().paused = true
-	
-# Un-pause game if player clicks resume game button
-func _on_resume_pressed()-> void:
-	get_tree().paused = false
-	
-	# show UI bar again
-
-# Quit to title
-func _on_quit_to_title()-> void:
-	TransitionScreen.change_scene("res://MenuScreens/MainMenu/main_menu.tscn")
