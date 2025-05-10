@@ -1,22 +1,36 @@
-[gd_scene load_steps=5 format=3 uid="uid://bfy30vvtg4si1"]
+[gd_scene load_steps=10 format=3 uid="uid://bfy30vvtg4si1"]
 
 [ext_resource type="Script" uid="uid://cbpqoawase5jh" path="res://MenuScreens/LevelSelect/level_select.gd" id="1_cxgy1"]
-[ext_resource type="PackedScene" uid="uid://dlymie3y3jyw2" path="res://Stages/A_Forest/grass.tscn" id="2_nmcqp"]
+[ext_resource type="FontFile" uid="uid://b5tfhyq3vh05d" path="res://Assets/Fonts/ComingSoon.ttf" id="3_b8yqt"]
 [ext_resource type="Texture2D" uid="uid://cwqe573oo5tgn" path="res://Assets/Interface/textures_ui/forest_photo_lvl_ui.png" id="3_nmcqp"]
-[ext_resource type="Texture2D" uid="uid://c1v4num82kllx" path="res://Assets/Interface/textures_ui/Back.png" id="4_nmcqp"]
+[ext_resource type="Texture2D" uid="uid://e3t4l4qexkid" path="res://Assets/Interface/textures_ui/Back_new.png" id="5_0x8le"]
+[ext_resource type="Texture2D" uid="uid://c8w2tlcxet7am" path="res://Assets/textures/cherrytree_1.png" id="6_ri6ts"]
+[ext_resource type="Texture2D" uid="uid://cohcv3mlg04ql" path="res://Assets/textures/cherrytree_3.png" id="7_crf1t"]
+[ext_resource type="Texture2D" uid="uid://dgjfgbaauyek8" path="res://Assets/textures/cherrytree_4.png" id="8_rbodw"]
+[ext_resource type="Texture2D" uid="uid://ufmd4neqa088" path="res://Assets/textures/rock_4.png" id="10_iunll"]
+[ext_resource type="Texture2D" uid="uid://dhgj5jt8vu6aw" path="res://Assets/textures/rock_3.png" id="11_3lnk0"]
 
 [node name="LevelSelect" type="Control"]
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
-offset_right = -1920.0
-offset_bottom = -1080.0
+offset_left = -320.0
+offset_top = -180.0
+offset_right = -1600.0
+offset_bottom = -900.0
 grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_cxgy1")
 
-[node name="Grass" parent="." instance=ExtResource("2_nmcqp")]
+[node name="pinkbg" type="ColorRect" parent="."]
+layout_mode = 0
+offset_left = 304.0
+offset_top = 151.0
+offset_right = 1606.0
+offset_bottom = 926.0
+mouse_filter = 2
+color = Color(0.971899, 0.714413, 0.736345, 1)
 
 [node name="Scene Selection Label" type="Label" parent="."]
 layout_mode = 1
@@ -24,18 +38,21 @@ anchors_preset = 5
 anchor_left = 0.5
 anchor_right = 0.5
 offset_left = 725.0
-offset_top = 77.0
+offset_top = 183.0
 offset_right = 1204.0
-offset_bottom = 165.0
+offset_bottom = 281.0
 grow_horizontal = 2
-theme_override_colors/font_color = Color(0.490196, 0.215686, 0, 1)
+theme_override_colors/font_color = Color(0.377166, 0.236789, 0.248729, 1)
+theme_override_fonts/font = ExtResource("3_b8yqt")
 theme_override_font_sizes/font_size = 64
 text = "Scene Selection"
 
 [node name="Levels" type="MarginContainer" parent="."]
 layout_mode = 1
-offset_right = 1924.0
-offset_bottom = 1080.0
+offset_left = 322.0
+offset_top = 185.0
+offset_right = 1603.0
+offset_bottom = 898.0
 theme_override_constants/margin_left = 32
 theme_override_constants/margin_top = 32
 theme_override_constants/margin_right = 32
@@ -46,22 +63,68 @@ layout_mode = 2
 size_flags_horizontal = 4
 size_flags_vertical = 4
 
+[node name="starrynightlvl" type="TextureButton" parent="Levels/HBoxContainer"]
+visible = false
+layout_mode = 2
+texture_normal = ExtResource("3_nmcqp")
+
+[node name="duckislandlvl" type="TextureButton" parent="Levels/HBoxContainer"]
+visible = false
+layout_mode = 2
+texture_normal = ExtResource("3_nmcqp")
+
 [node name="forestlvl" type="TextureButton" parent="Levels/HBoxContainer"]
 layout_mode = 2
 texture_normal = ExtResource("3_nmcqp")
 
 [node name="MarginContainer" type="MarginContainer" parent="."]
 layout_mode = 0
-offset_right = 40.0
-offset_bottom = 40.0
-theme_override_constants/margin_left = 32
-theme_override_constants/margin_top = 32
-theme_override_constants/margin_right = 32
-theme_override_constants/margin_bottom = 32
+offset_left = 320.0
+offset_top = 181.0
+offset_right = 529.0
+offset_bottom = 390.0
+theme_override_constants/margin_left = 64
+theme_override_constants/margin_top = 64
+theme_override_constants/margin_right = 64
+theme_override_constants/margin_bottom = 64
 
 [node name="Back" type="TextureButton" parent="MarginContainer"]
 layout_mode = 2
-texture_normal = ExtResource("4_nmcqp")
+texture_normal = ExtResource("5_0x8le")
 
+[node name="Cherrytree1" type="Sprite2D" parent="."]
+position = Vector2(251, 903)
+texture = ExtResource("6_ri6ts")
+
+[node name="Cherrytree3" type="Sprite2D" parent="."]
+position = Vector2(350, 885)
+texture = ExtResource("7_crf1t")
+
+[node name="Cherrytree4" type="Sprite2D" parent="."]
+position = Vector2(488, 917)
+texture = ExtResource("8_rbodw")
+
+[node name="Cherrytree6" type="Sprite2D" parent="."]
+position = Vector2(1527, 657)
+texture = ExtResource("8_rbodw")
+
+[node name="Cherrytree7" type="Sprite2D" parent="."]
+position = Vector2(1386.5, 569)
+texture = ExtResource("6_ri6ts")
+
+[node name="Cherrytree8" type="Sprite2D" parent="."]
+position = Vector2(1215.5, 629)
+texture = ExtResource("8_rbodw")
+
+[node name="Rock4" type="Sprite2D" parent="."]
+position = Vector2(220, 1000)
+texture = ExtResource("10_iunll")
+
+[node name="Rock3" type="Sprite2D" parent="."]
+position = Vector2(425, 1063)
+texture = ExtResource("11_3lnk0")
+
+[connection signal="pressed" from="Levels/HBoxContainer/starrynightlvl" to="." method="_on_forestlevel_pressed"]
+[connection signal="pressed" from="Levels/HBoxContainer/duckislandlvl" to="." method="_on_forestlevel_pressed"]
 [connection signal="pressed" from="Levels/HBoxContainer/forestlvl" to="." method="_on_forestlevel_pressed"]
 [connection signal="pressed" from="MarginContainer/Back" to="." method="_on_back_pressed"]

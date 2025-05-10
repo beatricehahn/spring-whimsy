@@ -1,4 +1,4 @@
-[gd_scene load_steps=34 format=3 uid="uid://wy3uvcvhfa21"]
+[gd_scene load_steps=29 format=3 uid="uid://wy3uvcvhfa21"]
 
 [ext_resource type="Script" uid="uid://dl8pj6mhgku5i" path="res://MenuScreens/MainMenu/main_menu.gd" id="1_06t4h"]
 [ext_resource type="Texture2D" uid="uid://b81wl6iyvrw78" path="res://MenuScreens/MainMenu/textures_mainmenu/bg@0.3x.png" id="2_m5i6s"]
@@ -8,14 +8,13 @@
 [ext_resource type="Texture2D" uid="uid://xgpkxyem2hsi" path="res://Assets/Art/Levels/Demo Art/hidden objects/snail 1.png" id="6_al2h2"]
 [ext_resource type="Texture2D" uid="uid://opjkpyctnlr1" path="res://Assets/Art/Levels/Demo Art/Deco/basket 1.png" id="7_lpfbm"]
 [ext_resource type="Texture2D" uid="uid://rj18p88y6tob" path="res://Assets/Art/Levels/Demo Art/Deco/beavers and their basket.png" id="8_ali5n"]
-[ext_resource type="Texture2D" uid="uid://c8fijwcg0g5u6" path="res://Assets/Interface/textures_ui/Exit.png" id="11_5j3so"]
+[ext_resource type="Texture2D" uid="uid://cor2wr2um6ku" path="res://Assets/Interface/textures_ui/Quit.png" id="10_gd5t4"]
 [ext_resource type="Texture2D" uid="uid://dvkputda0nact" path="res://Assets/Interface/textures_ui/Play.png" id="11_o8wmd"]
 [ext_resource type="Texture2D" uid="uid://7fkmd8a5e3d3" path="res://MenuScreens/MainMenu/textures_mainmenu/title@0.3x.png" id="12_5j3so"]
 [ext_resource type="Texture2D" uid="uid://tdl3qopfplmm" path="res://MenuScreens/MainMenu/textures_mainmenu/snail@0.3x.png" id="12_qm7uu"]
 [ext_resource type="Texture2D" uid="uid://cm3o1vd1refbl" path="res://MenuScreens/MainMenu/textures_mainmenu/toyboat@0.3x.png" id="13_tl43r"]
 [ext_resource type="Texture2D" uid="uid://c4noh72erg7jg" path="res://MenuScreens/MainMenu/textures_mainmenu/tree@0.3x.png" id="14_c1hie"]
 [ext_resource type="Texture2D" uid="uid://b2fp7yv5a4ye2" path="res://MenuScreens/MainMenu/textures_mainmenu/key@0.3x.png" id="15_7as2j"]
-[ext_resource type="Texture2D" uid="uid://5wkif2yvllfu" path="res://MenuScreens/MainMenu/textures_mainmenu/capybara@0.3x.png" id="16_6qjqs"]
 [ext_resource type="Texture2D" uid="uid://nth02hgqcxxg" path="res://MenuScreens/MainMenu/textures_mainmenu/beach ball@0.3x.png" id="17_nfe8c"]
 [ext_resource type="Texture2D" uid="uid://bwfbgb0e1x2nl" path="res://MenuScreens/MainMenu/textures_mainmenu/sheep@0.3x.png" id="18_nfe8c"]
 [ext_resource type="Texture2D" uid="uid://dm8d84o7bnuwp" path="res://MenuScreens/MainMenu/textures_mainmenu/kite@0.3x.png" id="19_aoshj"]
@@ -27,12 +26,8 @@
 [ext_resource type="Texture2D" uid="uid://ilvw6xktm8g4" path="res://Assets/textures/mushroom_patch_1.png" id="25_w1b72"]
 [ext_resource type="Texture2D" uid="uid://b4daxbsro27o0" path="res://Assets/textures/frog_on_lilipadmat.png" id="26_b1xs2"]
 [ext_resource type="Texture2D" uid="uid://clsrhbwaa41p5" path="res://Assets/textures/frog_1.png" id="27_u7m8x"]
-[ext_resource type="Texture2D" uid="uid://t23nbhpwkl4w" path="res://Assets/textures/bush_2.png" id="28_kc7em"]
 [ext_resource type="Texture2D" uid="uid://bnhxvij28s3pb" path="res://Assets/textures/bush_1.png" id="29_o8t2a"]
 [ext_resource type="Texture2D" uid="uid://bm181kapgic1j" path="res://Assets/textures/cherrytree_2.png" id="30_16n5p"]
-[ext_resource type="Texture2D" uid="uid://cohcv3mlg04ql" path="res://Assets/textures/cherrytree_3.png" id="31_f807g"]
-[ext_resource type="Texture2D" uid="uid://dgjfgbaauyek8" path="res://Assets/textures/cherrytree_4.png" id="32_bppcv"]
-[ext_resource type="Texture2D" uid="uid://dfnkb4f3f36pp" path="res://Assets/textures/hedgehog_cake.png" id="33_gd5t4"]
 
 [node name="MainMenu" type="Control"]
 layout_mode = 3
@@ -44,17 +39,16 @@ grow_vertical = 2
 script = ExtResource("1_06t4h")
 
 [node name="Background" type="Sprite2D" parent="."]
-position = Vector2(960.5, 544)
-scale = Vector2(1.6849, 1.71605)
+position = Vector2(672.5, 182)
+scale = Vector2(1.22483, 1.71605)
 texture = ExtResource("2_m5i6s")
-metadata/_edit_lock_ = true
 
 [node name="Musicduck" type="Sprite2D" parent="."]
-position = Vector2(1588, 913)
+position = Vector2(321, 673)
 texture = ExtResource("3_lpfbm")
 
 [node name="Blanket3" type="Sprite2D" parent="."]
-position = Vector2(419, 853)
+position = Vector2(947, 474)
 scale = Vector2(0.69183, 0.561836)
 texture = ExtResource("4_al2h2")
 
@@ -64,17 +58,12 @@ scale = Vector2(0.331325, 0.331325)
 texture = ExtResource("5_mp05l")
 
 [node name="Snail1" type="Sprite2D" parent="."]
-position = Vector2(1732, 588)
+position = Vector2(1151, 251)
 scale = Vector2(0.435065, 0.435065)
 texture = ExtResource("6_al2h2")
 
-[node name="Basket1" type="Sprite2D" parent="."]
-position = Vector2(1419, 941)
-scale = Vector2(0.60628, 0.60628)
-texture = ExtResource("7_lpfbm")
-
 [node name="BeaversAndTheirBasket" type="Sprite2D" parent="."]
-position = Vector2(407, 839)
+position = Vector2(926, 459)
 texture = ExtResource("8_ali5n")
 
 [node name="VBoxContainer" type="VBoxContainer" parent="."]
@@ -98,55 +87,52 @@ texture_normal = ExtResource("11_o8wmd")
 
 [node name="Exit" type="TextureButton" parent="VBoxContainer"]
 layout_mode = 2
-texture_normal = ExtResource("11_5j3so")
+texture_normal = ExtResource("10_gd5t4")
+
+[node name="Sheep_0_3x" type="Sprite2D" parent="."]
+position = Vector2(1086, 105)
+texture = ExtResource("18_nfe8c")
 
 [node name="Title" type="Sprite2D" parent="."]
-position = Vector2(964, 452)
+position = Vector2(626, 221)
+scale = Vector2(0.70979, 0.70979)
 texture = ExtResource("12_5j3so")
 
+[node name="Tree_0_3x2" type="Sprite2D" parent="."]
+position = Vector2(259, 353)
+texture = ExtResource("14_c1hie")
+
+[node name="Basket1" type="Sprite2D" parent="."]
+position = Vector2(192, 513)
+scale = Vector2(0.60628, 0.60628)
+texture = ExtResource("7_lpfbm")
+
 [node name="Snail_0_3x" type="Sprite2D" parent="."]
-position = Vector2(761, 994)
+position = Vector2(576, 637)
 texture = ExtResource("12_qm7uu")
 
 [node name="Toyboat_0_3x" type="Sprite2D" parent="."]
-position = Vector2(307, 511)
+position = Vector2(227, 129)
 texture = ExtResource("13_tl43r")
-
-[node name="Tree_0_3x2" type="Sprite2D" parent="."]
-position = Vector2(1929, 244)
-texture = ExtResource("14_c1hie")
-
-[node name="Tree_0_3x" type="Sprite2D" parent="."]
-position = Vector2(1813, 496)
-scale = Vector2(1.43431, 1.43431)
-texture = ExtResource("14_c1hie")
 
 [node name="Key_0_3x" type="Sprite2D" parent="."]
 position = Vector2(1671, 1020)
 texture = ExtResource("15_7as2j")
 
-[node name="Capybara_0_3x" type="Sprite2D" parent="."]
-position = Vector2(1269, 703)
-texture = ExtResource("16_6qjqs")
-
 [node name="BeachBall_0_3x" type="Sprite2D" parent="."]
-position = Vector2(276, 366)
+position = Vector2(1209, 332)
 texture = ExtResource("17_nfe8c")
 
-[node name="Sheep_0_3x" type="Sprite2D" parent="."]
-position = Vector2(196, 151)
-texture = ExtResource("18_nfe8c")
-
 [node name="Snail_0_3x2" type="Sprite2D" parent="."]
-position = Vector2(507, 244)
+position = Vector2(118, 31)
 texture = ExtResource("12_qm7uu")
 
 [node name="Kite_0_3x" type="Sprite2D" parent="."]
-position = Vector2(613, 153)
+position = Vector2(1158, 617)
 texture = ExtResource("19_aoshj")
 
 [node name="Balloons_0_3x" type="Sprite2D" parent="."]
-position = Vector2(1717, 667)
+position = Vector2(1136, 94)
 scale = Vector2(1.47143, 1.47143)
 texture = ExtResource("20_dutds")
 
@@ -160,7 +146,7 @@ position = Vector2(665, 587)
 texture = ExtResource("22_o2r3f")
 
 [node name="Tulips_0_3x2" type="Sprite2D" parent="."]
-position = Vector2(1461, 348)
+position = Vector2(1244, 240)
 texture = ExtResource("22_o2r3f")
 
 [node name="Tulips_0_3x3" type="Sprite2D" parent="."]
@@ -168,19 +154,19 @@ position = Vector2(1202, 919)
 texture = ExtResource("22_o2r3f")
 
 [node name="Tulips_0_3x4" type="Sprite2D" parent="."]
-position = Vector2(159, 1009)
+position = Vector2(732, 652)
 texture = ExtResource("22_o2r3f")
 
 [node name="Tulips_0_3x5" type="Sprite2D" parent="."]
-position = Vector2(84, 727)
+position = Vector2(47, 664)
 texture = ExtResource("22_o2r3f")
 
 [node name="Tulips_0_3x6" type="Sprite2D" parent="."]
-position = Vector2(113, 358)
+position = Vector2(45, 44)
 texture = ExtResource("22_o2r3f")
 
 [node name="Tulips_0_3x7" type="Sprite2D" parent="."]
-position = Vector2(372, 239)
+position = Vector2(976, 239)
 texture = ExtResource("22_o2r3f")
 
 [node name="Tulips_0_3x8" type="Sprite2D" parent="."]
@@ -192,23 +178,15 @@ position = Vector2(473, 11)
 texture = ExtResource("22_o2r3f")
 
 [node name="Tulips_0_3x10" type="Sprite2D" parent="."]
-position = Vector2(1500, 504)
+position = Vector2(1041, 662)
 texture = ExtResource("22_o2r3f")
 
-[node name="Toyboat_0_3x2" type="Sprite2D" parent="."]
-position = Vector2(1565, 52)
-texture = ExtResource("13_tl43r")
-
 [node name="Toyboat_0_3x3" type="Sprite2D" parent="."]
-position = Vector2(1521, 153)
+position = Vector2(803, -10)
 texture = ExtResource("13_tl43r")
 
 [node name="Bush_0_3x" type="Sprite2D" parent="."]
-position = Vector2(753, 179)
-texture = ExtResource("21_mg587")
-
-[node name="Bush_0_3x2" type="Sprite2D" parent="."]
-position = Vector2(598, 636)
+position = Vector2(1272, 427)
 texture = ExtResource("21_mg587")
 
 [node name="Rock3" type="Sprite2D" parent="."]
@@ -224,64 +202,20 @@ position = Vector2(1179, 999)
 texture = ExtResource("25_w1b72")
 
 [node name="FrogOnLilipadmat" type="Sprite2D" parent="."]
-position = Vector2(164, 613)
+position = Vector2(631, 53)
 texture = ExtResource("26_b1xs2")
 
 [node name="Frog1" type="Sprite2D" parent="."]
-position = Vector2(1204, 146)
+position = Vector2(1211, 615)
 texture = ExtResource("27_u7m8x")
 
-[node name="Bush2" type="Sprite2D" parent="."]
-position = Vector2(1296, 57)
-texture = ExtResource("28_kc7em")
-
 [node name="Bush1" type="Sprite2D" parent="."]
-position = Vector2(1176, 158)
+position = Vector2(1242, 177)
 texture = ExtResource("29_o8t2a")
 
 [node name="Cherrytree2" type="Sprite2D" parent="."]
-position = Vector2(1369, -67)
+position = Vector2(-297, 158)
 texture = ExtResource("30_16n5p")
-
-[node name="Cherrytree3" type="Sprite2D" parent="."]
-position = Vector2(1241, 26)
-texture = ExtResource("31_f807g")
-
-[node name="Cherrytree4" type="Sprite2D" parent="."]
-position = Vector2(1577, 251)
-texture = ExtResource("32_bppcv")
-
-[node name="HedgehogCake" type="Sprite2D" parent="."]
-position = Vector2(1455, 874)
-texture = ExtResource("33_gd5t4")
-
-[node name="Bush3" type="Sprite2D" parent="."]
-position = Vector2(1410, 650)
-texture = ExtResource("29_o8t2a")
-
-[node name="Bush4" type="Sprite2D" parent="."]
-position = Vector2(1415, 709)
-texture = ExtResource("28_kc7em")
-
-[node name="Bush5" type="Sprite2D" parent="."]
-position = Vector2(1367, 752)
-texture = ExtResource("28_kc7em")
-
-[node name="Bush6" type="Sprite2D" parent="."]
-position = Vector2(1279, 778)
-texture = ExtResource("28_kc7em")
-
-[node name="Bush7" type="Sprite2D" parent="."]
-position = Vector2(732, 988)
-texture = ExtResource("28_kc7em")
-
-[node name="Bush8" type="Sprite2D" parent="."]
-position = Vector2(705, 1023)
-texture = ExtResource("28_kc7em")
-
-[node name="Bush9" type="Sprite2D" parent="."]
-position = Vector2(639, 957)
-texture = ExtResource("28_kc7em")
 
 [connection signal="pressed" from="VBoxContainer/Play" to="." method="_on_start_pressed"]
 [connection signal="pressed" from="VBoxContainer/Exit" to="." method="_on_quit_pressed"]

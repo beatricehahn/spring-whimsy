@@ -1,10 +1,9 @@
-[gd_scene load_steps=63 format=3 uid="uid://c7e1nqwk25hbe"]
+[gd_scene load_steps=64 format=3 uid="uid://c7e1nqwk25hbe"]
 
 [ext_resource type="Script" uid="uid://6a2ehwuxrouf" path="res://Stages/A_Forest/Forest01.gd" id="1_mqu2i"]
 [ext_resource type="Script" uid="uid://cigf00o02l1xv" path="res://Assets/Util/Camera/camera_control.gd" id="2_5iqwd"]
-[ext_resource type="PackedScene" uid="uid://dlymie3y3jyw2" path="res://Stages/A_Forest/grass.tscn" id="2_xl0wm"]
+[ext_resource type="PackedScene" uid="uid://ck0avdt4m3r2g" path="res://MenuScreens/PauseMenu/PauseMenu.tscn" id="2_yeclv"]
 [ext_resource type="Theme" uid="uid://7vyw8pr30dth" path="res://Assets/Fonts/springthemefont.tres" id="3_b6pt6"]
-[ext_resource type="Texture2D" uid="uid://de7slosvqg6gt" path="res://Assets/Interface/textures_ui/Pause.png" id="4_xbwpv"]
 [ext_resource type="Texture2D" uid="uid://c8w2tlcxet7am" path="res://Assets/textures/cherrytree_1.png" id="6_xl0wm"]
 [ext_resource type="Texture2D" uid="uid://u4dq4deanoae" path="res://Assets/Interface/textures_ui/searchlist_photo_textures/frog1_photo.png" id="6_xswqy"]
 [ext_resource type="Texture2D" uid="uid://d1lb3jplwahbj" path="res://Assets/Interface/textures_ui/searchlist_photo_textures/musicduck_photo.png" id="7_eynyh"]
@@ -24,6 +23,7 @@
 [ext_resource type="Texture2D" uid="uid://b0hx8vkst0o20" path="res://Assets/Interface/textures_ui/searchlist_photo_textures/teafrog_photo.png" id="14_8c88a"]
 [ext_resource type="Texture2D" uid="uid://t23nbhpwkl4w" path="res://Assets/textures/bush_2.png" id="14_v5x7a"]
 [ext_resource type="Texture2D" uid="uid://dgjfgbaauyek8" path="res://Assets/textures/cherrytree_4.png" id="15_mv4vx"]
+[ext_resource type="Texture2D" uid="uid://di8lu48c3i264" path="res://Assets/Interface/textures_ui/Pause_new.png" id="15_r6l72"]
 [ext_resource type="Texture2D" uid="uid://cohcv3mlg04ql" path="res://Assets/textures/cherrytree_3.png" id="16_1vqsg"]
 [ext_resource type="Texture2D" uid="uid://b4daxbsro27o0" path="res://Assets/textures/frog_on_lilipadmat.png" id="17_u4v31"]
 [ext_resource type="Texture2D" uid="uid://8t1cse0j8rnu" path="res://Assets/textures/squirrel_basket.png" id="19_bee6c"]
@@ -62,16 +62,23 @@
 [ext_resource type="Texture2D" uid="uid://c4noh72erg7jg" path="res://MenuScreens/MainMenu/textures_mainmenu/tree@0.3x.png" id="61_yeclv"]
 [ext_resource type="Texture2D" uid="uid://cm3o1vd1refbl" path="res://MenuScreens/MainMenu/textures_mainmenu/toyboat@0.3x.png" id="62_r6l72"]
 
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_k08wi"]
+
 [sub_resource type="Theme" id="Theme_52hgw"]
 
 [node name="Forest01" type="Node2D"]
 script = ExtResource("1_mqu2i")
 
-[node name="Grass" parent="." instance=ExtResource("2_xl0wm")]
-metadata/_edit_lock_ = true
+[node name="greenbg" type="ColorRect" parent="."]
+offset_left = -1360.0
+offset_top = -240.0
+offset_right = 3165.0
+offset_bottom = 2314.0
+mouse_filter = 2
+color = Color(0.699205, 0.773438, 0.516632, 1)
 
 [node name="Camera2D" type="Camera2D" parent="."]
-position = Vector2(962, 1186)
+position = Vector2(646, 364)
 script = ExtResource("2_5iqwd")
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
@@ -87,49 +94,66 @@ scale = Vector2(1.00113, 1)
 mouse_filter = 2
 metadata/_edit_lock_ = true
 
-[node name="Panel" type="Panel" parent="CanvasLayer/Control"]
-layout_mode = 0
-offset_left = 24.9718
-offset_top = 828.0
-offset_right = 1884.97
-offset_bottom = 1054.0
-
-[node name="Pause" type="MarginContainer" parent="CanvasLayer/Control/Panel"]
+[node name="Pause" type="MarginContainer" parent="CanvasLayer/Control"]
 layout_mode = 1
-offset_right = 169.0
-offset_bottom = 169.0
-theme_override_constants/margin_left = 48
-theme_override_constants/margin_top = 48
-theme_override_constants/margin_right = 48
-theme_override_constants/margin_bottom = 48
+offset_top = 1.0
+offset_right = 201.0
+offset_bottom = 202.0
+theme_override_constants/margin_left = 64
+theme_override_constants/margin_top = 64
+theme_override_constants/margin_right = 64
+theme_override_constants/margin_bottom = 64
 
-[node name="pause" type="TextureButton" parent="CanvasLayer/Control/Panel/Pause"]
+[node name="pause" type="TextureButton" parent="CanvasLayer/Control/Pause"]
 process_mode = 3
 layout_mode = 2
-texture_normal = ExtResource("4_xbwpv")
+texture_normal = ExtResource("15_r6l72")
+
+[node name="Panel" type="Panel" parent="CanvasLayer/Control"]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -609.0
+offset_top = -237.0
+offset_right = 577.0
+offset_bottom = -74.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_styles/panel = SubResource("StyleBoxEmpty_k08wi")
+
+[node name="ColorRect" type="ColorRect" parent="CanvasLayer/Control/Panel"]
+layout_mode = 0
+offset_right = 1214.0
+offset_bottom = 220.0
+color = Color(0.773438, 0.459229, 0.487792, 0.764706)
 
 [node name="Level Title" type="Label" parent="CanvasLayer/Control/Panel"]
 layout_mode = 1
-offset_left = 211.761
-offset_top = 24.0
-offset_right = 466.761
-offset_bottom = 86.0
+offset_left = 19.9424
+offset_top = 16.0
+offset_right = 274.942
+offset_bottom = 78.0
 theme = ExtResource("3_b6pt6")
+theme_override_colors/font_color = Color(0.215686, 0.0745098, 0.0862745, 1)
 theme_override_font_sizes/font_size = 40
 text = "The Forest"
 
 [node name="Score" type="Label" parent="CanvasLayer/Control/Panel"]
 layout_mode = 1
-anchors_preset = 5
-anchor_left = 0.5
-anchor_right = 0.5
-offset_left = -718.239
-offset_top = 92.0
-offset_right = -463.239
-offset_bottom = 137.0
-grow_horizontal = 2
+anchors_preset = 4
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 24.9368
+offset_top = -22.5
+offset_right = 279.937
+offset_bottom = 22.5
+grow_vertical = 2
+theme_override_colors/font_color = Color(0.214844, 0.0763702, 0.0879099, 1)
 theme_override_font_sizes/font_size = 32
-text = "FOUND: X / 10"
+text = "FOUND: 0 / 10"
 
 [node name="MarginContainer" type="MarginContainer" parent="CanvasLayer/Control/Panel"]
 layout_mode = 1
@@ -138,10 +162,10 @@ anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-offset_left = -443.0
-offset_top = -118.0
-offset_right = 903.0
-offset_bottom = 131.0
+offset_left = -358.0
+offset_top = -88.5
+offset_right = 653.0
+offset_bottom = 156.5
 grow_horizontal = 2
 grow_vertical = 2
 theme_override_constants/margin_left = 32
@@ -193,6 +217,14 @@ texture = ExtResource("13_p6khe")
 [node name="teafrog_icon" type="TextureRect" parent="CanvasLayer/Control/Panel/MarginContainer/searchlist/HBoxContainer"]
 layout_mode = 2
 texture = ExtResource("14_8c88a")
+
+[node name="PauseMenu" parent="CanvasLayer" instance=ExtResource("2_yeclv")]
+visible = false
+visibility_layer = 513
+offset_left = 5.99994
+offset_top = 1.0
+offset_right = 5.99994
+offset_bottom = 1.0
 
 [node name="Cherrytree1" type="Sprite2D" parent="."]
 y_sort_enabled = true
@@ -667,7 +699,7 @@ texture = ExtResource("41_w37xm")
 position = Vector2(-129, 1350)
 
 [node name="turtle" parent="." instance=ExtResource("43_dvswm")]
-position = Vector2(315, 1505)
+position = Vector2(477, 1484)
 
 [node name="toyboat" parent="." instance=ExtResource("44_krlm7")]
 position = Vector2(-25, 1541)
@@ -851,7 +883,8 @@ texture = ExtResource("59_phs54")
 position = Vector2(-850, 934)
 
 [node name="Snail_0_3x4" type="Sprite2D" parent="."]
-position = Vector2(1276, 249)
+position = Vector2(1285.25, 261.75)
+scale = Vector2(0.668675, 0.632075)
 texture = ExtResource("59_phs54")
 
 [node name="Tulips_0_3x" type="Sprite2D" parent="."]
@@ -875,11 +908,12 @@ position = Vector2(-710, 1008)
 texture = ExtResource("60_1wasv")
 
 [node name="Snail_0_3x5" type="Sprite2D" parent="."]
-position = Vector2(1242, 458)
+position = Vector2(1231.25, 465.25)
+scale = Vector2(0.740964, 0.726415)
 texture = ExtResource("59_phs54")
 
 [node name="Tree_0_3x" type="Sprite2D" parent="."]
-position = Vector2(67, 910)
+position = Vector2(56, 893)
 texture = ExtResource("61_yeclv")
 
 [node name="Tree_0_3x2" type="Sprite2D" parent="."]
@@ -1392,7 +1426,7 @@ position = Vector2(478, 1857)
 scale = Vector2(-1, 1)
 texture = ExtResource("53_52mee")
 
-[connection signal="pressed" from="CanvasLayer/Control/Panel/Pause/pause" to="." method="_on_pause_pressed"]
+[connection signal="pressed" from="CanvasLayer/Control/Pause/pause" to="." method="_on_pause_pressed"]
 [connection signal="is_found" from="musicduck" to="." method="on_object_found"]
 [connection signal="is_found" from="snail" to="." method="on_object_found"]
 [connection signal="is_found" from="sunbathingheron" to="." method="on_object_found"]
