@@ -7,7 +7,7 @@
 resource_local_to_scene = true
 size = Vector2(143.01, 59.9848)
 
-[node name="butterfly_kite" instance=ExtResource("1_87bn2")]
+[node name="kite_flyer" instance=ExtResource("1_87bn2")]
 
 [node name="CollisionShape2D" parent="." index="0"]
 position = Vector2(1.48617, -1.01023)

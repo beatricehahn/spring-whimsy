@@ -16,7 +16,7 @@ func _ready() -> void:
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta) -> void:
 	var count = Global.Data[self.name].size()
-	scoreLabel.text = "Found: " + str(count) + "/10"
+	scoreLabel.text = "Found: " + str(count) + "/12"
 	
 	if Input.is_action_just_pressed("pause"):
 		pauseMenu()

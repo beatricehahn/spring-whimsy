@@ -1,9 +1,10 @@
-[gd_scene load_steps=72 format=3 uid="uid://c7e1nqwk25hbe"]
+[gd_scene load_steps=75 format=3 uid="uid://c7e1nqwk25hbe"]
 
 [ext_resource type="Script" uid="uid://6a2ehwuxrouf" path="res://Stages/A_Forest/Forest01.gd" id="1_mqu2i"]
 [ext_resource type="Script" uid="uid://cigf00o02l1xv" path="res://Assets/Util/Camera/camera_control.gd" id="2_5iqwd"]
 [ext_resource type="PackedScene" uid="uid://ck0avdt4m3r2g" path="res://MenuScreens/PauseMenu/PauseMenu.tscn" id="2_yeclv"]
 [ext_resource type="Theme" uid="uid://7vyw8pr30dth" path="res://Assets/Fonts/springthemefont.tres" id="3_b6pt6"]
+[ext_resource type="Texture2D" uid="uid://bi2gt4cl026np" path="res://Assets/Interface/textures_ui/searchlist_photo_textures/bird_basket_photo.png" id="6_1wasv"]
 [ext_resource type="Texture2D" uid="uid://c8w2tlcxet7am" path="res://Assets/textures/cherrytree_1.png" id="6_xl0wm"]
 [ext_resource type="Texture2D" uid="uid://u4dq4deanoae" path="res://Assets/Interface/textures_ui/searchlist_photo_textures/frog1_photo.png" id="6_xswqy"]
 [ext_resource type="Texture2D" uid="uid://d1lb3jplwahbj" path="res://Assets/Interface/textures_ui/searchlist_photo_textures/musicduck_photo.png" id="7_eynyh"]
@@ -12,6 +13,7 @@
 [ext_resource type="Texture2D" uid="uid://ilvw6xktm8g4" path="res://Assets/textures/mushroom_patch_1.png" id="8_xswqy"]
 [ext_resource type="Texture2D" uid="uid://bg7mcs6vyhwes" path="res://Assets/textures/rock_1.png" id="9_eynyh"]
 [ext_resource type="Texture2D" uid="uid://bkd35i54m7udr" path="res://Assets/Interface/textures_ui/searchlist_photo_textures/deer_photo.png" id="9_qt7wm"]
+[ext_resource type="Texture2D" uid="uid://81ygabbqumh1" path="res://Assets/Interface/textures_ui/searchlist_photo_textures/adventurer_photo.png" id="10_6gfsj"]
 [ext_resource type="Texture2D" uid="uid://402rn6mtfv1r" path="res://Assets/textures/rock_2.png" id="10_qt7wm"]
 [ext_resource type="Texture2D" uid="uid://cognk4pu860ih" path="res://Assets/Interface/textures_ui/searchlist_photo_textures/fox_photo.png" id="10_yl8yh"]
 [ext_resource type="Texture2D" uid="uid://cem1ihkt23ena" path="res://Assets/Interface/textures_ui/searchlist_photo_textures/heron_photo.png" id="11_p6khe"]
@@ -20,6 +22,7 @@
 [ext_resource type="Texture2D" uid="uid://c0n22yv47q1k5" path="res://Assets/Interface/textures_ui/searchlist_photo_textures/rubberducky_photo.png" id="12_yl8yh"]
 [ext_resource type="Texture2D" uid="uid://bnhxvij28s3pb" path="res://Assets/textures/bush_1.png" id="13_8c88a"]
 [ext_resource type="Texture2D" uid="uid://bvdjq17t0qc65" path="res://Assets/Interface/textures_ui/searchlist_photo_textures/snail_photo.png" id="13_p6khe"]
+[ext_resource type="Texture2D" uid="uid://bv4khohw15rii" path="res://Assets/Interface/textures_ui/searchlist_photo_textures/kite_flyer_photo.png" id="14_4vika"]
 [ext_resource type="Texture2D" uid="uid://b0hx8vkst0o20" path="res://Assets/Interface/textures_ui/searchlist_photo_textures/teafrog_photo.png" id="14_8c88a"]
 [ext_resource type="Texture2D" uid="uid://t23nbhpwkl4w" path="res://Assets/textures/bush_2.png" id="14_v5x7a"]
 [ext_resource type="Texture2D" uid="uid://dgjfgbaauyek8" path="res://Assets/textures/cherrytree_4.png" id="15_mv4vx"]
@@ -60,7 +63,7 @@
 [ext_resource type="Texture2D" uid="uid://enm2lqh4fdaa" path="res://MenuScreens/MainMenu/textures_mainmenu/tulips@0.3x.png" id="60_1wasv"]
 [ext_resource type="Texture2D" uid="uid://c4oenh21ahidp" path="res://Stages/A_Forest/textures/envelope.png" id="61_r6l72"]
 [ext_resource type="Texture2D" uid="uid://c4noh72erg7jg" path="res://MenuScreens/MainMenu/textures_mainmenu/tree@0.3x.png" id="61_yeclv"]
-[ext_resource type="PackedScene" uid="uid://dro6y516jmtex" path="res://Stages/A_Forest/objects/butterfly_kite.tscn" id="62_52mee"]
+[ext_resource type="PackedScene" uid="uid://dro6y516jmtex" path="res://Stages/A_Forest/objects/kite_flyer.tscn" id="62_52mee"]
 [ext_resource type="Texture2D" uid="uid://cm3o1vd1refbl" path="res://MenuScreens/MainMenu/textures_mainmenu/toyboat@0.3x.png" id="62_r6l72"]
 [ext_resource type="PackedScene" uid="uid://4l3bg8vneigw" path="res://Stages/A_Forest/objects/adventurer.tscn" id="63_pjkfl"]
 [ext_resource type="PackedScene" uid="uid://25m46lbh30ib" path="res://Stages/A_Forest/objects/bird_basket.tscn" id="64_te066"]
@@ -195,6 +198,10 @@ theme = SubResource("Theme_52hgw")
 layout_mode = 2
 texture = ExtResource("6_xswqy")
 
+[node name="bird_basket_icon" type="TextureRect" parent="CanvasLayer/Control/Panel/MarginContainer/searchlist/HBoxContainer"]
+layout_mode = 2
+texture = ExtResource("6_1wasv")
+
 [node name="musicduck_icon" type="TextureRect" parent="CanvasLayer/Control/Panel/MarginContainer/searchlist/HBoxContainer"]
 layout_mode = 2
 size_flags_horizontal = 4
@@ -207,6 +214,10 @@ texture = ExtResource("8_eynyh")
 [node name="deer_icon" type="TextureRect" parent="CanvasLayer/Control/Panel/MarginContainer/searchlist/HBoxContainer"]
 layout_mode = 2
 texture = ExtResource("9_qt7wm")
+
+[node name="adventurer_icon" type="TextureRect" parent="CanvasLayer/Control/Panel/MarginContainer/searchlist/HBoxContainer"]
+layout_mode = 2
+texture = ExtResource("10_6gfsj")
 
 [node name="sleepingfox_icon" type="TextureRect" parent="CanvasLayer/Control/Panel/MarginContainer/searchlist/HBoxContainer"]
 layout_mode = 2
@@ -223,6 +234,10 @@ texture = ExtResource("12_yl8yh")
 [node name="snail_icon" type="TextureRect" parent="CanvasLayer/Control/Panel/MarginContainer/searchlist/HBoxContainer"]
 layout_mode = 2
 texture = ExtResource("13_p6khe")
+
+[node name="kite_flyer_icon" type="TextureRect" parent="CanvasLayer/Control/Panel/MarginContainer/searchlist/HBoxContainer"]
+layout_mode = 2
+texture = ExtResource("14_4vika")
 
 [node name="teafrog_icon" type="TextureRect" parent="CanvasLayer/Control/Panel/MarginContainer/searchlist/HBoxContainer"]
 layout_mode = 2
@@ -1436,7 +1451,7 @@ texture = ExtResource("53_52mee")
 position = Vector2(1281, 513)
 texture = ExtResource("61_r6l72")
 
-[node name="butterfly_kite" parent="." instance=ExtResource("62_52mee")]
+[node name="kite_flyer" parent="." instance=ExtResource("62_52mee")]
 position = Vector2(928, 1538)
 
 [node name="adventurer" parent="." instance=ExtResource("63_pjkfl")]
@@ -1546,6 +1561,6 @@ texture = ExtResource("69_pxn4q")
 [connection signal="input_event" from="Frog1" to="Frog1" method="_on_input_event"]
 [connection signal="is_found" from="Frog1" to="." method="on_object_found"]
 [connection signal="is_found" from="deer" to="." method="on_object_found"]
-[connection signal="is_found" from="butterfly_kite" to="." method="on_object_found"]
+[connection signal="is_found" from="kite_flyer" to="." method="on_object_found"]
 [connection signal="is_found" from="adventurer" to="." method="on_object_found"]
 [connection signal="is_found" from="bird_basket" to="." method="on_object_found"]
