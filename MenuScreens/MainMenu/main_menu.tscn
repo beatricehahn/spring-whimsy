@@ -1,4 +1,4 @@
-[gd_scene load_steps=29 format=3 uid="uid://wy3uvcvhfa21"]
+[gd_scene load_steps=36 format=3 uid="uid://wy3uvcvhfa21"]
 
 [ext_resource type="Script" uid="uid://dl8pj6mhgku5i" path="res://MenuScreens/MainMenu/main_menu.gd" id="1_06t4h"]
 [ext_resource type="Texture2D" uid="uid://b81wl6iyvrw78" path="res://MenuScreens/MainMenu/textures_mainmenu/bg@0.3x.png" id="2_m5i6s"]
@@ -27,56 +27,69 @@
 [ext_resource type="Texture2D" uid="uid://b4daxbsro27o0" path="res://Assets/textures/frog_on_lilipadmat.png" id="26_b1xs2"]
 [ext_resource type="Texture2D" uid="uid://clsrhbwaa41p5" path="res://Assets/textures/frog_1.png" id="27_u7m8x"]
 [ext_resource type="Texture2D" uid="uid://bnhxvij28s3pb" path="res://Assets/textures/bush_1.png" id="29_o8t2a"]
+[ext_resource type="Texture2D" uid="uid://dpryjpkqoth5i" path="res://Assets/Art/Levels/Duck Island Art/lilypad.png" id="29_pkyot"]
 [ext_resource type="Texture2D" uid="uid://bm181kapgic1j" path="res://Assets/textures/cherrytree_2.png" id="30_16n5p"]
+[ext_resource type="Texture2D" uid="uid://dp3q7obkq3srd" path="res://Assets/Art/Levels/Duck Island Art/lotus.png" id="30_gd5t4"]
+[ext_resource type="Texture2D" uid="uid://b7c3d2a6k7obk" path="res://Assets/Art/Levels/Duck Island Art/plant.png" id="31_w1b72"]
+[ext_resource type="Texture2D" uid="uid://byygrespjfh65" path="res://Assets/Art/Levels/Duck Island Art/swimming duck.png" id="32_b1xs2"]
+[ext_resource type="Texture2D" uid="uid://c8w2tlcxet7am" path="res://Assets/textures/cherrytree_1.png" id="33_b1xs2"]
+[ext_resource type="Texture2D" uid="uid://dgjfgbaauyek8" path="res://Assets/textures/cherrytree_4.png" id="34_u7m8x"]
+[ext_resource type="Texture2D" uid="uid://cohcv3mlg04ql" path="res://Assets/textures/cherrytree_3.png" id="35_kc7em"]
 
 [node name="MainMenu" type="Control"]
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
+offset_left = 3.0
+offset_top = -3.0
+offset_right = 3.0
+offset_bottom = -3.0
 grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_06t4h")
+metadata/_edit_lock_ = true
 
 [node name="Background" type="Sprite2D" parent="."]
-position = Vector2(672.5, 182)
-scale = Vector2(1.22483, 1.71605)
+position = Vector2(710, 548)
+scale = Vector2(2.38483, 1.71605)
 texture = ExtResource("2_m5i6s")
+metadata/_edit_lock_ = true
 
 [node name="Musicduck" type="Sprite2D" parent="."]
 position = Vector2(321, 673)
 texture = ExtResource("3_lpfbm")
 
 [node name="Blanket3" type="Sprite2D" parent="."]
-position = Vector2(947, 474)
+position = Vector2(1590, 733)
 scale = Vector2(0.69183, 0.561836)
 texture = ExtResource("4_al2h2")
 
 [node name="Rubberducky" type="Sprite2D" parent="."]
-position = Vector2(709, 115)
+position = Vector2(1139, 259)
 scale = Vector2(0.331325, 0.331325)
 texture = ExtResource("5_mp05l")
 
 [node name="Snail1" type="Sprite2D" parent="."]
-position = Vector2(1151, 251)
+position = Vector2(1322, 879)
 scale = Vector2(0.435065, 0.435065)
 texture = ExtResource("6_al2h2")
 
 [node name="BeaversAndTheirBasket" type="Sprite2D" parent="."]
-position = Vector2(926, 459)
+position = Vector2(1577, 682)
 texture = ExtResource("8_ali5n")
 
 [node name="VBoxContainer" type="VBoxContainer" parent="."]
 layout_mode = 1
-anchors_preset = -1
+anchors_preset = 7
 anchor_left = 0.5
-anchor_top = 0.917
+anchor_top = 1.0
 anchor_right = 0.5
-anchor_bottom = 0.917
+anchor_bottom = 1.0
 offset_left = -114.5
-offset_top = -318.36
+offset_top = -317.0
 offset_right = 114.5
-offset_bottom = -123.36
+offset_bottom = -121.0
 grow_horizontal = 2
 grow_vertical = 0
 theme_override_constants/separation = 16
@@ -90,29 +103,29 @@ layout_mode = 2
 texture_normal = ExtResource("10_gd5t4")
 
 [node name="Sheep_0_3x" type="Sprite2D" parent="."]
-position = Vector2(1086, 105)
+position = Vector2(578, 912)
 texture = ExtResource("18_nfe8c")
 
 [node name="Title" type="Sprite2D" parent="."]
-position = Vector2(626, 221)
+position = Vector2(971, 436)
 scale = Vector2(0.70979, 0.70979)
 texture = ExtResource("12_5j3so")
 
 [node name="Tree_0_3x2" type="Sprite2D" parent="."]
-position = Vector2(259, 353)
+position = Vector2(1711, 379)
 texture = ExtResource("14_c1hie")
 
 [node name="Basket1" type="Sprite2D" parent="."]
-position = Vector2(192, 513)
+position = Vector2(228, 754)
 scale = Vector2(0.60628, 0.60628)
 texture = ExtResource("7_lpfbm")
 
 [node name="Snail_0_3x" type="Sprite2D" parent="."]
-position = Vector2(576, 637)
+position = Vector2(532, 678)
 texture = ExtResource("12_qm7uu")
 
 [node name="Toyboat_0_3x" type="Sprite2D" parent="."]
-position = Vector2(227, 129)
+position = Vector2(546, 386)
 texture = ExtResource("13_tl43r")
 
 [node name="Key_0_3x" type="Sprite2D" parent="."]
@@ -120,33 +133,33 @@ position = Vector2(1671, 1020)
 texture = ExtResource("15_7as2j")
 
 [node name="BeachBall_0_3x" type="Sprite2D" parent="."]
-position = Vector2(1209, 332)
+position = Vector2(1401, 495)
 texture = ExtResource("17_nfe8c")
 
 [node name="Snail_0_3x2" type="Sprite2D" parent="."]
-position = Vector2(118, 31)
+position = Vector2(434, 184)
 texture = ExtResource("12_qm7uu")
 
 [node name="Kite_0_3x" type="Sprite2D" parent="."]
-position = Vector2(1158, 617)
+position = Vector2(1840, 371)
 texture = ExtResource("19_aoshj")
 
 [node name="Balloons_0_3x" type="Sprite2D" parent="."]
-position = Vector2(1136, 94)
+position = Vector2(1465, 300)
 scale = Vector2(1.47143, 1.47143)
 texture = ExtResource("20_dutds")
-
-[node name="Bush_0_3x" type="Sprite2D" parent="Balloons_0_3x"]
-position = Vector2(44.8542, 47.5727)
-scale = Vector2(0.67961, 0.67961)
-texture = ExtResource("21_mg587")
 
 [node name="Tulips_0_3x" type="Sprite2D" parent="."]
 position = Vector2(665, 587)
 texture = ExtResource("22_o2r3f")
 
+[node name="Bush_0_3x2" type="Sprite2D" parent="."]
+position = Vector2(1898, 556)
+scale = Vector2(0.999999, 0.999999)
+texture = ExtResource("21_mg587")
+
 [node name="Tulips_0_3x2" type="Sprite2D" parent="."]
-position = Vector2(1244, 240)
+position = Vector2(1325, 369)
 texture = ExtResource("22_o2r3f")
 
 [node name="Tulips_0_3x3" type="Sprite2D" parent="."]
@@ -166,15 +179,15 @@ position = Vector2(45, 44)
 texture = ExtResource("22_o2r3f")
 
 [node name="Tulips_0_3x7" type="Sprite2D" parent="."]
-position = Vector2(976, 239)
+position = Vector2(980, 163)
 texture = ExtResource("22_o2r3f")
 
 [node name="Tulips_0_3x8" type="Sprite2D" parent="."]
-position = Vector2(1062, 172)
+position = Vector2(1097, 108)
 texture = ExtResource("22_o2r3f")
 
 [node name="Tulips_0_3x9" type="Sprite2D" parent="."]
-position = Vector2(473, 11)
+position = Vector2(556, 244)
 texture = ExtResource("22_o2r3f")
 
 [node name="Tulips_0_3x10" type="Sprite2D" parent="."]
@@ -182,11 +195,11 @@ position = Vector2(1041, 662)
 texture = ExtResource("22_o2r3f")
 
 [node name="Toyboat_0_3x3" type="Sprite2D" parent="."]
-position = Vector2(803, -10)
+position = Vector2(1550, 172)
 texture = ExtResource("13_tl43r")
 
 [node name="Bush_0_3x" type="Sprite2D" parent="."]
-position = Vector2(1272, 427)
+position = Vector2(1438, 375)
 texture = ExtResource("21_mg587")
 
 [node name="Rock3" type="Sprite2D" parent="."]
@@ -202,7 +215,7 @@ position = Vector2(1179, 999)
 texture = ExtResource("25_w1b72")
 
 [node name="FrogOnLilipadmat" type="Sprite2D" parent="."]
-position = Vector2(631, 53)
+position = Vector2(190, 429)
 texture = ExtResource("26_b1xs2")
 
 [node name="Frog1" type="Sprite2D" parent="."]
@@ -210,12 +223,113 @@ position = Vector2(1211, 615)
 texture = ExtResource("27_u7m8x")
 
 [node name="Bush1" type="Sprite2D" parent="."]
-position = Vector2(1242, 177)
+position = Vector2(1017, 72)
 texture = ExtResource("29_o8t2a")
 
 [node name="Cherrytree2" type="Sprite2D" parent="."]
-position = Vector2(-297, 158)
+position = Vector2(172, 158)
 texture = ExtResource("30_16n5p")
+
+[node name="Lilypad" type="Sprite2D" parent="."]
+position = Vector2(81, 517)
+texture = ExtResource("29_pkyot")
+
+[node name="Lilypad2" type="Sprite2D" parent="."]
+position = Vector2(417, 382)
+texture = ExtResource("29_pkyot")
+
+[node name="Lotus" type="Sprite2D" parent="."]
+position = Vector2(589, 478)
+texture = ExtResource("30_gd5t4")
+
+[node name="Lilypad3" type="Sprite2D" parent="."]
+position = Vector2(970, 275)
+texture = ExtResource("29_pkyot")
+
+[node name="Lilypad4" type="Sprite2D" parent="."]
+position = Vector2(1311, 152)
+texture = ExtResource("29_pkyot")
+
+[node name="Lotus2" type="Sprite2D" parent="."]
+position = Vector2(1298, 260)
+texture = ExtResource("30_gd5t4")
+
+[node name="Lotus3" type="Sprite2D" parent="."]
+position = Vector2(1776, 67)
+texture = ExtResource("30_gd5t4")
+
+[node name="Plant" type="Sprite2D" parent="."]
+position = Vector2(685, 736)
+texture = ExtResource("31_w1b72")
+
+[node name="Plant2" type="Sprite2D" parent="."]
+position = Vector2(250, 326)
+texture = ExtResource("31_w1b72")
+
+[node name="Plant3" type="Sprite2D" parent="."]
+position = Vector2(68, 894)
+texture = ExtResource("31_w1b72")
+
+[node name="SwimmingDuck" type="Sprite2D" parent="."]
+position = Vector2(329, 453)
+texture = ExtResource("32_b1xs2")
+
+[node name="SwimmingDuck2" type="Sprite2D" parent="."]
+position = Vector2(848, 279)
+texture = ExtResource("32_b1xs2")
+
+[node name="SwimmingDuck3" type="Sprite2D" parent="."]
+position = Vector2(1189, 185)
+texture = ExtResource("32_b1xs2")
+
+[node name="SwimmingDuck4" type="Sprite2D" parent="."]
+position = Vector2(1446, 77)
+texture = ExtResource("32_b1xs2")
+
+[node name="SwimmingDuck5" type="Sprite2D" parent="."]
+position = Vector2(1821, 165)
+texture = ExtResource("32_b1xs2")
+
+[node name="Plant4" type="Sprite2D" parent="."]
+position = Vector2(1112, 590)
+texture = ExtResource("31_w1b72")
+
+[node name="Bush2" type="Sprite2D" parent="."]
+position = Vector2(66, 986)
+texture = ExtResource("29_o8t2a")
+
+[node name="Cherrytree1" type="Sprite2D" parent="."]
+position = Vector2(1868, 776)
+texture = ExtResource("33_b1xs2")
+
+[node name="Cherrytree3" type="Sprite2D" parent="."]
+position = Vector2(1605, 948)
+texture = ExtResource("30_16n5p")
+
+[node name="Cherrytree4" type="Sprite2D" parent="."]
+position = Vector2(1838, 961)
+scale = Vector2(1.48013, 1.35784)
+texture = ExtResource("34_u7m8x")
+
+[node name="Cherrytree5" type="Sprite2D" parent="."]
+position = Vector2(282, 927)
+scale = Vector2(1.308, 1.0916)
+texture = ExtResource("33_b1xs2")
+
+[node name="Cherrytree6" type="Sprite2D" parent="."]
+position = Vector2(3, 908)
+scale = Vector2(1.57339, 1)
+texture = ExtResource("30_16n5p")
+
+[node name="Cherrytree7" type="Sprite2D" parent="."]
+position = Vector2(103, 1003)
+scale = Vector2(1.70161, 1.16822)
+texture = ExtResource("35_kc7em")
+
+[node name="Cherrytree8" type="Sprite2D" parent="."]
+position = Vector2(785, 87.0001)
+scale = Vector2(1.87748, 1.54412)
+texture = ExtResource("34_u7m8x")
 
 [connection signal="pressed" from="VBoxContainer/Play" to="." method="_on_start_pressed"]
 [connection signal="pressed" from="VBoxContainer/Exit" to="." method="_on_quit_pressed"]

@@ -77,7 +77,7 @@ mouse_filter = 2
 color = Color(0.699205, 0.773438, 0.516632, 1)
 
 [node name="Camera2D" type="Camera2D" parent="."]
-position = Vector2(646, 364)
+position = Vector2(960, 540)
 script = ExtResource("2_5iqwd")
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
