@@ -12,14 +12,13 @@ config_version=5
 
 config/name="springwhimsy"
 config/version="1.2"
-run/main_scene="uid://wy3uvcvhfa21"
+run/main_scene="uid://y3og7jq5mw7d"
 config/use_custom_user_dir=true
 config/features=PackedStringArray("4.4", "GL Compatibility")
 config/icon="res://icon.svg"
 
 [autoload]
 
-Dialogic="*res://addons/dialogic/Core/DialogicGameHandler.gd"
 SceneManager="*res://Assets/Util/SceneManager/scene_manager.tscn"
 TransitionScreen="*res://MenuScreens/Transitions/transition_screen.tscn"
 Global="*res://Scripts/Global.gd"
@@ -50,13 +49,7 @@ folder_colors={
 "res://Scripts/": "red",
 "res://Stages/": "blue",
 "res://Stages/A_Forest/": "green",
-"res://Stages/B_Urban/": "purple",
-"res://Stages/C_Garden/": "yellow",
-"res://Stages/D_Isles/": "blue",
-"res://Stages/E_Wetlands/": "orange",
-"res://Stages/F_Farm/": "red",
-"res://Stages/G_Festival/": "pink",
-"res://addons/": "gray"
+"res://Stages/D_Isles/": "blue"
 }
 
 [input]
