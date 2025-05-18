@@ -1,4 +1,4 @@
-[gd_scene load_steps=67 format=3 uid="uid://c7e1nqwk25hbe"]
+[gd_scene load_steps=72 format=3 uid="uid://c7e1nqwk25hbe"]
 
 [ext_resource type="Script" uid="uid://6a2ehwuxrouf" path="res://Stages/A_Forest/Forest01.gd" id="1_mqu2i"]
 [ext_resource type="Script" uid="uid://cigf00o02l1xv" path="res://Assets/Util/Camera/camera_control.gd" id="2_5iqwd"]
@@ -64,6 +64,11 @@
 [ext_resource type="Texture2D" uid="uid://cm3o1vd1refbl" path="res://MenuScreens/MainMenu/textures_mainmenu/toyboat@0.3x.png" id="62_r6l72"]
 [ext_resource type="PackedScene" uid="uid://4l3bg8vneigw" path="res://Stages/A_Forest/objects/adventurer.tscn" id="63_pjkfl"]
 [ext_resource type="PackedScene" uid="uid://25m46lbh30ib" path="res://Stages/A_Forest/objects/bird_basket.tscn" id="64_te066"]
+[ext_resource type="Texture2D" uid="uid://q2euh8p4nouc" path="res://Assets/Art/Levels/Duck Island Art/frogstatue.png" id="65_phs54"]
+[ext_resource type="Texture2D" uid="uid://dpryjpkqoth5i" path="res://Assets/Art/Levels/Duck Island Art/lilypad.png" id="66_1wasv"]
+[ext_resource type="Texture2D" uid="uid://dp3q7obkq3srd" path="res://Assets/Art/Levels/Duck Island Art/lotus.png" id="67_4vika"]
+[ext_resource type="Texture2D" uid="uid://b7c3d2a6k7obk" path="res://Assets/Art/Levels/Duck Island Art/plant.png" id="68_6gfsj"]
+[ext_resource type="Texture2D" uid="uid://byygrespjfh65" path="res://Assets/Art/Levels/Duck Island Art/swimming duck.png" id="69_pxn4q"]
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_k08wi"]
 
@@ -662,10 +667,10 @@ texture = ExtResource("11_yl8yh")
 position = Vector2(1172, 596)
 
 [node name="snail" parent="." instance=ExtResource("31_1vqsg")]
-position = Vector2(2877, 293)
+position = Vector2(2878, 286)
 
 [node name="sunbathingheron" parent="." instance=ExtResource("32_u4v31")]
-position = Vector2(-576, 1093)
+position = Vector2(-786, 1513)
 
 [node name="sleepingfox" parent="." instance=ExtResource("33_6y46q")]
 position = Vector2(-739, 2024)
@@ -697,7 +702,7 @@ scale = Vector2(0.882701, 0.882701)
 texture = ExtResource("41_w37xm")
 
 [node name="rubberducky" parent="." instance=ExtResource("35_1ydgw")]
-position = Vector2(-129, 1350)
+position = Vector2(-138, 1358)
 
 [node name="turtle" parent="." instance=ExtResource("43_dvswm")]
 position = Vector2(477, 1484)
@@ -706,7 +711,7 @@ position = Vector2(477, 1484)
 position = Vector2(-25, 1541)
 
 [node name="toyboat2" parent="." instance=ExtResource("44_krlm7")]
-position = Vector2(496, 1596)
+position = Vector2(548, 1549)
 
 [node name="toyboat3" parent="." instance=ExtResource("44_krlm7")]
 position = Vector2(325, 1321)
@@ -787,7 +792,7 @@ position = Vector2(2146, 1484)
 texture = ExtResource("12_p6khe")
 
 [node name="SquirrelBasket3" type="Sprite2D" parent="."]
-position = Vector2(1983, 1716)
+position = Vector2(1959, 1868)
 texture = ExtResource("19_bee6c")
 
 [node name="SquirrelBasket4" type="Sprite2D" parent="."]
@@ -835,7 +840,7 @@ position = Vector2(1967, 1205)
 texture = ExtResource("54_pjkfl")
 
 [node name="Kite_0_3x" type="Sprite2D" parent="."]
-position = Vector2(2074, 959)
+position = Vector2(1810, 692)
 texture = ExtResource("55_te066")
 
 [node name="Kite_0_3x2" type="Sprite2D" parent="."]
@@ -922,7 +927,7 @@ position = Vector2(1501, 659)
 texture = ExtResource("61_yeclv")
 
 [node name="deer" parent="." instance=ExtResource("38_bee6c")]
-position = Vector2(1244, 1436)
+position = Vector2(1251, 1448)
 
 [node name="Tree_0_3x3" type="Sprite2D" parent="."]
 position = Vector2(2382, 596)
@@ -1432,13 +1437,102 @@ position = Vector2(1281, 513)
 texture = ExtResource("61_r6l72")
 
 [node name="butterfly_kite" parent="." instance=ExtResource("62_52mee")]
-position = Vector2(1774, 1209)
+position = Vector2(928, 1538)
 
 [node name="adventurer" parent="." instance=ExtResource("63_pjkfl")]
-position = Vector2(1811, 1265)
+position = Vector2(774, 560)
 
 [node name="bird_basket" parent="." instance=ExtResource("64_te066")]
-position = Vector2(1738, 1289)
+position = Vector2(2377, 1064)
+scale = Vector2(2.03537, 2.03537)
+
+[node name="Frogstatue" type="Sprite2D" parent="."]
+position = Vector2(-2, 1248)
+texture = ExtResource("65_phs54")
+
+[node name="Lilypad" type="Sprite2D" parent="."]
+position = Vector2(-372, 1317)
+texture = ExtResource("66_1wasv")
+
+[node name="Lotus" type="Sprite2D" parent="."]
+position = Vector2(-249, 1400)
+texture = ExtResource("67_4vika")
+
+[node name="Lotus2" type="Sprite2D" parent="."]
+position = Vector2(237, 1545)
+texture = ExtResource("67_4vika")
+
+[node name="Lilypad2" type="Sprite2D" parent="."]
+position = Vector2(358, 1439)
+texture = ExtResource("66_1wasv")
+
+[node name="Lotus3" type="Sprite2D" parent="."]
+position = Vector2(537, 1368)
+texture = ExtResource("67_4vika")
+
+[node name="Lotus4" type="Sprite2D" parent="."]
+position = Vector2(632, 1520)
+texture = ExtResource("67_4vika")
+
+[node name="Plant" type="Sprite2D" parent="."]
+position = Vector2(39, 1607)
+texture = ExtResource("68_6gfsj")
+
+[node name="Plant2" type="Sprite2D" parent="."]
+position = Vector2(274, 1471)
+texture = ExtResource("68_6gfsj")
+
+[node name="Plant3" type="Sprite2D" parent="."]
+position = Vector2(-518, 1349)
+texture = ExtResource("68_6gfsj")
+
+[node name="Plant4" type="Sprite2D" parent="."]
+position = Vector2(-180, 1235)
+texture = ExtResource("68_6gfsj")
+
+[node name="Plant5" type="Sprite2D" parent="."]
+position = Vector2(-35, 1673)
+texture = ExtResource("68_6gfsj")
+
+[node name="SwimmingDuck" type="Sprite2D" parent="."]
+position = Vector2(356, 1254)
+texture = ExtResource("69_pxn4q")
+
+[node name="SwimmingDuck2" type="Sprite2D" parent="."]
+position = Vector2(-145, 1394)
+texture = ExtResource("69_pxn4q")
+
+[node name="SwimmingDuck3" type="Sprite2D" parent="."]
+position = Vector2(38, 1489)
+texture = ExtResource("69_pxn4q")
+
+[node name="SwimmingDuck4" type="Sprite2D" parent="."]
+position = Vector2(218, 1677)
+texture = ExtResource("69_pxn4q")
+
+[node name="SwimmingDuck5" type="Sprite2D" parent="."]
+position = Vector2(432, 1382)
+texture = ExtResource("69_pxn4q")
+
+[node name="SwimmingDuck6" type="Sprite2D" parent="."]
+position = Vector2(321, 1597)
+texture = ExtResource("69_pxn4q")
+
+[node name="SwimmingDuck7" type="Sprite2D" parent="."]
+position = Vector2(-199, 1345)
+texture = ExtResource("69_pxn4q")
+
+[node name="SwimmingDuck8" type="Sprite2D" parent="."]
+position = Vector2(-159, 1542)
+texture = ExtResource("69_pxn4q")
+
+[node name="SwimmingDuck9" type="Sprite2D" parent="."]
+position = Vector2(-440, 1365)
+texture = ExtResource("69_pxn4q")
+
+[node name="SwimmingDuck10" type="Sprite2D" parent="."]
+position = Vector2(-265, 1565)
+texture = ExtResource("69_pxn4q")
 
 [connection signal="pressed" from="CanvasLayer/Control/Pause/pause" to="." method="_on_pause_pressed"]
 [connection signal="is_found" from="musicduck" to="." method="on_object_found"]
