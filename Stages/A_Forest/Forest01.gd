@@ -8,6 +8,8 @@ extends Node2D
 @onready var pause_menu = $CanvasLayer/PauseMenu
 @onready var is_paused = pause_menu.is_paused
 
+@onready var win_screen = $CanvasLayer/VictoryScreen
+
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
 	pass # Replace with function body.
@@ -17,6 +19,9 @@ func _ready() -> void:
 func _process(delta) -> void:
 	var count = Global.Data[self.name].size()
 	scoreLabel.text = "Found: " + str(count) + "/12"
+	
+	if count == 12:
+		show_winscreen()
 	
 	if Input.is_action_just_pressed("pause"):
 		pauseMenu()
@@ -28,7 +33,10 @@ func pauseMenu():
 	else:
 		pause_menu.show()
 		Engine.time_scale = 0
-	
+
+func show_winscreen():
+	Engine.time_scale = 0
+	win_screen.show()
 
 # Triggers when hidden object emits a "found" signal
 func on_object_found(object_name: String) -> void:
