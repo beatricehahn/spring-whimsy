@@ -1,0 +1,18 @@
+[gd_scene load_steps=4 format=3 uid="uid://25m46lbh30ib"]
+
+[ext_resource type="PackedScene" uid="uid://c0qa4cotdyca3" path="res://Assets/Util/Collectable/collectable.tscn" id="1_lfowq"]
+[ext_resource type="Texture2D" uid="uid://vo8xkwvle661" path="res://Stages/A_Forest/textures/bird_basket.png" id="2_lfowq"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_e7q3t"]
+resource_local_to_scene = true
+size = Vector2(57.0124, 40.5231)
+
+[node name="bird_basket" instance=ExtResource("1_lfowq")]
+
+[node name="CollisionShape2D" parent="." index="0"]
+position = Vector2(0.463715, -3.27212)
+rotation = 3.13471
+shape = SubResource("RectangleShape2D_e7q3t")
+
+[node name="Sprite2D" parent="." index="1"]
+texture = ExtResource("2_lfowq")

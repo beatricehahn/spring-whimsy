@@ -1,0 +1,18 @@
+[gd_scene load_steps=4 format=3 uid="uid://dro6y516jmtex"]
+
+[ext_resource type="PackedScene" uid="uid://c0qa4cotdyca3" path="res://Assets/Util/Collectable/collectable.tscn" id="1_87bn2"]
+[ext_resource type="Texture2D" uid="uid://3ire2nefoowl" path="res://Stages/A_Forest/textures/butterfly_kite.png" id="2_87bn2"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_e7q3t"]
+resource_local_to_scene = true
+size = Vector2(143.01, 59.9848)
+
+[node name="butterfly_kite" instance=ExtResource("1_87bn2")]
+
+[node name="CollisionShape2D" parent="." index="0"]
+position = Vector2(1.48617, -1.01023)
+rotation = 3.13471
+shape = SubResource("RectangleShape2D_e7q3t")
+
+[node name="Sprite2D" parent="." index="1"]
+texture = ExtResource("2_87bn2")

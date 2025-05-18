@@ -1,4 +1,4 @@
-[gd_scene load_steps=63 format=3 uid="uid://c7e1nqwk25hbe"]
+[gd_scene load_steps=67 format=3 uid="uid://c7e1nqwk25hbe"]
 
 [ext_resource type="Script" uid="uid://6a2ehwuxrouf" path="res://Stages/A_Forest/Forest01.gd" id="1_mqu2i"]
 [ext_resource type="Script" uid="uid://cigf00o02l1xv" path="res://Assets/Util/Camera/camera_control.gd" id="2_5iqwd"]
@@ -58,8 +58,12 @@
 [ext_resource type="Texture2D" uid="uid://bwfbgb0e1x2nl" path="res://MenuScreens/MainMenu/textures_mainmenu/sheep@0.3x.png" id="58_xpxvp"]
 [ext_resource type="Texture2D" uid="uid://tdl3qopfplmm" path="res://MenuScreens/MainMenu/textures_mainmenu/snail@0.3x.png" id="59_phs54"]
 [ext_resource type="Texture2D" uid="uid://enm2lqh4fdaa" path="res://MenuScreens/MainMenu/textures_mainmenu/tulips@0.3x.png" id="60_1wasv"]
+[ext_resource type="Texture2D" uid="uid://c4oenh21ahidp" path="res://Stages/A_Forest/textures/envelope.png" id="61_r6l72"]
 [ext_resource type="Texture2D" uid="uid://c4noh72erg7jg" path="res://MenuScreens/MainMenu/textures_mainmenu/tree@0.3x.png" id="61_yeclv"]
+[ext_resource type="PackedScene" uid="uid://dro6y516jmtex" path="res://Stages/A_Forest/objects/butterfly_kite.tscn" id="62_52mee"]
 [ext_resource type="Texture2D" uid="uid://cm3o1vd1refbl" path="res://MenuScreens/MainMenu/textures_mainmenu/toyboat@0.3x.png" id="62_r6l72"]
+[ext_resource type="PackedScene" uid="uid://4l3bg8vneigw" path="res://Stages/A_Forest/objects/adventurer.tscn" id="63_pjkfl"]
+[ext_resource type="PackedScene" uid="uid://25m46lbh30ib" path="res://Stages/A_Forest/objects/bird_basket.tscn" id="64_te066"]
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_k08wi"]
 
@@ -69,15 +73,17 @@
 script = ExtResource("1_mqu2i")
 
 [node name="greenbg" type="ColorRect" parent="."]
-offset_left = -1360.0
-offset_top = -240.0
-offset_right = 3165.0
-offset_bottom = 2314.0
+offset_left = -1468.0
+offset_top = -403.0
+offset_right = 3057.0
+offset_bottom = 2151.0
+scale = Vector2(1.08, 1.16)
 mouse_filter = 2
 color = Color(0.699205, 0.773438, 0.516632, 1)
+metadata/_edit_lock_ = true
 
 [node name="Camera2D" type="Camera2D" parent="."]
-position = Vector2(960, 540)
+position = Vector2(1088, 1098)
 script = ExtResource("2_5iqwd")
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
@@ -152,7 +158,7 @@ offset_bottom = 22.5
 grow_vertical = 2
 theme_override_colors/font_color = Color(0.214844, 0.0763702, 0.0879099, 1)
 theme_override_font_sizes/font_size = 32
-text = "FOUND: 0 / 10"
+text = "FOUND: 0 / 12"
 
 [node name="MarginContainer" type="MarginContainer" parent="CanvasLayer/Control/Panel"]
 layout_mode = 1
@@ -1421,6 +1427,19 @@ position = Vector2(478, 1857)
 scale = Vector2(-1, 1)
 texture = ExtResource("53_52mee")
 
+[node name="Envelope" type="Sprite2D" parent="."]
+position = Vector2(1281, 513)
+texture = ExtResource("61_r6l72")
+
+[node name="butterfly_kite" parent="." instance=ExtResource("62_52mee")]
+position = Vector2(1774, 1209)
+
+[node name="adventurer" parent="." instance=ExtResource("63_pjkfl")]
+position = Vector2(1811, 1265)
+
+[node name="bird_basket" parent="." instance=ExtResource("64_te066")]
+position = Vector2(1738, 1289)
+
 [connection signal="pressed" from="CanvasLayer/Control/Pause/pause" to="." method="_on_pause_pressed"]
 [connection signal="is_found" from="musicduck" to="." method="on_object_found"]
 [connection signal="is_found" from="snail" to="." method="on_object_found"]
@@ -1433,3 +1452,6 @@ texture = ExtResource("53_52mee")
 [connection signal="input_event" from="Frog1" to="Frog1" method="_on_input_event"]
 [connection signal="is_found" from="Frog1" to="." method="on_object_found"]
 [connection signal="is_found" from="deer" to="." method="on_object_found"]
+[connection signal="is_found" from="butterfly_kite" to="." method="on_object_found"]
+[connection signal="is_found" from="adventurer" to="." method="on_object_found"]
+[connection signal="is_found" from="bird_basket" to="." method="on_object_found"]
